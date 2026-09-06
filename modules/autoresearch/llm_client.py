@@ -66,16 +66,28 @@ class LocalLLMClient:
             }
 
             if json_mode:
+                cleaned = raw_text
+                # Strip reasoning <think>...</think> if present
+                if "</think>" in cleaned:
+                    cleaned = cleaned.split("</think>")[-1].strip()
+
+                if "```json" in cleaned:
+                    cleaned = cleaned.split("```json")[1].split("```")[0].strip()
+                elif "```" in cleaned:
+                    cleaned = cleaned.split("```")[1].split("```")[0].strip()
+
+                # Extract content between outer braces
+                start_idx = cleaned.find("{")
+                end_idx = cleaned.rfind("}")
+                if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
+                    cleaned = cleaned[start_idx:end_idx + 1]
+
                 try:
-                    result["json"] = json.loads(raw_text)
-                except Exception as e:
-                    # Try extracting json snippet if wrapped in markdown
-                    cleaned = raw_text
-                    if "```json" in cleaned:
-                        cleaned = cleaned.split("```json")[1].split("```")[0].strip()
-                    elif "```" in cleaned:
-                        cleaned = cleaned.split("```")[1].split("```")[0].strip()
                     result["json"] = json.loads(cleaned)
+                except Exception as parse_err:
+                    import re
+                    sanitized = re.sub(r",\s*([\]}])", r"\1", cleaned)
+                    result["json"] = json.loads(sanitized)
 
             return result
         except Exception as e:
