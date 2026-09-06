@@ -1,0 +1,16 @@
+KAREL ČAPEK: R.U.R. (Rossumovi Univerzální Roboti)
+Utopická hra o třech dějstvích s předehrou (1920)
+
+PŘEDEHRA.
+Ústřední kancelář továrny Rossumových Univerzálních Robotů.
+
+DOMIN: (diktuje) ...továrna neručí za chyby v opise. Tečka. K rukám pánů E. Busmana v Hamburku. Uctivý pane, na váš dopis ze dne 14. m. t. sdělujeme, že náš závod nepřijímá žádné objednávky na okamžité dodání Robotů. Naše výroba nestačí krýt ani poptávku starých zákazníků. Roboti se osvědčují v každém ohledu. Výrobní cena jednoho Robota činí dnes 120 dolarů včetně šatů a udržování na tři léta. Závod Rossum's Universal Robots.
+
+HELENA: Vy jste pan generální ředitel Domin?
+DOMIN: K vašim službám, slečno Gloryová. Vy jste dcera prezidenta Gloryho?
+HELENA: Ano.
+DOMIN: Vítám vás na našem ostrově. Posaďte se, prosím. Zde na ostrově vyrábíme novou éru lidstva.
+HELENA: Chtěla bych vidět... chtěla bych vědět, jak děláte ty vaše Roboty.
+DOMIN: Starý Rossum, velký filosof, se pokusil chemickou syntézou vytvořit protoplazmu. Roku 1932 objevil látku, která se chovala přesně jako živá hmota. Ale mladý inženýr Rossum, jeho synovec, řekl: Příroda našla jen jeden způsob, jak zorganizovat živou hmotu. Je tu však jiný způsob, jednodušší, tvarově čistší a tvárnější, na který příroda vůbec nepřipadla: stroj. A tak vznikl Robot.
+HELENA: Robot necítí nic?
+DOMIN: Nic. Roboti nemají duši. Nemají lásku, nemají vzpouru, nemají strach ze smrti. Pracují mechanicky, dokonale, levně. Jsou to dělníci bez chyb, stroje z masa a kostí, které osvobodí člověка od ponižující dřiny!
