@@ -18,6 +18,7 @@ import json
 import sqlite3
 import sys
 import unicodedata
+from typing import Any, Dict, Optional
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -48,6 +49,38 @@ def normalize_old_orthography(s: str) -> str:
     s = strip_accents(s)
     return (s.replace("ъ", "").replace("ѣ", "і").replace("и", "и")
              .replace("’", "").replace("'", "").strip())
+
+
+import re
+
+# Виправлені посилання несуть байтову координату в артефакті:
+#   «Тяжкороб» (Грінченко, том 4, артефакт 2451234+58)
+# Такі перевіряються ЧИТАННЯМ БАЙТІВ, а не розбором прози — той самий
+# принцип, що й у свідків із творів: координата, а не твердження.
+COORD_RE = re.compile(
+    r"«([^»]+)»\s*\(Грінченко,\s*том\s*(\d),\s*артефакт\s*(\d+)\+(\d+)\)"
+)
+
+
+def verify_by_coordinates(model_text: str, data: bytes) -> Optional[Dict[str, Any]]:
+    """Перевіряє всі координатні посилання у тексті. None — якщо їх немає."""
+    matches = COORD_RE.findall(model_text or "")
+    if not matches:
+        return None
+    checked, failed = [], []
+    for word, vol, start, length in matches:
+        start, length = int(start), int(length)
+        line = data[start:start + length].decode("utf-8", errors="replace")
+        if strip_accents(line).lower().startswith(strip_accents(word).lower()[:5]):
+            checked.append(f"{word}@{start}")
+        else:
+            failed.append(f"{word}@{start} -> {line[:30]!r}")
+    if failed:
+        return {"verdict": "CONTRADICTED",
+                "evidence": "координата не вказує на заявлене слово: " + "; ".join(failed)}
+    return {"verdict": "CONFIRMED_COORD",
+            "evidence": "усі моделі підтверджені байтовими координатами: "
+                        + ", ".join(checked)}
 
 
 def main() -> int:
@@ -81,6 +114,8 @@ def main() -> int:
         key = normalize_old_orthography(e["headword"])
         lookup.setdefault(key, []).append(e)
 
+    artifact_data = ARTIFACT.read_bytes()
+
     print(f"покажчик: {len(entries):,} реєстрових слів, "
           f"{len(lookup):,} унікальних форм")
     print(f"артефакт sha256: {artifact_sha[:32]}…\n")
@@ -99,6 +134,25 @@ def main() -> int:
     print(f"{'НЕОЛОГІЗМ':<20}{'СЛОВО-МОДЕЛЬ':<16}{'ТОМ':>4}{'ФАКТ':>5}  ВЕРДИКТ")
     for r in rows:
         model = r["derivation_model"]
+
+        # Спершу — координатна перевірка. Якщо посилання її має, прози не
+        # розбираємо взагалі: байти або на місці, або ні.
+        by_coord = verify_by_coordinates(model, artifact_data)
+        if by_coord:
+            verdict = by_coord["verdict"]
+            counts[verdict] = counts.get(verdict, 0) + 1
+            con.execute(
+                "INSERT INTO grinchenko_claim_checks "
+                "(attestation_id, proposed_ukr_term, claim_text, verdict, "
+                " evidence, checked_at_utc) VALUES (?,?,?,?,?,?)",
+                (r["id"], r["proposed_ukr_term"], model,
+                 "CONFIRMED" if verdict == "CONFIRMED_COORD" else verdict,
+                 by_coord["evidence"], now),
+            )
+            print(f"{r['proposed_ukr_term'][:20]:<20}"
+                  f"{'(за координатами)':<16}{'':>4}{'':>5}  {verdict}")
+            continue
+
         cit = parse_citation(model)
         hw = extract_headword(model)
 
