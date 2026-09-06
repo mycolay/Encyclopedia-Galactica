@@ -173,16 +173,15 @@ class LocalLLMClient:
 Поверни JSON:
 {{"candidates": ["термін1", "термін2"]}}
 """
-        try:
-            res = self.generate(prompt=prompt, system_prompt=system_prompt, json_mode=True, temperature=0.2)
-            cands = res.get("json", {}).get("candidates", [])
-            if isinstance(cands, list):
-                # Clean and filter non-empty string candidates
-                return [str(c).strip() for c in cands if str(c).strip() and len(str(c).strip()) > 2]
-            return []
-        except Exception as e:
-            logger.warning(f"Error in propose_candidates: {e}")
-            return []
+        res = self.generate(prompt=prompt, system_prompt=system_prompt, json_mode=True, temperature=0.2)
+        payload = res.get("json")
+        if not isinstance(payload, dict) or not isinstance(payload.get("candidates"), list):
+            raise ValueError("invalid_candidates_schema")
+        cands = payload["candidates"]
+        if any(not isinstance(c, str) or not c.strip() for c in cands):
+            raise ValueError("invalid_candidate_item")
+        # Transport/JSON failures propagate: only an explicit empty array means no candidates.
+        return list(dict.fromkeys(c.strip() for c in cands))
 
     def derive_ukrainian_neologism(
         self,

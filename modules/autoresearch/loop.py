@@ -42,6 +42,14 @@ class AutoResearchRunner:
         self.on_cycle_complete = on_cycle_complete
         self.is_running = False
 
+    def run_extraction_cycle(self, target_work, queue_path, profile, max_windows=5):
+        """Durable extraction stage; candidates await localization and editorial work."""
+        from modules.corpus.queue import CorpusQueue
+        queue = CorpusQueue(queue_path)
+        plan = queue.prepare(target_work['id'], target_work['text_path'], profile)
+        return queue.run(plan, self.llm_client, target_work['title_orig'],
+                         target_work['author_name_orig'], max_windows=max_windows)
+
     def get_next_work_target(self) -> Optional[Dict[str, Any]]:
         """Selects the next cult work with full text available on disk."""
         works = self.db.get_works(limit=100, order_by="cult_score DESC")
