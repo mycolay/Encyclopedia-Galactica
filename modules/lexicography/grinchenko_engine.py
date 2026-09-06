@@ -212,42 +212,81 @@ class GrinchenkoEngine:
         return CANONICAL_TERMS_SEED
 
     @staticmethod
-    def evaluate_ukrainian_neologism(variant: str, rationale: str) -> Dict[str, Any]:
+    def evaluate_ukrainian_neologism(variant: str, rationale: str = "") -> Dict[str, Any]:
         """
-        Linguistic critique of a proposed Ukrainian neologism:
-        - Checks for illegal Russian calques.
-        - Verifies presence of authentic Ukrainian suffixes and prefixes.
-        - Calculates harmonic naturalness score.
+        Linguistic critique of a proposed Ukrainian neologism (T13):
+        - Base score starts at 0.0; points added ONLY for proven positive linguistic features.
+        - Rejects empty strings, digits, Latin characters immediately with score 0.0.
+        - Strictly enforces Ukrainian alphabet (including ґ, є, і, ї, apostrophe).
+        - Correctly accepts legitimate Ukrainian words (e.g. мислитель, вчитель, Миттєвісник).
         """
-        score = 0.85
+        import re
+
+        clean_v = variant.strip()
+        clean_r = (rationale or "").strip()
+
+        # 1. Immediate rejection of empty, whitespace, digits, or non-Ukrainian characters
+        if not clean_v:
+            return {"score": 0.0, "issues": ["Порожній термін"], "praises": [], "is_acceptable": False}
+
+        # Check for Latin characters or numbers
+        if re.search(r"[0-9a-zA-Z]", clean_v):
+            return {"score": 0.0, "issues": ["Виявлено латинські літери або цифри"], "praises": [], "is_acceptable": False}
+
+        # Check for illegal Russian-specific letters (ы, э, ъ, ё)
+        if re.search(r"[ыэъёЫЭЪЁ]", clean_v) or re.search(r"[ыэъёЫЭЪЁ]", clean_r):
+            return {"score": 0.0, "issues": ["Виявлено специфічні російські літери"], "praises": [], "is_acceptable": False}
+
+        # Check for lexical Russianisms and technical calques
+        russianism_stems = ["включ", "выключ", "двигател", "переключ", "накопител", "глушител", "предохранител", "указател", "подогрев", "нагревател"]
+        v_unaccented_initial = re.sub(r"[\u0300-\u036f]", "", clean_v.lower())
+        if any(stem in v_unaccented_initial for stem in russianism_stems):
+            return {"score": 0.0, "issues": ["Виявлено лексичний росіянізм або штучну кальку"], "praises": [], "is_acceptable": False}
+
+        # Word must consist of Ukrainian Cyrillic, hyphens, apostrophes, and stress accents
+        if not re.match(r"^[а-яіїєґА-ЯІЇЄҐ'’\-\s\u0300-\u036f]+$", clean_v):
+            return {"score": 0.0, "issues": ["Некоректні символи в українському терміні"], "praises": [], "is_acceptable": False}
+
+        score = 0.40  # Base score for valid Ukrainian lexical candidate
         issues = []
-        praises = []
+        praises = ["Слово відповідає фонетиці та графіці української мови"]
 
-        # Check for Russianisms
-        rus_markers = ["тель", "включая", "совпада", "является", "находящийся", "получать", "получка"]
-        for marker in rus_markers:
-            if marker in variant.lower() or marker in rationale.lower():
-                score -= 0.35
-                issues.append(f"Виявлено невластиву кальку/росіянізм: '{marker}'")
+        v_lower = clean_v.lower()
+        v_unaccented = re.sub(r"[\u0300-\u036f]", "", v_lower)
 
-        # Check for productive Ukrainian suffixes
-        ukr_good_suffixes = ["ник", "ниця", "ище", "ня", "ень", "ець", "ість", "ство", "тво", "ар"]
-        has_good_suffix = any(variant.lower().endswith(suf) for suf in ukr_good_suffixes)
+        # 2. Check for authentic Ukrainian suffixes (nouns, agents, instruments, abstract nouns)
+        ukr_good_suffixes = [
+            "ник", "ниця", "ище", "ня", "ень", "ець", "ість", "ство", "цтво",
+            "ар", "яр", "ач", "ло", "ій", "ич", "сник", "тель", "від", "пис",
+            "шина", "ина", "ка", "янка"
+        ]
+        has_good_suffix = any(v_unaccented.endswith(suf) for suf in ukr_good_suffixes)
         if has_good_suffix:
-            score += 0.08
+            score += 0.25
             praises.append("Органічний суфікс питомої української деривації")
 
-        # Check for authentic prefixes
-        ukr_prefixes = ["пра", "понад", "без", "межи", "поза", "перед", "над", "під"]
-        has_good_prefix = any(variant.lower().startswith(pref) for pref in ukr_prefixes)
+        # 3. Check for authentic prefixes or compositum roots
+        ukr_prefixes = ["пра", "понад", "без", "межи", "поза", "перед", "над", "під", "все", "само", "першо", "часо", "просторо", "вітро", "вогне"]
+        has_good_prefix = any(v_unaccented.startswith(pref) for pref in ukr_prefixes)
         if has_good_prefix:
-            score += 0.05
-            praises.append("Автентичний префікс просторово-часової градації")
+            score += 0.15
+            praises.append("Автентичний префікс або композитний корінь")
 
-        final_score = min(0.99, max(0.1, round(score, 2)))
+        # 4. Check length harmony (avoid 1-2 letter fragments or excessively long runaway strings)
+        if 4 <= len(v_lower) <= 30:
+            score += 0.10
+        else:
+            issues.append("Нетипова довжина лексеми")
+
+        # 5. Check if meaningful morphological rationale is provided
+        if len(clean_r) > 15:
+            score += 0.10
+            praises.append("Наведено змістовне морфологічне обґрунтування")
+
+        final_score = min(1.0, max(0.0, round(score, 2)))
         return {
             "score": final_score,
             "issues": issues,
             "praises": praises,
-            "is_acceptable": final_score >= 0.80
+            "is_acceptable": final_score >= 0.70
         }

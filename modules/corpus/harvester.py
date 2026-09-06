@@ -173,7 +173,10 @@ class PublicDomainHarvester:
         self.db = db
 
     def clean_gutenberg_text(self, text: str) -> str:
-        """Removes Gutenberg boilerplate headers and footers."""
+        """Removes Gutenberg boilerplate headers and footers, and normalizes to LF."""
+        # 1. Normalize line endings to LF
+        cleaned = text.replace("\r\n", "\n").replace("\r", "\n")
+
         header_patterns = [
             r"\*\*\*\s*START OF TH(?:E|IS) PROJECT GUTENBERG EBOOK[^\*]*\*\*\*",
             r"\*\*\*\s*START OF THE PROJECT GUTENBERG[^\*]*\*\*\*"
@@ -183,7 +186,6 @@ class PublicDomainHarvester:
             r"\*\*\*\s*END OF THE PROJECT GUTENBERG"
         ]
 
-        cleaned = text
         for hp in header_patterns:
             parts = re.split(hp, cleaned, flags=re.IGNORECASE)
             if len(parts) > 1:

@@ -1,0 +1,11 @@
+# типово: текстові файли з LF
+* text=auto eol=lf
+
+# КОРПУС — недоторканні байти, незалежно від розширення
+data/corpus/**        -text -diff
+K:/scifi_library/**   -text -diff
+*.QUARANTINE.txt      -text -diff
+
+# документація — звичайний текст
+docs/*.md   text eol=lf
+*.py        text eol=lf

@@ -79,15 +79,14 @@ class DatabaseManager:
                 ipa TEXT,
                 work_id INTEGER NOT NULL,
                 author_id INTEGER NOT NULL,
-                first_attestation_year INTEGER NOT NULL,
-                original_context TEXT NOT NULL,
+                original_context TEXT,
                 context_source_locator TEXT,
                 concept_category TEXT NOT NULL,
                 scientific_definition TEXT NOT NULL,
                 ukr_traditional TEXT,
                 ukr_grinchenko_json TEXT DEFAULT '[]',
-                morphological_rationale TEXT NOT NULL,
-                ukr_translated_context TEXT NOT NULL,
+                morphological_rationale TEXT,
+                ukr_translated_context TEXT,
                 verification_score REAL DEFAULT 0.0,
                 status TEXT DEFAULT 'verified',
                 FOREIGN KEY (work_id) REFERENCES works(id) ON DELETE CASCADE,
@@ -253,16 +252,16 @@ class DatabaseManager:
         with self.get_connection() as conn:
             neologisms_json = json.dumps([n.dict() if hasattr(n, 'dict') else n for n in term.ukr_grinchenko_neologisms], ensure_ascii=False)
             cursor = conn.execute("""
-            INSERT INTO terms (term_orig, ipa, work_id, author_id, first_attestation_year,
+            INSERT INTO terms (term_orig, ipa, work_id, author_id,
                               original_context, context_source_locator, concept_category,
                               scientific_definition, ukr_traditional, ukr_grinchenko_json,
                               morphological_rationale, ukr_translated_context,
                               verification_score, status)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             RETURNING id;
             """, (
                 term.term_orig, term.ipa, term.work_id, term.author_id,
-                term.first_attestation_year, term.original_context,
+                term.original_context,
                 term.context_source_locator, term.concept_category,
                 term.scientific_definition, term.ukr_traditional,
                 neologisms_json, term.morphological_rationale,
@@ -278,7 +277,7 @@ class DatabaseManager:
             VALUES (?, ?, ?, ?, ?, ?, ?)
             """, (
                 term_id, term.term_orig, term.concept_category, term.scientific_definition,
-                term.ukr_traditional or "", term.morphological_rationale, term.ukr_translated_context
+                term.ukr_traditional or "", term.morphological_rationale or "", term.ukr_translated_context or ""
             ))
 
             conn.commit()
@@ -289,8 +288,10 @@ class DatabaseManager:
             if search:
                 cursor = conn.execute("""
                 SELECT t.*, w.title_orig as work_title_orig, w.title_ukr as work_title_ukr,
-                       a.name_orig as author_name_orig, a.name_ukr as author_name_ukr
+                       a.name_orig as author_name_orig, a.name_ukr as author_name_ukr,
+                       ea.earliest_year
                 FROM terms t
+                LEFT JOIN earliest_attestation ea ON t.term_orig = ea.term_orig
                 JOIN terms_fts fts ON t.id = fts.rowid
                 JOIN works w ON t.work_id = w.id
                 JOIN authors a ON t.author_id = a.id
@@ -301,22 +302,26 @@ class DatabaseManager:
             elif category:
                 cursor = conn.execute("""
                 SELECT t.*, w.title_orig as work_title_orig, w.title_ukr as work_title_ukr,
-                       a.name_orig as author_name_orig, a.name_ukr as author_name_ukr
+                       a.name_orig as author_name_orig, a.name_ukr as author_name_ukr,
+                       ea.earliest_year
                 FROM terms t
+                LEFT JOIN earliest_attestation ea ON t.term_orig = ea.term_orig
                 JOIN works w ON t.work_id = w.id
                 JOIN authors a ON t.author_id = a.id
                 WHERE t.concept_category = ?
-                ORDER BY t.first_attestation_year ASC
+                ORDER BY COALESCE(ea.earliest_year, 9999) ASC, t.id ASC
                 LIMIT ?
                 """, (category, limit))
             else:
                 cursor = conn.execute("""
                 SELECT t.*, w.title_orig as work_title_orig, w.title_ukr as work_title_ukr,
-                       a.name_orig as author_name_orig, a.name_ukr as author_name_ukr
+                       a.name_orig as author_name_orig, a.name_ukr as author_name_ukr,
+                       ea.earliest_year
                 FROM terms t
+                LEFT JOIN earliest_attestation ea ON t.term_orig = ea.term_orig
                 JOIN works w ON t.work_id = w.id
                 JOIN authors a ON t.author_id = a.id
-                ORDER BY t.first_attestation_year ASC
+                ORDER BY COALESCE(ea.earliest_year, 9999) ASC, t.id ASC
                 LIMIT ?
                 """, (limit,))
 
@@ -326,6 +331,29 @@ class DatabaseManager:
                 d["ukr_grinchenko_neologisms"] = json.loads(d.get("ukr_grinchenko_json") or "[]")
                 results.append(d)
             return results
+
+    def get_term_by_orig(self, term_orig: str) -> Optional[Dict[str, Any]]:
+        with self.get_connection() as conn:
+            cursor = conn.execute("SELECT * FROM terms WHERE LOWER(term_orig) = LOWER(?)", (term_orig.strip(),))
+            row = cursor.fetchone()
+            if not row:
+                return None
+            d = dict(row)
+            d["ukr_grinchenko_neologisms"] = json.loads(d.get("ukr_grinchenko_json") or "[]")
+            return d
+
+    def insert_attestation(self, attestation: Dict[str, Any]) -> int:
+        with self.get_connection() as conn:
+            keys = list(attestation.keys())
+            placeholders = ", ".join("?" for _ in keys)
+            cols = ", ".join(keys)
+            cursor = conn.execute(
+                f"INSERT INTO attestations ({cols}) VALUES ({placeholders}) RETURNING id;",
+                [attestation[k] for k in keys]
+            )
+            att_id = cursor.fetchone()[0]
+            conn.commit()
+            return att_id
 
     # --- Research Cycle Operations ---
     def insert_cycle(self, cycle: ResearchCycle) -> int:

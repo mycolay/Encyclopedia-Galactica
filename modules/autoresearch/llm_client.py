@@ -45,7 +45,7 @@ class LocalLLMClient:
             "options": {
                 "temperature": temperature,
                 "top_p": 0.9,
-                "num_predict": 700
+                "num_predict": 2000
             }
         }
         if system_prompt:
@@ -149,3 +149,78 @@ class LocalLLMClient:
 }}
 """
         return self.generate(prompt=prompt, system_prompt=system_prompt, json_mode=True)
+
+    def propose_candidates(self, excerpt_text: str, work_title: str = "", author_name: str = "") -> list:
+        """
+        КРОК 1 (Т12): Пропозиція кандидатів.
+        LLM читає шматок тексту і називає лише список слів-кандидатів.
+        Жодних цитат, жодних галюцинацій.
+        """
+        system_prompt = (
+            "Ти — дослідник історії наукової фантастики. Прочитай фрагмент тексту та виділи "
+            "ключові фантастичні терміни, назви вигаданих технологій, неологізми, раси або спекулятивні концепти. "
+            "Відповідай ВИКЛЮЧНО JSON-об'єктом формату: {\"candidates\": [\"term1\", \"term2\", ...]}."
+        )
+        prompt = f"""
+Твір: {work_title} ({author_name})
+
+ФРАГМЕНТ ТЕКСТУ:
+\"\"\"
+{excerpt_text}
+\"\"\"
+
+Знайди до 5 найважливіших спекулятивних термінів або неологізмів із цього фрагмента.
+Поверни JSON:
+{{"candidates": ["термін1", "термін2"]}}
+"""
+        try:
+            res = self.generate(prompt=prompt, system_prompt=system_prompt, json_mode=True, temperature=0.2)
+            cands = res.get("json", {}).get("candidates", [])
+            if isinstance(cands, list):
+                # Clean and filter non-empty string candidates
+                return [str(c).strip() for c in cands if str(c).strip() and len(str(c).strip()) > 2]
+            return []
+        except Exception as e:
+            logger.warning(f"Error in propose_candidates: {e}")
+            return []
+
+    def derive_ukrainian_neologism(
+        self,
+        term: str,
+        verified_quote: str,
+        work_title: str = "",
+        author_name: str = ""
+    ) -> Dict[str, Any]:
+        """
+        КРОК 3 (Т12): Деривація.
+        LLM отримує ВЖЕ ЗНАЙДЕНУ справжню цитату і пропонує український відповідник
+        за моделями словника Грінченка. Регістр 'proposed'.
+        """
+        system_prompt = (
+            "Ти — академічний лексикограф та перекладач наукової фантастики. "
+            "Тобі надано СПРАВЖНЮ верифіковану цитату з першоджерела. "
+            "Твоє завдання — створити питомий, органічний український неологізм за моделями "
+            "живої української мови (словник Б. Грінченка 1907-1909), без механічних кальок та русизмів. "
+            "Відповідай ВИКЛЮЧНО валідним JSON-об'єктом."
+        )
+        prompt = f"""
+Термін: {term}
+Твір: {work_title} ({author_name})
+
+АВТЕНТИЧНА ЦИТАТА З КНИГИ (КООРДИНАТА ПІДТВЕРДЖЕНА):
+\"\"\"
+{verified_quote}
+\"\"\"
+
+Створи для цього терміна українську пропозицію (регістр 'proposed').
+Поверни JSON строго за такою структурою:
+{{
+  "proposed_ukr_term": "Українське_слово_з_наголосом",
+  "grinchenko_root": "базовий_український_корінь (наприклад: плин-, роб-, віст-, літ-)",
+  "derivation_model": "формула словотвору (наприклад: корінь + сполучний о + суфікс -ник)",
+  "stylistic_note": "філологічне пояснення, чому ця форма найкраще розкриває суть поняття",
+  "scientific_definition": "стисле визначення концепту у всесвіті твору",
+  "concept_category": "категорія концепту (наприклад: Хрононавтика, Робототехніка, Космоплавання, Астроінженерія)"
+}}
+"""
+        return self.generate(prompt=prompt, system_prompt=system_prompt, json_mode=True, temperature=0.3)

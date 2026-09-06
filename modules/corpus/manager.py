@@ -147,8 +147,9 @@ class CorpusManager:
                 f"> **Автор**: {meta.get('author_name', author_slug)} | **Твір**: {meta.get('title', work_slug)}\n"
                 f"> **Обсяг**: {ch['word_count']} слів (~{int(ch['word_count'] * 1.35)} токенів)\n\n"
             )
-            with open(ch_path, "w", encoding="utf-8") as f:
-                f.write(ch_header + ch["content"])
+            ch_data = (ch_header + ch["content"]).replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
+            with open(ch_path, "wb") as f:
+                f.write(ch_data)
 
             chapter_manifest_items.append({
                 "index": ch["index"],
@@ -178,13 +179,15 @@ class CorpusManager:
         )
 
         full_text_path = work_dir / "full_text.md"
-        with open(full_text_path, "w", encoding="utf-8") as f:
-            f.write(frontmatter + clean_text)
+        full_text_bytes = (frontmatter + clean_text).replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
+        with open(full_text_path, "wb") as f:
+            f.write(full_text_bytes)
 
         # 5. Legacy original.txt for backwards compatibility
         original_txt_path = work_dir / "original.txt"
-        with open(original_txt_path, "w", encoding="utf-8") as f:
-            f.write(clean_text)
+        clean_bytes = clean_text.replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
+        with open(original_txt_path, "wb") as f:
+            f.write(clean_bytes)
 
         # 6. Generate manifest.json
         manifest_data = {
@@ -208,8 +211,9 @@ class CorpusManager:
         }
 
         manifest_path = work_dir / "manifest.json"
-        with open(manifest_path, "w", encoding="utf-8") as f:
-            json.dump(manifest_data, f, ensure_ascii=False, indent=2)
+        manifest_bytes = json.dumps(manifest_data, ensure_ascii=False, indent=2).replace("\r\n", "\n").encode("utf-8")
+        with open(manifest_path, "wb") as f:
+            f.write(manifest_bytes)
 
         return {
             "work_dir": str(work_dir),

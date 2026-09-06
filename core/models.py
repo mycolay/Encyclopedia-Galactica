@@ -57,15 +57,15 @@ class SciFiTerm(BaseModel):
     ipa: Optional[str] = None
     work_id: int
     author_id: int
-    first_attestation_year: int
-    original_context: str  # Точна цитата мовою оригіналу
+    first_attestation_year: Optional[int] = None
+    original_context: Optional[str] = None  # Quotes live as byte-coordinates in attestations table
     context_source_locator: Optional[str] = None  # Розділ, сторінка або сцена
-    concept_category: str  # e.g., "Технологія зв'язку", "Кібернетика", "Соціологія", "Ксенологія"
-    scientific_definition: str  # Академічна дефініція у всесвіті твору
+    concept_category: str = "Фантастичний концепт"  # e.g., "Технологія зв'язку", "Кібернетика"
+    scientific_definition: str = ""  # Академічна дефініція у всесвіті твору
     ukr_traditional: Optional[str] = None  # Існуючий традиційний переклад (якщо був)
     ukr_grinchenko_neologisms: List[NeologismInterpretation] = Field(default_factory=list)
-    morphological_rationale: str  # Академічне обґрунтування за питомим словотвором
-    ukr_translated_context: str  # Художній переклад цитати українською з новим терміном
+    morphological_rationale: Optional[str] = None  # Академічне обґрунтування за питомим словотвором
+    ukr_translated_context: Optional[str] = None  # Художній переклад цитати українською з новим терміном
     verification_score: float = 0.0  # Оцінка якості (0.0 - 1.0)
     status: str = "verified"  # candidate, verified, rejected
 
