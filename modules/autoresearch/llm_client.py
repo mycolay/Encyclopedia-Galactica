@@ -44,7 +44,8 @@ class LocalLLMClient:
             "stream": False,
             "options": {
                 "temperature": temperature,
-                "top_p": 0.9
+                "top_p": 0.9,
+                "num_predict": 700
             }
         }
         if system_prompt:
@@ -53,10 +54,13 @@ class LocalLLMClient:
             payload["format"] = "json"
 
         try:
-            response = requests.post(url, json=payload, timeout=240)
+            response = requests.post(url, json=payload, timeout=600)
             response.raise_for_status()
             data = response.json()
             raw_text = data.get("response", "").strip()
+            # In Ollama 0.24.0, reasoning models may place output into 'thinking'
+            if not raw_text and data.get("thinking"):
+                raw_text = data.get("thinking", "").strip()
 
             result = {
                 "text": raw_text,
