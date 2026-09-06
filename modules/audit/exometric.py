@@ -121,6 +121,19 @@ def seal_run(run, bundle, anchor_path):
                 raise ValueError('export_quote_mismatch')
     write_json(bundle/'source_map.json',dict(artifact_paths=sources,
         scope='Sources and zone maps captured at sealing time; metadata does not establish scientific correctness.'))
+    return seal_prepared_bundle(bundle, anchor_path)
+
+
+def seal_prepared_bundle(bundle, anchor_path):
+    """Seal a prepared immutable run directory using the same pinned instruments."""
+    bundle, anchor_path = Path(bundle).resolve(), Path(anchor_path).resolve()
+    if anchor_path.exists() or anchor_path.is_relative_to(bundle):
+        raise ValueError('anchor_exists_or_inside_bundle')
+    if (bundle/'seal').exists() or (bundle/'bridge_config.json').exists():
+        raise FileExistsError('bundle_already_sealed_or_partial')
+    for name, (_, expected) in PINS.items():
+        if sha(bundle/'tools'/name) != expected:
+            raise ValueError('instrument_hash_drift')
     artifacts = [dict(artifact_id=p.relative_to(bundle).as_posix(),uri=p.relative_to(bundle).as_posix())
                  for p in sorted(bundle.rglob('*')) if p.is_file()]
     config = dict(schema_version='exometric_shadow_config.v0',base_dir=str(bundle),
