@@ -1,0 +1,22 @@
+{
+  "status": "planning_only_no_model_execution",
+  "executor_commit": "2e4b92929f52928703095608c9de1bb3ca5f1cd5",
+  "plans": 23,
+  "jobs": 1015,
+  "target_bytes": 7926371,
+  "completed_bytes": 0,
+  "replan_identical": true,
+  "rejected": [],
+  "files": {
+    ".benchmarks\\corpus-queue-step03-001\\queue.db": "91c2e7cac480f37c58d6132f20bec8e93f1d39cdf53848d9dfe01891fa6dd1ef",
+    ".benchmarks\\corpus-queue-step03-001\\plan.json": "dd56cefc0f5f79480fd9f66650337036e2299a1ab15565410d12bd7fd6a6c273",
+    ".benchmarks\\corpus-queue-step03-001\\replan.json": "dd56cefc0f5f79480fd9f66650337036e2299a1ab15565410d12bd7fd6a6c273",
+    "modules\\corpus\\queue.py": "323e5510e389b03eed2778be41d3314da7abde698b1f632d360b91774d2005c9",
+    "modules\\autoresearch\\loop.py": "30b4177587a2490b2ab8aadf161f49018d7e3f5b768c7f90d602be71afdd19d8",
+    "modules\\autoresearch\\llm_client.py": "67d77783dc7e9902a532360e82d9e0d50f8c38d15085957ca45f4d81f6edaa89",
+    "scripts\\corpus_queue.py": "30fada92677983fd5885e7ec35eee38e83cca687d1c1dd5252443d16572b6d31",
+    "tests\\test_corpus_queue.py": "d9d0dc2add4eac52c9ecf8a086fa5b0dad2ea99719ac33657ee5fc6d1a327124",
+    "docs\\CORPUS_QUEUE_PROTOCOL_V1.md": "dd829603e2803ccc6870341358f4a58abeec705ed00adfc4525f3d296bcc6c61"
+  },
+  "claim_boundary": "Plain hash receipt, not yet Exometric sealed. Planning is not corpus analysis."
+}
