@@ -59,6 +59,22 @@ def main() -> int:
     entries = idx["entries"]
     artifact_sha = idx["artifact_sha256"]
 
+    # Захист від застарілого покажчика.
+    #
+    # Реальний випадок 2026-09-06: фонове завдання, запущене ДО виправлення
+    # регулярки, завершилося ПІСЛЯ нього і мовчки затерло виправлений
+    # покажчик старою версією. Звірка після цього дала б хибне спростування
+    # для «бездоріжжя» вдруге. Покажчик мусить самозасвідчувати свою версію.
+    expected_indexer = "build_hrinchenko_index.v2"
+    if idx.get("indexer_version") != expected_indexer:
+        print(
+            f"ЗУПИНКА: покажчик побудовано версією "
+            f"{idx.get('indexer_version') or '<без версії>'}, "
+            f"а потрібна {expected_indexer}.\n"
+            f"Перебудуйте: python scripts/build_hrinchenko_index.py"
+        )
+        return 2
+
     # мапа нормалізованої форми -> список записів
     lookup: dict[str, list[dict]] = {}
     for e in entries:

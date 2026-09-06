@@ -133,9 +133,18 @@ def main() -> int:
     print(f"  контроль координат (кожне 997-ме): розбіжностей {bad}")
 
     import json
+    # Покажчик самозасвідчує свою версію: інакше застаріла збірка може
+    # мовчки затерти виправлену, і звірка дасть хибний вердикт.
+    rx_fp = hashlib.sha256(HEADWORD_RE.pattern.encode("utf-8")).hexdigest()[:16]
     (OUT_DIR / "headwords.json").write_text(
         json.dumps(
-            {"artifact_sha256": digest, "count": len(entries), "entries": entries},
+            {
+                "artifact_sha256": digest,
+                "indexer_version": "build_hrinchenko_index.v2",
+                "headword_regex_fingerprint": rx_fp,
+                "count": len(entries),
+                "entries": entries,
+            },
             ensure_ascii=False,
         ),
         encoding="utf-8",
