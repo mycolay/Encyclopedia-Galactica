@@ -130,13 +130,78 @@ def run_cycle(model: str = "qwen3.5:27b"):
         console.print(f"[red]Помилка або завершення черги:[/red] {res}")
 
 
-@app.command("export")
-def export_docs():
-    """Оновити та експортувати академічний Словник у docs/SCI_FI_LEXICON.md."""
+@app.command("nas-status")
+def nas_status():
+    """Відобразити стан накопичувача NAS (K:\scifi_library) та збережених книг."""
+    corpus_mgr = CorpusManager()
+    stats = corpus_mgr.get_storage_stats()
+
+    table = Table(title="🏛️ Стан бібліотеки NAS (K:\\scifi_library)", border_style="green")
+    table.add_column("Параметр", style="cyan bold")
+    table.add_column("Значення", style="yellow bold")
+
+    table.add_row("Кореневий каталог", stats["root_path"])
+    table.add_row("Тип сховища", "NAS Мережевий диск (K:)" if stats["is_nas"] else "Локальний диск")
+    table.add_row("Всього на диску", f"{stats['disk_total_gb']} ГБ")
+    table.add_row("Вільно на диску", f"{stats['disk_free_gb']} ГБ")
+    table.add_row("Зайнято на диску", f"{stats['disk_used_gb']} ГБ")
+    table.add_row("Авторів на NAS", str(stats["authors_count"]))
+    table.add_row("Повнотекстових творів", str(stats["works_count"]))
+    table.add_row("Всього слів у бібліотеці", f"{stats['total_words_stored']:,}")
+
+    console.print(table)
+
+
+@app.command("harvest-classics")
+def harvest_classics():
+    """Завантажити та розпакувати шедеври світового суспільного надбання на NAS."""
+    from modules.corpus.harvester import PublicDomainHarvester
     db = DatabaseManager()
-    exporter = DictionaryExporter(db)
-    path = exporter.export_markdown()
-    console.print(f"[green]Академічний словник успішно оновлено:[/green] [cyan]{path}[/cyan]")
+    corpus_mgr = CorpusManager()
+    harvester = PublicDomainHarvester(corpus_mgr, db)
+
+    console.print("[cyan]Запуск пакетного завантаження шедеврів НФ на NAS K:\\scifi_library...[/cyan]")
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[progress.description]{task.description}"),
+        console=console
+    ) as progress:
+        task = progress.add_task("[yellow]Завантаження текстів...", total=None)
+        results = harvester.harvest_all_public_domain(
+            lambda r: console.print(f"  • [green]Збережено на NAS:[/green] {r.get('title')} ({r.get('word_count', 0):,} слів, {r.get('chapters_count', 0)} глав)")
+        )
+
+    console.print(f"[bold green]✅ Завантаження завершено! Всього опрацьовано: {len(results)} творів.[/bold green]")
+
+
+@app.command("import-book")
+def import_book(
+    file_path: str = typer.Argument(..., help="Шлях до файлу книги (.epub, .fb2, .txt, .md)"),
+    title: str = typer.Option(..., "--title", "-t", help="Оригінальна назва твору"),
+    author: str = typer.Option(..., "--author", "-a", help="Ім'я автора"),
+    year: int = typer.Option(1990, "--year", "-y", help="Рік першого видання"),
+    title_ukr: str = typer.Option("", "--title-ukr", help="Українська назва"),
+    lang: str = typer.Option("en", "--lang", "-l", help="Мова оригіналу")
+):
+    """Імпортувати локальну електронну книгу (.epub/.txt) у формат LLM-Ready на NAS."""
+    from modules.corpus.importer import EbookImporter
+    db = DatabaseManager()
+    corpus_mgr = CorpusManager()
+    importer = EbookImporter(corpus_mgr, db)
+
+    try:
+        res = importer.import_book(
+            file_path=file_path,
+            title_orig=title,
+            author_name=author,
+            year=year,
+            title_ukr=title_ukr,
+            original_lang=lang
+        )
+        console.print(f"[bold green]✅ Книгу успішно імпортовано на NAS:[/bold green] [cyan]{res['full_text_path']}[/cyan]")
+        console.print(f"   Слів: {res['word_count']:,} | Глав для LLM: {res['chapters_count']}")
+    except Exception as e:
+        console.print(f"[bold red]Помилка імпорту:[/bold red] {e}")
 
 
 if __name__ == "__main__":

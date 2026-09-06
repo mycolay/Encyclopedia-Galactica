@@ -146,13 +146,23 @@ with st.sidebar:
         st.info("NVIDIA GPU: інформація недоступна або драйвер зайнятий.")
 
     st.markdown("---")
+    st.markdown("### 🏛️ Накопичувач NAS (K:)")
+    nas_stats = corpus_mgr.get_storage_stats()
+    st.write(f"**Каталог**: `{nas_stats['root_path']}`")
+    st.write(f"**Статус**: {'🟢 NAS підключено (K:)' if nas_stats['is_nas'] else '🟡 Локальний фолбек'}")
+    c_nas1, c_nas2 = st.columns(2)
+    c_nas1.metric("Вільно", f"{nas_stats['disk_free_gb']} GB")
+    c_nas2.metric("Книг на NAS", nas_stats["works_count"])
+    st.caption(f"Всього слів на NAS: **{nas_stats['total_words_stored']:,}**")
+
+    st.markdown("---")
     st.caption("Система функціонує за архітектурою **AutoResearch (The Karpathy Loop)**.")
 
 # Main Navigation Tabs
-tab_catalog, tab_lexicon, tab_corpus, tab_autoresearch, tab_grinchenko = st.tabs([
+tab_catalog, tab_lexicon, tab_nas_library, tab_autoresearch, tab_grinchenko = st.tabs([
     "🏆 Культовий Каталог (Top-1000)",
     "📖 Словник неологізмів («Космослов»)",
-    "📚 Корпус текстів оригіналу",
+    "🏛️ Бібліотека NAS (K:\\scifi_library)",
     "⚡ AutoResearch Deck (Karpathy Loop)",
     "🧬 Моделі словотвору Грінченка"
 ])
@@ -289,44 +299,168 @@ with tab_lexicon:
 
 
 # ----------------------------------------------------------------------
-# TAB 3: TEXT CORPUS READER
+# TAB 3: NAS FULL-TEXT LIBRARY (K:\scifi_library)
 # ----------------------------------------------------------------------
-with tab_corpus:
-    st.subheader("Корпус текстів оригіналу (Original Language Texts)")
-    st.markdown("Сховище повних текстів та канонічних фрагментів мовами першодруку для верифікації перших згадок термінів.")
+with tab_nas_library:
+    st.subheader("🏛️ Локальна бібліотека повних текстів на NAS (`K:\\scifi_library`)")
+    st.markdown(
+        "Сховище цілісних оригінальних творів, збережених у стандарті **LLM-Ready**: "
+        "чистий повнотекстовий Markdown (`full_text.md`), семантичний маніфест (`manifest.json`) "
+        "та сегментація на окремі глави (`chapters/chapter_XX.md`) для роботи з контекстними вікнами моделей."
+    )
 
-    corpus_works = [w for w in db.get_works(limit=100) if w.get("has_full_text")]
-    if corpus_works:
-        sel_corpus_work = st.selectbox(
-            "Оберіть твір з корпусу для читання:",
-            corpus_works,
-            format_func=lambda w: f"{w['title_orig']} — {w['author_name_orig']} ({w['year']}) [{w.get('word_count', 0)} слів]"
+    nas_stat = corpus_mgr.get_storage_stats()
+    col_n1, col_n2, col_n3, col_n4 = st.columns(4)
+    col_n1.metric("Диск NAS", "K:\\scifi_library" if nas_stat["is_nas"] else "Локальне сховище")
+    col_n2.metric("Вільно на NAS", f"{nas_stat['disk_free_gb']} GB")
+    col_n3.metric("Повних книг", f"{nas_stat['works_count']}")
+    col_n4.metric("Всього слів", f"{nas_stat['total_words_stored']:,}")
+
+    subtab_reader, subtab_harvest, subtab_import = st.tabs([
+        "📖 Читальна зала (LLM-Ready Reader)",
+        "📥 Гарвестер класики на NAS",
+        "📦 Імпортер локальних книг"
+    ])
+
+    # Subtab 1: Reader
+    with subtab_reader:
+        corpus_works = [w for w in db.get_works(limit=200) if w.get("has_full_text")]
+        if corpus_works:
+            sel_corpus_work = st.selectbox(
+                "Оберіть твір для перегляду:",
+                corpus_works,
+                format_func=lambda w: f"{w['title_orig']} — {w['author_name_orig']} ({w['year']}) [{w.get('word_count', 0):,} слів]"
+            )
+
+            if sel_corpus_work:
+                a_slug = sel_corpus_work.get("author_slug", "")
+                w_slug = sel_corpus_work.get("slug", "")
+                manifest = corpus_mgr.load_manifest(a_slug, w_slug)
+
+                # Show manifest summary cards
+                col_m1, col_m2, col_m3, col_m4 = st.columns(4)
+                words_cnt = manifest.get("word_count", sel_corpus_work.get("word_count", 0)) if manifest else sel_corpus_work.get("word_count", 0)
+                tokens_est = manifest.get("estimated_tokens", int(words_cnt * 1.35)) if manifest else int(words_cnt * 1.35)
+                chapters_cnt = len(manifest.get("chapters", [])) if manifest else 1
+
+                col_m1.metric("Слів у тексті", f"{words_cnt:,}")
+                col_m2.metric("Орієнтовно токенів", f"{tokens_est:,}")
+                col_m3.metric("Кількість глав", chapters_cnt)
+                col_m4.metric("Формат", "LLM-Ready Markdown")
+
+                read_mode = st.radio(
+                    "Режим читання:",
+                    ["📑 Поглавний перегляд для LLM (chapters/chapter_XX.md)", "📜 Повний суцільний текст (full_text.md)"],
+                    horizontal=True
+                )
+
+                if "Поглавний" in read_mode and manifest and manifest.get("chapters"):
+                    chapters_list = manifest["chapters"]
+                    sel_ch = st.selectbox(
+                        "Оберіть главу / розділ для аналізу:",
+                        chapters_list,
+                        format_func=lambda c: f"{c.get('title', 'Глава')} — {c.get('word_count', 0):,} слів (~{c.get('token_estimate', 0):,} токенів)"
+                    )
+                    if sel_ch:
+                        ch_content = corpus_mgr.load_chapter(a_slug, w_slug, sel_ch["index"])
+                        if ch_content:
+                            st.caption(f"Файл: `{sel_ch.get('relative_path')}`")
+                            st.text_area("Зміст глави:", ch_content, height=450)
+                        else:
+                            st.warning("Вміст глави недоступний.")
+                else:
+                    # Full text mode
+                    full_text = corpus_mgr.load_text(a_slug, w_slug)
+                    if full_text:
+                        highlight_term = st.text_input("🔍 Знайти термін або контекст у творі:", "")
+                        if highlight_term:
+                            contexts = corpus_mgr.search_term_context(full_text, highlight_term)
+                            if contexts:
+                                st.success(f"Знайдено збігів: {len(contexts)}")
+                                for c in contexts:
+                                    st.markdown(f"> ...{c['context']}...")
+                            else:
+                                st.warning(f"Термін '{highlight_term}' не знайдено.")
+                        st.text_area("Повний текст мовою оригіналу:", full_text, height=500)
+                    else:
+                        st.error("Повний текст недоступний на диску.")
+        else:
+            st.info("У бібліотеці NAS наразі немає збережених творів. Завантажте їх у вкладці 'Гарвестер класики'.")
+
+    # Subtab 2: Harvester
+    with subtab_harvest:
+        st.markdown("#### 📥 Автоматичне завантаження світової класики НФ на NAS")
+        st.markdown(
+            "Гарвестер автоматично завантажує повні неадаптовані тексти з відкритих баз суспільного надбання (Project Gutenberg), "
+            "очищає від колонтитулів, розбиває на глави та формує пакет **LLM-Ready** на диску `K:\\scifi_library`."
         )
 
-        if sel_corpus_work:
-            text_content = None
-            if sel_corpus_work.get("text_path") and Path(sel_corpus_work["text_path"]).exists():
-                with open(sel_corpus_work["text_path"], "r", encoding="utf-8", errors="ignore") as f:
-                    text_content = f.read()
+        from modules.corpus.harvester import PUBLIC_DOMAIN_SF_MASTERS, PublicDomainHarvester
+        harvester = PublicDomainHarvester(corpus_mgr, db)
 
-            if text_content:
-                st.caption(f"Файл: `{sel_corpus_work.get('text_path')}` | Мова: `{sel_corpus_work.get('original_lang')}`")
-                highlight_term = st.text_input("🔍 Підсвітити або знайти термін у тексті:", "")
+        harv_table = []
+        for item in PUBLIC_DOMAIN_SF_MASTERS:
+            # Check if work exists on NAS
+            manifest = corpus_mgr.load_manifest(item["author_slug"], item["slug"])
+            status_str = f"✅ Збережено на NAS ({manifest.get('word_count', 0):,} слів, {len(manifest.get('chapters', []))} глав)" if manifest else "⏳ Очікує завантаження"
+            harv_table.append({
+                "Назва твору": item["title_orig"],
+                "Українська назва": item["title_ukr"],
+                "Автор": item["author_name_orig"],
+                "Рік": item["year"],
+                "Статус на NAS": status_str
+            })
+        st.dataframe(pd.DataFrame(harv_table), use_container_width=True)
 
-                if highlight_term:
-                    contexts = corpus_mgr.search_term_context(text_content, highlight_term)
-                    if contexts:
-                        st.success(f"Знайдено збігів: {len(contexts)}")
-                        for c in contexts:
-                            st.markdown(f"> ...{c['context']}...")
-                    else:
-                        st.warning(f"Термін '{highlight_term}' не знайдено у тексті.")
+        if st.button("🚀 Завантажити всі доступні шедеври на NAS (K:\\scifi_library)", type="primary"):
+            with st.spinner("Завантаження та структурування творів на NAS..."):
+                results = harvester.harvest_all_public_domain()
+                st.success(f"Успішно опрацьовано {len(results)} творів! Бібліотеку оновлено.")
+                st.rerun()
 
-                st.text_area("Повний текст мовою оригіналу:", text_content, height=450)
-            else:
-                st.error("Файл тексту не знайдено на диску.")
-    else:
-        st.info("У корпусі наразі немає завантажених текстів. Виконайте ініціалізацію або завантаження.")
+    # Subtab 3: Importer
+    with subtab_import:
+        st.markdown("#### 📦 Імпорт локальної книги у формат LLM-Ready на NAS")
+        st.markdown("Конвертує ваші власні файли `.epub`, `.fb2`, `.txt`, `.md` у стандартизований пакет із главами на NAS.")
+
+        from modules.corpus.importer import EbookImporter
+        importer = EbookImporter(corpus_mgr, db)
+
+        col_i1, col_i2 = st.columns(2)
+        imp_title = col_i1.text_input("Оригінальна назва твору:", "")
+        imp_author = col_i2.text_input("Автор (латиницею):", "")
+        col_i3, col_i4 = st.columns(2)
+        imp_title_ukr = col_i3.text_input("Українська назва (опційно):", "")
+        imp_year = col_i4.number_input("Рік першого видання:", min_value=1800, max_value=2026, value=1984)
+
+        imp_file = st.file_uploader("Оберіть файл книги (.epub, .txt, .fb2, .md):", type=["epub", "txt", "fb2", "md"])
+
+        if st.button("📥 Імпортувати та упакувати на NAS") and imp_file and imp_title and imp_author:
+            with st.spinner("Імпорт, розпаковка та сегментація на глави..."):
+                # Save temp file
+                temp_path = PROJECT_ROOT / "temp_import" / imp_file.name
+                temp_path.parent.mkdir(parents=True, exist_ok=True)
+                with open(temp_path, "wb") as f:
+                    f.write(imp_file.read())
+
+                try:
+                    res_pkg = importer.import_book(
+                        file_path=str(temp_path),
+                        title_orig=imp_title,
+                        author_name=imp_author,
+                        year=int(imp_year),
+                        title_ukr=imp_title_ukr if imp_title_ukr else imp_title
+                    )
+                    st.success(f"✅ Книгу успішно додано до NAS бібліотеки: `{res_pkg['full_text_path']}`")
+                    st.write(f"Слів: **{res_pkg['word_count']:,}** | Сформовано глав для LLM: **{res_pkg['chapters_count']}**")
+                except Exception as ex:
+                    st.error(f"Помилка імпорту: {ex}")
+                finally:
+                    if temp_path.exists():
+                        try:
+                            temp_path.unlink()
+                        except Exception:
+                            pass
 
 
 # ----------------------------------------------------------------------

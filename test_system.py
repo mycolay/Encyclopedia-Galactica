@@ -138,15 +138,54 @@ def test_karpathy_critic_evaluation():
     assert inv_score < 0.60
 
 
-def test_ollama_connectivity():
-    """Checks if local Ollama service is reachable on RTX 3090."""
-    client = LocalLLMClient()
-    available = client.is_available()
-    # If Ollama is running, verify models list
-    if available:
-        models = client.list_available_models()
-        assert len(models) > 0, "Ollama should have at least 1 model installed"
-        assert any("qwen" in m.lower() for m in models), "Qwen model should be present"
+def test_nas_llm_ready_packaging():
+    """Verify that CorpusManager packages texts into full_text.md, manifest.json, and chapters."""
+    mgr = CorpusManager()
+    sample_novel = (
+        "CHAPTER I. THE BEGINNING\n\n"
+        "This is the first chapter of the great cosmic adventure.\n"
+        "The stars were burning in the silence of space.\n\n"
+        "CHAPTER II. THE CONTACT\n\n"
+        "This is the second chapter where the alien signal was heard.\n"
+    )
+    res = mgr.package_llm_ready_work(
+        author_slug="test-author-nas",
+        work_slug="test-cosmic-book",
+        text=sample_novel,
+        metadata={"title": "Test Cosmic Book", "year": 2026}
+    )
+    assert Path(res["full_text_path"]).exists()
+    assert Path(res["manifest_path"]).exists()
+    assert res["chapters_count"] == 2
+
+    # Load chapter 1
+    ch1 = mgr.load_chapter("test-author-nas", "test-cosmic-book", 1)
+    assert ch1 is not None
+    assert "CHAPTER I" in ch1
+
+    # Load manifest
+    manifest = mgr.load_manifest("test-author-nas", "test-cosmic-book")
+    assert manifest is not None
+    assert manifest["work_slug"] == "test-cosmic-book"
+    assert len(manifest["chapters"]) == 2
+
+
+def test_harvester_gutenberg_cleaning():
+    """Verify Gutenberg header and footer cleaning."""
+    from modules.corpus.harvester import PublicDomainHarvester
+    db = DatabaseManager()
+    mgr = CorpusManager()
+    harvester = PublicDomainHarvester(mgr, db)
+
+    raw_gutenberg = (
+        "*** START OF THE PROJECT GUTENBERG EBOOK FRANKENSTEIN ***\n\n"
+        "Letter 1\nTo Mrs. Saville, England.\nSt. Petersburgh, Dec. 11th, 17--.\n"
+        "*** END OF THE PROJECT GUTENBERG EBOOK FRANKENSTEIN ***"
+    )
+    cleaned = harvester.clean_gutenberg_text(raw_gutenberg)
+    assert "*** START" not in cleaned
+    assert "*** END" not in cleaned
+    assert "Letter 1" in cleaned
 
 
 if __name__ == "__main__":
