@@ -1,0 +1,9 @@
+{
+  "schema_version": "cosmoslov.audit_anchor.v1",
+  "bundle_name": "calibration-step11-001",
+  "manifest_sha256": "d0559818aade5662dc11f7519d8b93cdd9cfde1efb289c60fce097eae731c1f6",
+  "head_chain_hash": "72be68eed77f1b40c5a33b100780e17eda11358dcc2d59ab6403b7b1902bded3",
+  "artifact_count": 8,
+  "claim": "integrity_only",
+  "external_custody": "pending_human_retention"
+}
