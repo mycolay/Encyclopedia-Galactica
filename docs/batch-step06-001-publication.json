@@ -1,0 +1,15 @@
+{
+  "run": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step06-001",
+  "inserted_lexical_evidence": 65,
+  "ukrainian_drafts": 16,
+  "anchor": {
+    "schema_version": "cosmoslov.audit_anchor.v1",
+    "bundle_name": "batch-step06-001",
+    "manifest_sha256": "e49ace27390ac19c8c2647ca7481432ad38050a2c57c30a4b6cb702d23bb8a6c",
+    "head_chain_hash": "fd6c0b016ca3804c38996c3f9e82f03bf09d493d87cfa9d0c27208cd793081f8",
+    "artifact_count": 228,
+    "claim": "integrity_only",
+    "external_custody": "pending_human_retention"
+  },
+  "claim": "Lexical presence verified; concept relevance, definitions and Ukrainian drafts await editorial review."
+}

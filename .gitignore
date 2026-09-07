@@ -5,3 +5,5 @@ __pycache__/
 *.egg-info/
 .venv/
 data/batch_queue.db*
+data/scifi_lexicon.db-wal
+data/scifi_lexicon.db-shm
