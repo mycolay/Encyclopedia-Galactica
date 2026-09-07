@@ -117,7 +117,8 @@ def main():
             if not isinstance(translation,dict) or not isinstance(translation.get('translation_uk'),str) or not translation['translation_uk'].strip():raise ValueError('invalid_translation')
             b=ground(call(scene['id']+'/B',instruction+'\nORIGINAL:\n'+original+'\nWORKING TRANSLATION (may contain errors):\n'+translation['translation_uk']),scene)
             outputs.append(dict(scene=scene,original_only=a,translation=translation,translation_assisted=b))
-            write_json(run/'results.json',outputs)
+            write_json(run/('scene-'+scene['id']+'.json'),outputs[-1])
+        write_json(run/'results.json',outputs)
         write_json(run/'summary.json',dict(metrics=metrics,elapsed_seconds=time.monotonic()-started,
             claim='feasibility_only; exact quotes do not validate descriptions; human paired evaluation pending'))
         for name,(path,expected) in PINS.items():checked_copy(path,run/'tools'/name,expected)

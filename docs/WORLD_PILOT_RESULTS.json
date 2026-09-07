@@ -1,0 +1,197 @@
+[
+  {
+    "scene": {
+      "id": "education",
+      "byte_start": 54607,
+      "byte_len": 509,
+      "text": "When I had attained the age of seventeen my parents resolved that I\nshould become a student at the university of Ingolstadt. I had\nhitherto attended the schools of Geneva, but my father thought it\nnecessary for the completion of my education that I should be made\nacquainted with other customs than those of my native country. My\ndeparture was therefore fixed at an early date, but before the day\nresolved upon could arrive, the first misfortune of my life\noccurred—an omen, as it were, of my future misery."
+    },
+    "original_only": {
+      "accepted": [
+        {
+          "name": "Ingolstadt",
+          "kind": "place",
+          "description_uk": "Університет, куди батьки вирішили відправити оповідача навчатися.",
+          "quote": "university of Ingolstadt",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "byte_start": 54706,
+          "byte_len": 24,
+          "quote_sha256": "258520227bb34aa498471b42a72c3537183ab9f4fdfe7e2d0cacf778af492659"
+        },
+        {
+          "name": "Geneva",
+          "kind": "place",
+          "description_uk": "Місто, де оповідач раніше відвідував школи.",
+          "quote": "schools of Geneva",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "byte_start": 54760,
+          "byte_len": 17,
+          "quote_sha256": "ef134ecc11a756565413e23b6ee948e507026b71d0bf5b19f3dbd5c6c2f6d7fd"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "first misfortune",
+          "kind": "concept",
+          "description_uk": "Перша нещасна подія в житті оповідача, що стала віщуванням майбутнього горя.",
+          "quote": "the first misfortune of my life occurred—an omen, as it were, of my future misery",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "reason": "quote_not_exact_in_original"
+        }
+      ]
+    },
+    "translation": {
+      "translation_uk": "Коли мені виповнилося сімнадцять років, мої батьки вирішили, що я маю стати студентом університету в Інгольштадті. До цього часу я навчався в школах Женеви, але мій батько вважав необхідним для завершення моєї освіти, щоб я ознайомився з іншими звичаями, ніж ті, що панують у моїй рідній країні. Тому мій від'їзд було призначено на ранній термін, але ще до того, як настав призначений день, сталася перша нещастя в моєму житті — начебто передвістя моєї майбутньої біди."
+    },
+    "translation_assisted": {
+      "accepted": [
+        {
+          "name": "Ingolstadt",
+          "kind": "place",
+          "description_uk": "Університет, куди батьки вирішили відправити оповідача навчатися.",
+          "quote": "university of Ingolstadt",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "byte_start": 54706,
+          "byte_len": 24,
+          "quote_sha256": "258520227bb34aa498471b42a72c3537183ab9f4fdfe7e2d0cacf778af492659"
+        },
+        {
+          "name": "Geneva",
+          "kind": "place",
+          "description_uk": "Місто, де оповідач навчався в школах до свого від'їзду.",
+          "quote": "schools of Geneva",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "byte_start": 54760,
+          "byte_len": 17,
+          "quote_sha256": "ef134ecc11a756565413e23b6ee948e507026b71d0bf5b19f3dbd5c6c2f6d7fd"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "first misfortune",
+          "kind": "concept",
+          "description_uk": "Подія, що сталася перед від'їздом і розглядається як передвістя майбутньої біди.",
+          "quote": "the first misfortune of my life occurred—an omen, as it were, of my future misery",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "reason": "quote_not_exact_in_original"
+        }
+      ]
+    }
+  },
+  {
+    "scene": {
+      "id": "creation",
+      "byte_start": 84411,
+      "byte_len": 538,
+      "text": "It was on a dreary night of November that I beheld the accomplishment\nof my toils. With an anxiety that almost amounted to agony, I\ncollected the instruments of life around me, that I might infuse a\nspark of being into the lifeless thing that lay at my feet. It was\nalready one in the morning; the rain pattered dismally against the\npanes, and my candle was nearly burnt out, when, by the glimmer of the\nhalf-extinguished light, I saw the dull yellow eye of the creature\nopen; it breathed hard, and a convulsive motion agitated its limbs."
+    },
+    "original_only": {
+      "accepted": [
+        {
+          "name": "November",
+          "kind": "concept",
+          "description_uk": "Місяць, коли відбулася подія.",
+          "quote": "It was on a dreary night of November",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "byte_start": 84411,
+          "byte_len": 36,
+          "quote_sha256": "fbf19a915032b48dab4139d40d98a461f04239274f9d2d30687e531aacfe4b8c"
+        },
+        {
+          "name": "instruments of life",
+          "kind": "concept",
+          "description_uk": "Прилади, зібрані для надання життя.",
+          "quote": "collected the instruments of life around me",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "byte_start": 84543,
+          "byte_len": 43,
+          "quote_sha256": "d2c41642cd1a8e530932ce79953a02d04e8c6a497015f971a44bb5a9951920f3"
+        },
+        {
+          "name": "candle",
+          "kind": "concept",
+          "description_uk": "Джерело світла, яке майже згоріло.",
+          "quote": "my candle was nearly burnt out",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "byte_start": 84755,
+          "byte_len": 30,
+          "quote_sha256": "b01aec9af48cad3462fb972bbc43e0e108bf830a8de7fa545c5760c425e97797"
+        }
+      ],
+      "rejected": [
+        {
+          "name": "creature",
+          "kind": "character",
+          "description_uk": "Істота з тьмяним жовтим оком, яка прийшла до життя.",
+          "quote": "I saw the dull yellow eye of the creature open",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "reason": "quote_not_exact_in_original"
+        }
+      ]
+    },
+    "translation": {
+      "translation_uk": "Це сталося в похмуру ніч у листопаді, коли я побачив завершення своїх праць. З тривогою, що майже дорівнювала агонії, я зібрав навколо себе інструменти життя, щоб надати іскру буття безжиттєвій істоті, що лежала біля моїх ніг. Була вже перша година ночі; дощ сумно стукотів у віконні скляні, а моя свічка майже згоріла, коли при мерехтливому світлі напівзгаслого вогню я побачив, як відкривається тупе жовте око істоти; вона важко дихала, і судомиш рух хвилював її кінцівки."
+    },
+    "translation_assisted": {
+      "accepted": [
+        {
+          "name": "original designation",
+          "kind": "concept",
+          "description_uk": "Інструменти, зібрані навіщо, щоб надати іскру буття безжиттєвій істоті.",
+          "quote": "instruments of life",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "byte_start": 84557,
+          "byte_len": 19,
+          "quote_sha256": "1e97abfc58e0586ad5191183799437bfa5c1bfbfffa99796cf0fa541333b07c2"
+        },
+        {
+          "name": "original designation",
+          "kind": "concept",
+          "description_uk": "Жовте око істоти, яке відкривається в напівзгаслому світлі.",
+          "quote": "dull yellow eye",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "byte_start": 84850,
+          "byte_len": 15,
+          "quote_sha256": "093aa9467e00de0a6fc27f900171535bf216f4ea08604a171f991bc88500452d"
+        },
+        {
+          "name": "original designation",
+          "kind": "place",
+          "description_uk": "Похмура ніч у листопаді, коли відбувається подія.",
+          "quote": "dreary night of November",
+          "epistemic": "explicit",
+          "status": "editorial_pending",
+          "entailment": "not_verified",
+          "byte_start": 84423,
+          "byte_len": 24,
+          "quote_sha256": "bdcbc370c930dc5635f385e43c62817dca1d28496a352f9fe15ab601de46c313"
+        }
+      ],
+      "rejected": []
+    }
+  }
+]

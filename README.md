@@ -30,6 +30,8 @@
 - [Друга партія: завершено екстракцію Frankenstein](docs/IMPLEMENTATION_STEP_06.md)
 - [Зовнішнє збереження історії в GitHub](docs/REMOTE_RETENTION_2026-09-07.md)
 
+- [Контекстний пілот: переклад, персонажі та місця](docs/IMPLEMENTATION_STEP_07.md)
+
 ## Відтворюваний експорт
 
 ```powershell
