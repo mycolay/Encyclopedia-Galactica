@@ -1,6 +1,8 @@
 # Редакторська процедура: готові форми, оцінювання ще не почалось
 
 Основна рубрика й правила узгодженості: BATCH_AND_EDITORIAL_PROTOCOL_V1.md.
+Перевірка заповнених форм і розрахунок узгодженості реалізовані у
+scripts/score_editorial_review.py; порядок запуску: IMPLEMENTATION_STEP_10.md.
 Генератор: `python scripts/prepare_editorial_review.py --output <новий_каталог>`.
 Форми поточного зрізу: .benchmarks/editorial-step09-001/reviewer-1/ratings.json
 та reviewer-2/ratings.json. Ключ відповідності зберігає координатор окремо.

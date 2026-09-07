@@ -1,0 +1,300 @@
+{
+  "status": "not_ready",
+  "reviewer_metadata_complete": false,
+  "completed_first": 0,
+  "completed_second": 0,
+  "phases": {
+    "calibration": {
+      "completed_pairs": 0,
+      "scales": {
+        "semantics": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "no_pairs",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        },
+        "naturalness": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "no_pairs",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        },
+        "word_formation": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "no_pairs",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        },
+        "style": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "no_pairs",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        }
+      },
+      "arbitration": []
+    },
+    "development_review": {
+      "completed_pairs": 0,
+      "scales": {
+        "semantics": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "no_pairs",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        },
+        "naturalness": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "no_pairs",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        },
+        "word_formation": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "no_pairs",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        },
+        "style": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "no_pairs",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        }
+      },
+      "arbitration": []
+    }
+  },
+  "automatic_approvals": 0,
+  "limitation": "No independent identity check, no held-out inference, no aggregate quality score; comments still require coordinator review.",
+  "input_sha256": [
+    "2c24f26d838e97f2a9594829ebfc9d8a6b6efefe2fd6d655536dbaf16a8e2a71",
+    "df9ee888aaf33bb0d00c3a2bdb05f7120c13868eb7be17ac20cbf4cd826a0ace",
+    "2c24f26d838e97f2a9594829ebfc9d8a6b6efefe2fd6d655536dbaf16a8e2a71",
+    "df9ee888aaf33bb0d00c3a2bdb05f7120c13868eb7be17ac20cbf4cd826a0ace"
+  ]
+}
