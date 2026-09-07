@@ -1,0 +1,30 @@
+{
+  "captured_git_head": "439b3bdbb237ea1ea7f96701bed15fa4259e4324",
+  "nas_path": "K:\\scifi_library\\project_backups\\cosmoslov\\20260907T072207Z",
+  "files": {
+    "history.bundle": {
+      "sha256": "53949cc1dcf3b7d5431907cd74e2fdfae4b102c5e180bbf93cc5b1b6503beb56",
+      "bytes": 448414
+    },
+    "research_packages.zip": {
+      "sha256": "1d327e5fe51dd9e87a890f97e3e744e3c5c3a70fdab9630cd45a773439b25044",
+      "bytes": 3365445
+    },
+    "scifi_lexicon.db": {
+      "sha256": "d785194d9bd9a4201d08dc792eab6b6b923661cf9420b28fe3067545c29b9fa0",
+      "bytes": 249856
+    },
+    "working_tree.zip": {
+      "sha256": "2bb80d44d829f071b78f3936099d47b82eb61c32635294583e13bd6878451065",
+      "bytes": 357195
+    }
+  },
+  "checks": [
+    "hash parity",
+    "ZIP CRC",
+    "bundle mirror restore and fsck",
+    "SQLite integrity_check"
+  ],
+  "scope": "Git history, current versioned/unignored working files, consistent main SQLite and selected research packages. Full corpus already on NAS is not redundantly backed up here.",
+  "boundary": "NAS hardware redundancy; not independent human custody, offsite backup, or NAS snapshot verification."
+}
