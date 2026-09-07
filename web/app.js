@@ -1,21 +1,22 @@
 const $=id=>document.getElementById(id);
 const state={cards:[],history:[],csrf:'',category:'all',selected:null};
-const kinds={all:'Увесь каталог',concept:'Поняття',character:'Персонажі',place:'Місця',organization:'Організації',candidate:'До класифікації'};
+const kinds={all:'Увесь каталог',concept:'Поняття',entity:'Сутності',character:'Персонажі',place:'Місця',organization:'Організації',candidate:'До класифікації'};
 const actions={accept:'Схвалено аудитором',revise:'Внесено правки',reject:'Відхилено',context:'Потрібен контекст'};
 function el(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
 function last(card){return state.history.filter(x=>x.card_id===card.id&&x.revision===card.revision).at(-1);}
+function inCategory(c,key){return key==='all'||(key==='entity'?c.taxonomy?.group==='entity':key==='character'?(c.kind==='character'||c.taxonomy?.narrative_roles.includes('character')):c.kind===key);}
 function toast(text){$('toast').textContent=text;$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',7000);}
 function render(){
  $('categories').replaceChildren();
  for(const [key,label] of Object.entries(kinds)){
   const button=el('button',label,key===state.category?'active':'');
-  button.append(el('small',key==='all'?state.cards.length:state.cards.filter(c=>c.kind===key).length));
+  button.append(el('small',state.cards.filter(c=>inCategory(c,key)).length));
   button.onclick=()=>{state.category=key;render();};$('categories').append(button);
  }
  const query=$('search').value.trim().toLocaleLowerCase();const status=$('statusFilter').value;
  const cards=state.cards.filter(c=>{
-  const d=last(c);const text=[c.term,c.ukrainian,c.english.value,c.title,c.author,...c.proposals.map(p=>p.variant),d?.ukrainian,d?.english].join(' ').toLocaleLowerCase();
-  return (state.category==='all'||c.kind===state.category)&&(!query||text.includes(query))&&(status==='all'||(status==='pending'?!d:d?.action===status));
+  const d=last(c);const text=[c.term,c.ukrainian,c.english.value,c.title,c.author,...c.proposals.map(p=>p.variant),...(c.taxonomy?.alternative_names||[]).map(x=>x.value),c.taxonomy?.group_label,c.taxonomy?.group_plural,c.taxonomy?.type_label,...(c.taxonomy?.role_labels||[]),d?.ukrainian,d?.english].join(' ').toLocaleLowerCase();
+  return inCategory(c,state.category)&&(!query||text.includes(query))&&(status==='all'||(status==='pending'?!d:d?.action===status));
  });
  const ending={one:'картка',few:'картки',many:'карток',other:'картки'}[new Intl.PluralRules('uk').select(cards.length)];
  $('categoryTitle').textContent=kinds[state.category];$('resultCount').textContent=`${cards.length} ${ending}`;
@@ -36,6 +37,13 @@ function detail(c){
  const langs=el('div',undefined,'languages');
  const fields=[['ОРИГ.',c.term,`Мова за метаданими: ${c.language}`],['УКР.',(d?.ukrainian??c.ukrainian)||'Ще не запропоновано',d?'Запис аудитора':c.preferred_translation?'Рекомендація Great Attractor':'Редакторська пропозиція'],['ENG',(d?.english??c.english.value)||'Ще не заповнено',d?'Запис аудитора':c.english.status==='original'?'Форма джерела з англійськими мовними метаданими':c.english.status==='working_translation'?'Робочий переклад Great Attractor; джерело перекладу не підтверджено':'Потрібне джерело або робочий переклад']];
  for(const [label,value,note] of fields){const row=el('div',undefined,'language');const val=el('span',value);val.append(el('small',note));row.append(el('b',label),val);langs.append(row);}box.append(langs);
+ if(c.taxonomy){
+  const t=c.taxonomy;box.append(el('h3','Природа і роль у творі'));
+  const tags=el('div',undefined,'taxonomy-tags');for(const value of [t.group_label,t.type_label,...t.role_labels])tags.append(el('span',value,'tag'));box.append(tags);
+  box.append(el('p',t.reason,'recommendation'),el('p',t.category_note,'muted'));
+  for(const name of t.alternative_names)box.append(el('p',`${name.value} — ${name.note}`,'recommendation'));
+  box.append(el('p','Картка може належати і до сутностей, і до персонажів; у загальному каталозі вона рахується один раз.','muted'));
+ }
  if(c.preferred_translation){box.append(el('h3','Чому цей відповідник'),el('p',c.preferred_translation.reason,'recommendation'));}
  if(c.definition){box.append(el('h3','Тлумачення'),el('p',typeof c.definition==='string'?c.definition:c.definition.text||JSON.stringify(c.definition)));}
  box.append(el('h3','Оригінальний контекст'));

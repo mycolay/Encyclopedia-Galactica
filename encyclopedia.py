@@ -57,6 +57,12 @@ def catalog():
             if not any(a.get('artifact_sha256')==choice['source_sha256'] for a in card['attestations']):continue
             card['ukrainian']=choice['ukrainian']
             card['preferred_translation']=dict(choice,status='assistant_recommendation',reviewer='Great Attractor')
+    taxonomy=json.loads((ROOT/'docs/ENTITY_TAXONOMY_V1.json').read_text(encoding='utf-8'))
+    for card in cards:
+        for item in taxonomy['items']:
+            if (item['work_id'],item['term'],item['source_kind'])!=(card['work_id'],card['term'],card['kind']):continue
+            if not any(a.get('artifact_sha256')==item['source_sha256'] for a in card['attestations']):continue
+            card['taxonomy']=dict(item,status='assistant_recommendation')
     cards.sort(key=lambda c:(0 if c['term']=='Nadrobot' else 1 if c['recommendations'] else 2,c['term'].casefold()))
     for card in cards:card['revision']=digest(card)
     return cards

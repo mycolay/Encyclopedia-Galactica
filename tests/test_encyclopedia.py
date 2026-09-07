@@ -63,3 +63,17 @@ def test_preferred_translations_are_evidence_bound_and_not_human_approvals():
     for c in cards:
         assert any(a['artifact_sha256']==c['preferred_translation']['source_sha256'] for a in c['attestations'])
         assert c['status'] in ('research_draft','assistant_draft')
+
+def test_entity_type_and_narrative_role_do_not_duplicate_card():
+    cards=catalog()
+    assert len(cards)==237
+    entities=[c for c in cards if c.get('taxonomy',{}).get('group')=='entity']
+    assert len(entities)==1
+    c=entities[0]
+    assert c['kind']=='character' and c['taxonomy']['narrative_roles']==['character']
+    assert c['taxonomy']['entity_type']=='embodied_being'
+    assert c['ukrainian']=='Істота'
+    assert c['taxonomy']['alternative_names'][0]['value']=='Створіння'
+    # Do not infer identity/category for the separate unclassified lexical record.
+    lexical=next(x for x in cards if x['term']=='creature' and x['kind']=='candidate')
+    assert 'taxonomy' not in lexical
