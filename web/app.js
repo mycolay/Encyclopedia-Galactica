@@ -34,8 +34,9 @@ function detail(c){
  const box=$('detail');box.replaceChildren();if(!c){box.append(el('p','Оберіть іншу категорію або пошуковий запит.'));return;}
  const d=last(c);box.append(el('span',actions[d?.action]||'Дослідницька чернетка','tag'),el('h2',(d?.ukrainian??c.ukrainian)||c.term),el('p',`${c.author} · ${c.title}`,'muted'));
  const langs=el('div',undefined,'languages');
- const fields=[['ОРИГ.',c.term,`Мова за метаданими: ${c.language}`],['УКР.',(d?.ukrainian??c.ukrainian)||'Ще не запропоновано',d?'Запис аудитора':'Редакторська пропозиція'],['ENG',(d?.english??c.english.value)||'Ще не заповнено',d?'Запис аудитора':c.english.status==='original'?'Форма джерела з англійськими мовними метаданими':c.english.status==='working_translation'?'Робочий переклад Great Attractor; джерело перекладу не підтверджено':'Потрібне джерело або робочий переклад']];
+ const fields=[['ОРИГ.',c.term,`Мова за метаданими: ${c.language}`],['УКР.',(d?.ukrainian??c.ukrainian)||'Ще не запропоновано',d?'Запис аудитора':c.preferred_translation?'Рекомендація Great Attractor':'Редакторська пропозиція'],['ENG',(d?.english??c.english.value)||'Ще не заповнено',d?'Запис аудитора':c.english.status==='original'?'Форма джерела з англійськими мовними метаданими':c.english.status==='working_translation'?'Робочий переклад Great Attractor; джерело перекладу не підтверджено':'Потрібне джерело або робочий переклад']];
  for(const [label,value,note] of fields){const row=el('div',undefined,'language');const val=el('span',value);val.append(el('small',note));row.append(el('b',label),val);langs.append(row);}box.append(langs);
+ if(c.preferred_translation){box.append(el('h3','Чому цей відповідник'),el('p',c.preferred_translation.reason,'recommendation'));}
  if(c.definition){box.append(el('h3','Тлумачення'),el('p',typeof c.definition==='string'?c.definition:c.definition.text||JSON.stringify(c.definition)));}
  box.append(el('h3','Оригінальний контекст'));
  if(!c.attestations.length)box.append(el('p','Підтвердженого контексту ще немає. Потрібне джерело.','notice'));

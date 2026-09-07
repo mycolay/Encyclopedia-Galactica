@@ -50,6 +50,13 @@ def catalog():
             definition=dict(text=item['description_uk'],status='assistant_draft'),
             status='assistant_draft',attestations=[dict(quote=item['quote'],check='reference_draft',artifact_sha256=reference['source_sha256'])],
             proposals=[],recommendations=[dict(reason=item['note'],relevance='uncertain')]))
+    preferred=json.loads((ROOT/'docs/PREFERRED_TRANSLATIONS_V1.json').read_text(encoding='utf-8'))
+    for card in cards:
+        for choice in preferred['items']:
+            if (choice['work_id'],choice['term'],choice['kind'])!=(card['work_id'],card['term'],card['kind']):continue
+            if not any(a.get('artifact_sha256')==choice['source_sha256'] for a in card['attestations']):continue
+            card['ukrainian']=choice['ukrainian']
+            card['preferred_translation']=dict(choice,status='assistant_recommendation',reviewer='Great Attractor')
     cards.sort(key=lambda c:(0 if c['term']=='Nadrobot' else 1 if c['recommendations'] else 2,c['term'].casefold()))
     for card in cards:card['revision']=digest(card)
     return cards

@@ -46,3 +46,20 @@ def test_nonaccept_requires_note(tmp_path):
 def test_shell_and_assets_available(tmp_path):
     c,_=client(tmp_path)
     for path in ['/','/static/app.js','/static/style.css']:assert c.get(path).status_code==200
+
+def test_preferred_synthesis_preserves_source_and_alternatives():
+    cards=catalog()
+    geneva=next(c for c in cards if c['term']=='Geneva' and c['kind']=='place')
+    assert geneva['ukrainian']=='Женева'
+    assert geneva['english']['value']=='Geneva'
+    assert geneva['preferred_translation']['status']=='assistant_recommendation'
+    robot=next(c for c in cards if c['term']=='Nadrobot')
+    assert robot['ukrainian']=='надробот'
+    assert any(p['variant']=='Надгігант' for p in robot['proposals'])
+
+def test_preferred_translations_are_evidence_bound_and_not_human_approvals():
+    cards=[c for c in catalog() if c.get('preferred_translation')]
+    assert len(cards)==8
+    for c in cards:
+        assert any(a['artifact_sha256']==c['preferred_translation']['source_sha256'] for a in c['attestations'])
+        assert c['status'] in ('research_draft','assistant_draft')

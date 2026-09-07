@@ -1,0 +1,9 @@
+{
+  "schema_version": "cosmoslov.audit_anchor.v1",
+  "bundle_name": "translations-step14-001",
+  "manifest_sha256": "d00c216149b3031501c4e089dde292b0df2603d63fa09ebf8d4e1329227c58f2",
+  "head_chain_hash": "fc22dd9e403f79dd3c7c324d69655a5b0eead8f2772d31e2d0567b0436ef7dec",
+  "artifact_count": 10,
+  "claim": "integrity_only",
+  "external_custody": "pending_human_retention"
+}
