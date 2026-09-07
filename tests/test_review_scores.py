@@ -10,6 +10,7 @@ def fixture():
 
 def filled(name):
     f=fixture();f['reviewer']={k:'fixture' for k in f['reviewer']};f['reviewer']['name']=name
+    f['reviewer']['role']='human'
     f['items'][0].update(context_sufficient=True,relevance='include',relevance_reason='fixture',
         recognized_provenance=False,scores={s:3 for s in SCALES})
     return f
@@ -70,3 +71,15 @@ def test_calibration_separate_from_development():
 def test_insufficient_context_cannot_have_numeric_scores():
     a=filled('A');a['items'][0]['context_sufficient']=False
     with pytest.raises(ValueError,match='insufficient_context_scored'):validate(a,fixture())
+
+def test_ai_human_is_not_independent_human_agreement():
+    a,b=filled('Great Attractor'),filled('Auditor');a['reviewer']['role']='ai'
+    r=compare(a,b,fixture(),fixture())
+    assert r['review_mode']=='ai_assisted_human_audit'
+    assert r['independent_human_agreement'] is False
+    assert r['phases']['development_review']['scales']['semantics']['weighted_kappa'] is None
+    assert r['automatic_approvals']==0
+
+def test_unknown_roles_cannot_claim_human_agreement():
+    a,b=filled('A'),filled('B');del a['reviewer']['role']
+    assert compare(a,b,fixture(),fixture())['status']=='not_ready'

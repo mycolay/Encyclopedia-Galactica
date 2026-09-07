@@ -1,0 +1,9 @@
+{
+  "schema_version": "cosmoslov.audit_anchor.v1",
+  "bundle_name": "assisted-review-step12-001",
+  "manifest_sha256": "1abe1f5c68008a7f9cd630893f6f7fb1adca2ccc75274f871e7e7fa7a509ea98",
+  "head_chain_hash": "675619a66aa8cbfc8332c74adb1bdfcae11e6ecf00512718bfc6941ea557dfd0",
+  "artifact_count": 17,
+  "claim": "integrity_only",
+  "external_custody": "pending_human_retention"
+}

@@ -28,9 +28,10 @@ def main():
     for number in [1,2]:
         shuffled=list(items);random.Random(901+number).shuffle(shuffled)
         folder=args.output/('reviewer-'+str(number));folder.mkdir()
-        payload=dict(status='unfilled_preparation',reviewer=dict(name=None,source_language_competence=None,
+        payload=dict(status='unfilled_preparation',reviewer=dict(name='Great Attractor' if number==1 else None,
+            role='ai' if number==1 else 'human',source_language_competence=None,
             ukrainian_competence=None,philological_experience=None,conflicts=None),
-            blindness='Provenance IDs hidden; existing public examples may be recognized. Not a held-out blind study.',items=shuffled)
+            blindness='Open AI-assisted human audit; not two independent human reviewers or a held-out blind study.',items=shuffled)
         (folder/'ratings.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (args.output/'coordinator-key.json').write_text(json.dumps(mapping,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(dict(unique_proposals=len(items),calibration=len(calibration),development=len(items)-len(calibration),human_ratings=0)))

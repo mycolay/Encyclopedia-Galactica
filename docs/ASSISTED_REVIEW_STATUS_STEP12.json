@@ -1,0 +1,296 @@
+{
+  "status": "not_ready",
+  "review_mode": "ai_assisted_human_audit",
+  "independent_human_agreement": false,
+  "reviewer_metadata_complete": true,
+  "completed_first": 10,
+  "completed_second": 0,
+  "phases": {
+    "calibration": {
+      "completed_pairs": 0,
+      "scales": {
+        "semantics": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "not_two_human_reviewers",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        },
+        "naturalness": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "not_two_human_reviewers",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        },
+        "word_formation": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "not_two_human_reviewers",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        },
+        "style": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "not_two_human_reviewers",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        }
+      },
+      "arbitration": []
+    },
+    "development_review": {
+      "completed_pairs": 0,
+      "scales": {
+        "semantics": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "not_two_human_reviewers",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        },
+        "naturalness": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "not_two_human_reviewers",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        },
+        "word_formation": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "not_two_human_reviewers",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        },
+        "style": {
+          "n": 0,
+          "exact": null,
+          "within_one": null,
+          "weighted_kappa": null,
+          "kappa_reason": "not_two_human_reviewers",
+          "contingency": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "na_pairs": 0
+        }
+      },
+      "arbitration": []
+    }
+  },
+  "automatic_approvals": 0,
+  "limitation": "No independent identity check, no held-out inference, no aggregate quality score; comments still require coordinator review."
+}

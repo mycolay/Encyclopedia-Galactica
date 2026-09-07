@@ -69,8 +69,13 @@ def compare(first,second,template_first,template_second):
         if {k:v for k,v in a[ident].items() if k not in EDITABLE}!={k:v for k,v in b[ident].items() if k not in EDITABLE}:
             raise ValueError('reviewer_contents_differ')
     people=[f.get('reviewer',{}) for f in (first,second)]
+    roles=[p.get('role') if isinstance(p,dict) else None for p in people]
+    mode='ai_assisted_human_audit' if sorted(str(r) for r in roles)==['ai','human'] else 'two_human_review' if roles==['human','human'] else 'unconfirmed_roles'
     ready=all(isinstance(p,dict) and all(isinstance(p.get(k),str) and p[k].strip()
         for k in ('name','source_language_competence','ukrainian_competence','philological_experience','conflicts')) for p in people)
+    if mode=='ai_assisted_human_audit':
+        ready=all(isinstance(p.get('name'),str) and p['name'].strip() for p in people)
+    if mode=='unconfirmed_roles':ready=False
     if ready and people[0]['name'].strip().casefold()==people[1]['name'].strip().casefold():
         raise ValueError('same_reviewer')
     # Metadata are declarations, not proof of identity or competence.
@@ -83,6 +88,9 @@ def compare(first,second,template_first,template_second):
             pairs=[(a[i]['scores'][scale],b[i]['scores'][scale]) for i in ids
                    if a[i]['scores'][scale] is not None and b[i]['scores'][scale] is not None]
             metrics[scale]=dict(agreement(pairs),na_pairs=len(ids)-len(pairs))
+            if mode!='two_human_review':
+                metrics[scale]['weighted_kappa']=None
+                metrics[scale]['kappa_reason']='not_two_human_reviewers'
         for i in ids:
             reasons=[]
             if a[i]['relevance']!=b[i]['relevance']:reasons.append('relevance_disagreement')
@@ -94,7 +102,8 @@ def compare(first,second,template_first,template_second):
                 if scale=='semantics' and any(v is not None and v<=1 for v in (x,y)):reasons.append('low_semantics')
             if reasons:arbitration.append(dict(id=i,reasons=reasons))
         phases[phase]=dict(completed_pairs=len(ids),scales=metrics,arbitration=arbitration)
-    return dict(status='descriptive_development_results' if paired else 'not_ready',
+    return dict(status=('assisted_audit_comparison' if mode=='ai_assisted_human_audit' else 'descriptive_development_results') if paired else 'not_ready',
+        review_mode=mode,independent_human_agreement=mode=='two_human_review' and bool(paired),
         reviewer_metadata_complete=ready,completed_first=len(done_a),completed_second=len(done_b),
         phases=phases,automatic_approvals=0,
         limitation='No independent identity check, no held-out inference, no aggregate quality score; comments still require coordinator review.')
