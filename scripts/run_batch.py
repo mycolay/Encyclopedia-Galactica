@@ -22,6 +22,12 @@ def backup(source,target):
     src=sqlite3.connect(Path(source).resolve().as_uri()+'?mode=ro',uri=True);dst=sqlite3.connect(target)
     try:src.backup(dst)
     finally:dst.close();src.close()
+    # Immutable artifacts must be self-contained, without volatile WAL/SHM sidecars.
+    snapshot=sqlite3.connect(target)
+    try:
+        if snapshot.execute('PRAGMA journal_mode=DELETE').fetchone()[0]!='delete':
+            raise ValueError('snapshot_journal_normalization_failed')
+    finally:snapshot.close()
 
 
 def logical_hash(c):
@@ -151,6 +157,7 @@ def main():
         with sqlite3.connect(run/'snapshot.db') as c:
             for w,_,p in plans:c.execute('UPDATE works SET text_path=? WHERE id=?',(str(p),w['id']))
             assert insert_records(c,records)==len(records)
+        c.close()  # Close WAL writers before sealing the immutable SQLite snapshot.
         exporter=DictionaryExporter(SimpleNamespace(db_path=run/'snapshot.db'),run/'SCI_FI_LEXICON.md');exporter.export_markdown()
         for name,(source,expected) in PINS.items():checked_copy(source,run/'tools'/name,expected)
         anchor=seal_prepared_bundle(run,args.anchor)
@@ -162,6 +169,7 @@ def main():
                 original=next(w['text_path'] for w in works if w['id']==r['work_id'])
                 if check_quote(r,original)[0] is None:raise ValueError('original_changed_before_publish')
             inserted=insert_records(c,records)
+        c.close()
         for name in ['SCI_FI_LEXICON.md','SCI_FI_LEXICON.json']:
             (ROOT/'docs'/name).write_bytes((run/name).read_bytes())
         publication=dict(run=str(run),inserted_lexical_evidence=inserted,ukrainian_drafts=summary['ukrainian_drafts'],anchor=anchor,

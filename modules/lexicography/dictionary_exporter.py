@@ -1,106 +1,142 @@
-"""
-Academic Dictionary Exporter for Sci-Fi Neologisms.
-Generates comprehensive Markdown documents and JSON-LD for academic dissemination.
-"""
-
+"""Evidence-first research export; never promotes proposals to verified articles."""
+import hashlib
 import json
+import sqlite3
 from pathlib import Path
-from typing import List, Dict, Any, Optional
-from core.db import DatabaseManager
 
-DEFAULT_OUTPUT_MD = Path(__file__).resolve().parent.parent.parent / "docs" / "SCI_FI_LEXICON.md"
+from modules.corpus.witness import find_occurrences
+
+DEFAULT_OUTPUT_MD = Path(__file__).resolve().parents[2] / 'docs' / 'SCI_FI_LEXICON.md'
+
+
+def check_quote(record, path):
+    """Independently check bytes, lexical match and hash-bound whole-span zone."""
+    try:
+        data = Path(path).read_bytes()
+        start, size = record['byte_start'], record['byte_len']
+        if not isinstance(start, int) or not isinstance(size, int) or start < 0 or size <= 0:
+            return None, 'invalid_coordinates'
+        if start + size > len(data):
+            return None, 'short_read'
+        if hashlib.sha256(data).hexdigest() != record['artifact_sha256']:
+            return None, 'artifact_drift'
+        window = data[start:start + size]
+        if hashlib.sha256(window).hexdigest() != record['window_sha256']:
+            return None, 'window_mismatch'
+        quote = window.decode('utf-8')
+        if not find_occurrences(window, record['term_orig']):
+            return None, 'term_absent'
+        zones = json.loads(Path(path).with_name('zones.json').read_text(encoding='utf-8'))
+        if zones.get('source_sha256') != record['artifact_sha256']:
+            return None, 'zone_hash_unbound'
+        if record.get('zone') != 'body' or not any(
+            z.get('kind') == 'body' and z['byte_start'] <= start
+            and start + size <= z['byte_end'] for z in zones['zones']
+        ):
+            return None, 'outside_body'
+        return quote, 'byte_verified_zone_map_checked'
+    except (OSError, ValueError, TypeError, KeyError) as exc:
+        return None, 'unavailable_or_invalid_' + type(exc).__name__
 
 
 class DictionaryExporter:
-    def __init__(self, db: DatabaseManager, output_path: Optional[Path] = None):
+    def __init__(self, db, output_path=None):
         self.db = db
-        self.output_path = output_path or DEFAULT_OUTPUT_MD
+        self.output_path = Path(output_path or DEFAULT_OUTPUT_MD)
+
+    def build_snapshot(self):
+        # A separate read-only transaction: no init_db, migration or source mutation.
+        uri = Path(self.db.db_path).resolve().as_uri() + '?mode=ro'
+        conn = sqlite3.connect(uri, uri=True)
+        conn.row_factory = sqlite3.Row
+        try:
+            conn.execute('BEGIN')
+            tables = {r[0] for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+            works = {r['id']: dict(r) for r in conn.execute(
+                'SELECT w.*, a.name_orig author_name FROM works w LEFT JOIN authors a ON a.id=w.author_id')}
+            cards = {}
+
+            def card(term, work_id):
+                key = (term.casefold().strip(), work_id)
+                if key not in cards:
+                    w = works.get(work_id, {})
+                    cards[key] = dict(term=term, work_id=work_id,
+                        title=w.get('title_orig'), author=w.get('author_name'),
+                        work_year=w.get('year'), definition=None, traditional=None,
+                        attestations=[], proposals=[], external=[])
+                return cards[key]
+
+            for row in conn.execute('SELECT * FROM terms ORDER BY id'):
+                c = card(row['term_orig'], row['work_id'])
+                c['definition'] = row['scientific_definition']
+                c['traditional'] = row['ukr_traditional']
+            if 'attestations' in tables:
+                for row in conn.execute('SELECT * FROM attestations ORDER BY id'):
+                    r = dict(row)
+                    c = card(r['term_orig'], r['work_id'])
+                    if r['register'] == 'attested':
+                        path = works.get(r['work_id'], {}).get('text_path')
+                        quote, status = check_quote(r, path)
+                        c['attestations'].append(dict(id=r['id'], year=r['year'],
+                            quote=quote, check=status, path=path,
+                            byte_start=r['byte_start'], byte_len=r['byte_len'],
+                            artifact_sha256=r['artifact_sha256']))
+                    elif r['register'] == 'proposed':
+                        c['proposals'].append(dict(id=r['id'], variant=r['proposed_ukr_term'],
+                            rationale=r.get('derivation_model'), note=r.get('stylistic_note'),
+                            derivation_type=r.get('derivation_type'),
+                            status='proposed_not_editorially_reviewed'))
+                    elif r['register'] == 'external':
+                        c['external'].append(dict(id=r['id'], authority=r['authority'],
+                            url=r['authority_url'], status='external_not_rechecked'))
+            ordered = sorted(cards.values(), key=lambda c: (c['term'].casefold(), c['work_id'] or -1))
+            for c in ordered:
+                years = [a['year'] for a in c['attestations'] if a['quote'] is not None and a['year'] is not None]
+                c['earliest_in_work_corpus'] = min(years) if years else None
+            return dict(schema_version='cosmoslov.research_cards.v1',
+                status='research_draft', cards=ordered,
+                counts=dict(cards=len(ordered), attestations=sum(len(c['attestations']) for c in ordered),
+                    byte_verified=sum(a['quote'] is not None for c in ordered for a in c['attestations']),
+                    proposals=sum(len(c['proposals']) for c in ordered)))
+        finally:
+            conn.close()
+
+    def export_markdown(self):
+        snapshot = self.build_snapshot()
+        lines = ['# Космослов — дослідницькі картки', '',
+            'Статус: дослідницька чернетка; редакторська й наукова перевірка статей не завершена.', '',
+            'Картка описує термін у конкретному творі. Однакова назва ще не означає однакове поняття.', '',
+            'Цитати перевірено за байтами та прив’язаною до хешу картою зон. Це не незалежна текстологічна перевірка самих меж зон.', '',
+            'Дати походять із метаданих засвідчень; історична першість і бібліографічна точність дат потребують окремої перевірки.', '',
+            'Статистика: ' + json.dumps(snapshot['counts'], ensure_ascii=False), '']
+        for c in snapshot['cards']:
+            lines += ['## ' + c['term'], '',
+                f"Твір: {c['title'] or 'не встановлено'}. Автор: {c['author'] or 'не встановлено'}.", '']
+            if c['definition']:
+                lines += ['Визначення з попередніх даних — потребує редакторської перевірки:', c['definition'], '']
+            if c['traditional']:
+                lines += ['Український відповідник із попередніх даних; видання й перекладача не підтверджено:', c['traditional'], '']
+            if c['earliest_in_work_corpus'] is not None:
+                lines += [f"Найраніша дата серед перевірених записів цього твору в корпусі: {c['earliest_in_work_corpus']}.", '']
+            for a in c['attestations']:
+                lines += [f"Засвідчення #{a['id']}: {a['check']}.", '']
+                if a['quote'] is not None:
+                    # JSON preserves exact quote whitespace; Markdown trims line ends.
+                    lines += [('> ' + line).rstrip() for line in a['quote'].splitlines()]
+                    lines += ['', f"Артефакт: `{a['path']}`; байти {a['byte_start']}+{a['byte_len']}; SHA-256 `{a['artifact_sha256']}`.", '']
+            if not any(a['quote'] is not None for a in c['attestations']):
+                lines += ['Перевіреної корпусної цитати для цієї картки немає.', '']
+            for p in c['proposals']:
+                lines += [f"### Українська пропозиція: {p['variant']}", '',
+                    'Статус: авторська/модельна пропозиція, редакторськи не затверджена.', '']
+                if p['rationale']:
+                    lines += ['Записане обґрунтування (словникові посилання цим експортом повторно не перевірялися):', p['rationale'], '']
+                if p['note']:
+                    lines += [p['note'], '']
+            for e in c['external']:
+                lines += [f"Зовнішнє свідчення #{e['id']}: {e['authority']}; {e['url'] or 'URL відсутній'}; повторно не перевірено.", '']
         self.output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    def export_markdown(self) -> Path:
-        """Exports the entire database of Sci-Fi terms into an academic Markdown dictionary."""
-        terms = self.db.get_terms(limit=1000)
-        stats = self.db.get_stats()
-
-        lines = [
-            "# СЛОВНИК НАУКОВО-ФАНТАСТИЧНИХ НЕОЛОГІЗМІВ ТА КОНЦЕПТІВ («КОСМОСЛОВ»)",
-            "## Академічний звід авторських термінів світової НФ з творчою українською інтерпретацією на основі моделей Словника Бориса Грінченка",
-            "",
-            "> **Статус проєкту**: Фундаментальне дослідження корпусу культової наукової фантастики.",
-            f"> **Кількість опрацьованих термінів**: {stats['terms_count']} | **Творів у каталозі**: {stats['works_count']} | **Авторів**: {stats['authors_count']}",
-            "",
-            "---",
-            "",
-            "## Вступні зауваги та науковий метод",
-            "Наукова фантастика є унікальним генератором понять, яких не існувало в реальності на момент їх написання.",
-            "Переклад таких понять нерідко зводився або до механічної транслітерації (калькування англійського звучання),",
-            "або до штучних росіянізмів. Наш метод спирається на внутрішні словотвірні закони української мови,",
-            "зафіксовані у чотиритомному «Словарі української мови» за ред. Бориса Грінченка (1907–1909),",
-            "що дозволяє відродити живу, природну образність термінів без спотворення їхньої фізичної чи філософської суті.",
-            "",
-            "---",
-            ""
-        ]
-
-        # Group by category
-        categories = {}
-        for t in terms:
-            cat = t.get("concept_category", "Загальні концепти")
-            if cat not in categories:
-                categories[cat] = []
-            categories[cat].append(t)
-
-        for cat_name, cat_terms in categories.items():
-            lines.append(f"## Розділ: {cat_name.upper()}")
-            lines.append("")
-
-            for term in cat_terms:
-                term_orig = term["term_orig"].upper()
-                ipa = term.get("ipa", "")
-                author_orig = term.get("author_name_orig", "")
-                author_ukr = term.get("author_name_ukr", "")
-                work_orig = term.get("work_title_orig", "")
-                work_ukr = term.get("work_title_ukr", "")
-                year = term.get("first_attestation_year", "")
-                def_sci = term.get("scientific_definition", "")
-                orig_context = term.get("original_context", "")
-                locator = term.get("context_source_locator", "")
-                trad = term.get("ukr_traditional", "")
-                rationale = term.get("morphological_rationale", "")
-                trans_ctx = term.get("ukr_translated_context", "")
-                neologisms = term.get("ukr_grinchenko_neologisms", [])
-
-                lines.append(f"### ❖ {term_orig} {f'`{ipa}`' if ipa else ''}")
-                lines.append(f"- **Першотвір та авторство**: **{author_ukr}** ({author_orig}), *«{work_ukr}»* (*{work_orig}*), **{year} рік**.")
-                if locator:
-                    lines.append(f"- **Локація у тексті**: {locator}")
-                lines.append(f"- **Науково-концептуальне визначення**: {def_sci}")
-                lines.append("")
-                lines.append(f"> **Контекст першої появи (мовою оригіналу)**:")
-                lines.append(f"> «{orig_context}»")
-                lines.append("")
-                lines.append(f"- **Традиційний переклад у виданнях**: *{trad}*")
-                lines.append("")
-                lines.append("**Творча українська інтерпретація за моделями словника Грінченка**:")
-                for n in neologisms:
-                    variant = n.get("variant", "")
-                    morphemes = n.get("morphemes", "")
-                    model = n.get("grinchenko_model", "")
-                    nuance = n.get("semantic_nuance", "")
-                    lines.append(f"  * **{variant}**")
-                    lines.append(f"    - *Морфемна будова*: {morphemes}")
-                    lines.append(f"    - *Зразок за Грінченком*: {model}")
-                    lines.append(f"    - *Семантичний відтінок*: {nuance}")
-                lines.append("")
-                lines.append(f"- **Академічне обґрунтування словотвору**: {rationale}")
-                lines.append("")
-                lines.append(f"> **Приклад художнього втілення в українському контексті**:")
-                lines.append(f"> «{trans_ctx}»")
-                lines.append("")
-                lines.append("---")
-                lines.append("")
-
-        with open(self.output_path, "w", encoding="utf-8") as f:
-            f.write("\n".join(lines))
-
+        self.output_path.write_bytes(('\n'.join(lines).rstrip() + '\n').encode('utf-8'))
+        self.output_path.with_suffix('.json').write_bytes(
+            (json.dumps(snapshot, ensure_ascii=False, indent=2) + '\n').encode('utf-8'))
         return self.output_path

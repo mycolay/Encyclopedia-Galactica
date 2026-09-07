@@ -50,3 +50,21 @@ def test_timeout_charges_reserved_tokens(tmp_path,monkeypatch):
     with pytest.raises(TimeoutError):c.propose_candidates('text')
     assert c.input_tokens==8192 and c.output_tokens==512 and c.errors==1
     assert (tmp_path/'calls/0001/metric.json').exists()
+
+
+def test_wal_snapshot_is_self_contained(tmp_path):
+    from scripts.run_batch import backup
+    source=tmp_path/'live.db';target=tmp_path/'snapshot.db'
+    live=sqlite3.connect(source)
+    live.execute('PRAGMA journal_mode=WAL')
+    live.execute('CREATE TABLE evidence(value TEXT)')
+    live.execute("INSERT INTO evidence VALUES('retained')");live.commit()
+    try:backup(source,target)
+    finally:live.close()
+    snapshot=sqlite3.connect(target)
+    try:
+        assert snapshot.execute('PRAGMA journal_mode').fetchone()[0]=='delete'
+        assert snapshot.execute('SELECT value FROM evidence').fetchone()[0]=='retained'
+    finally:snapshot.close()
+    assert not Path(str(target)+'-wal').exists()
+    assert not Path(str(target)+'-shm').exists()

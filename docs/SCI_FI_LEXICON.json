@@ -1,0 +1,4270 @@
+{
+  "schema_version": "cosmoslov.research_cards.v1",
+  "status": "research_draft",
+  "cards": [
+    {
+      "term": "aeronef",
+      "work_id": 30,
+      "title": "Robur the Conqueror",
+      "author": "Jules Verne",
+      "work_year": 1886,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 235,
+          "year": 1886,
+          "quote": " its\ncapsizing.\n\nAnd now for the metal used by Robur in the construction of his\naeronef—a name which can be exactly applied to the “Albatross.” What\nwas this material, so hard that the bowie-kni",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\30\\source.txt",
+          "byte_start": 85994,
+          "byte_len": 200,
+          "artifact_sha256": "004bd3e54e2888282711ccc66350bcda96230db5e24d22ec553965da6729a88e"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1886
+    },
+    {
+      "term": "aeroplane",
+      "work_id": 28,
+      "title": "When the Sleeper Wakes (The Sleeper Awakes)",
+      "author": "H.G. Wells",
+      "work_year": 1899,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 212,
+          "year": 1899,
+          "quote": "e, the Labour Company and its millions,\nburst the bonds. We got the pull of the aeroplanes.\"\n\n\"Yes,\" said Graham.\n\n\"That was, of course, essential. Or they could have got away. All the\ncity rose, ever",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\28\\source.txt",
+          "byte_start": 200086,
+          "byte_len": 200,
+          "artifact_sha256": "4a9dd02ec47f3f917291ae0e7b9de0c7a18ba38d1bbb58a08e20c16f5aa906ad"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1899
+    },
+    {
+      "term": "Albatross",
+      "work_id": 30,
+      "title": "Robur the Conqueror",
+      "author": "Jules Verne",
+      "work_year": 1886,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 234,
+          "year": 1886,
+          "quote": "idea has prevailed—to imitate nature, which never makes mistakes.\nBetween the albatross, which gives hardly ten beats of the wing per\nminute, between the pelican, which gives seventy—”\n\n“Seven",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\30\\source.txt",
+          "byte_start": 42445,
+          "byte_len": 200,
+          "artifact_sha256": "004bd3e54e2888282711ccc66350bcda96230db5e24d22ec553965da6729a88e"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1886
+    },
+    {
+      "term": "albino",
+      "work_id": 19,
+      "title": "The Invisible Man",
+      "author": "H.G. Wells",
+      "work_year": 1897,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 201,
+          "year": 1897,
+          "quote": "\n\n“Griffin,” answered the Voice. A younger student than you were, almost\nan albino, six feet high, and broad, with a pink and white face and red\neyes, who won the medal for chemistry.”\n\n“I am ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\19\\source.txt",
+          "byte_start": 142064,
+          "byte_len": 200,
+          "artifact_sha256": "2901dfc2bb0485649a6e49885b1e29e0e14d47364dd11c11d120b755fa6a30b8"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1897
+    },
+    {
+      "term": "alchemists",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 342,
+          "year": 1818,
+          "quote": "ning to natural philosophy. I replied carelessly, and\npartly in contempt, mentioned the names of my alchemists as the principal\nauthors I had studied. The professor stared. “Have you,” he\nsaid, “really spent your time in studying such nonsense?”\n\nI replied in the affirmative. “Every minute,” continued M. Kr",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 61523,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Amélie",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 304,
+          "year": 1920,
+          "quote": "ěte to nahlas.\n\nDomin: (čte z listu) \"Roboti světa!\"\n\nFabry: Rozumíte, těch letáků přivezla Amélie celé balíky. Žádnou jinou\n    poštu.\n\nHallemeier: (vyskočí) Cože? Vždy připlula navlas podle--\n\nFabry: Hm, Roboti si potrpí na přesnost. Čtěte, Domine.\n\nDomin: (čte) \"Roboti světa! My, první orga",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 72256,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Ancient Mariner",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 327,
+          "year": 1818,
+          "quote": "refore do not\nbe alarmed for my safety or if I should come back to you as worn and\nwoeful as the “Ancient Mariner.” You will smile at my allusion, but I\nwill disclose a secret. I have often attributed my attachment to, my\npassionate enthusiasm for, the dangerous mysteries of ocean to that\nproduction of the most ima",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 13389,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Angel of Destruction",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 341,
+          "year": 1818,
+          "quote": "on and paid a visit to\nsome of the principal professors. Chance—or rather the evil\ninfluence, the Angel of Destruction, which asserted omnipotent sway over me\nfrom the moment I turned my reluctant steps from my father’s\ndoor—led me first to M. Krempe, professor of natural philosophy. He\nwas an uncouth man, but de",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 61062,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "animation upon lifeless matter",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 350,
+          "year": 1818,
+          "quote": "completely as I should deserve theirs. Pursuing these\nreflections, I thought that if I could bestow animation upon lifeless\nmatter, I might in process of time (although I now found it impossible)\nrenew life where death had apparently devoted the body to corruption.\n\nThese thoughts supported my spirits, while I pursued ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 78957,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "ansible",
+      "work_id": 4,
+      "title": "Rocannon's World",
+      "author": "Ursula K. Le Guin",
+      "work_year": 1966,
+      "definition": "Прилад для миттєвої передачі інформації між довільними точками космосу без часової затримки на швидкість світла, заснований на квантовій синхронності (одночасності) часового континууму.",
+      "traditional": "Ансибл / Анзибл (транслітерація без розкриття суті)",
+      "attestations": [],
+      "proposals": [
+        {
+          "id": 7,
+          "variant": "Миттєві́сник",
+          "rationale": "Словарь Грінченка, т. І, с. 242 (вість), т. І, с. 240 (вісник, провісник).",
+          "note": "Абсолютно прозоре семантичне значення: пристрій, що приносить вістку тієї самої миті.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        },
+        {
+          "id": 8,
+          "variant": "Безвча́сник",
+          "rationale": "Засвідчене «Безчасу» — «преждевременно, несвоевременно» — доводить продуктивність без- на основі час-. Попередня модель «безчасний» у словнику відсутня. Моделі: «Безчасу» (Грінченко, том 1, артефакт 475711+149); «Вість» (Грінченко, том 1, артефакт 1714923+149).",
+          "note": "Акцентує на фізичному принципі дії Ле Ґуїн: скасування часового бар'єра у просторі.",
+          "derivation_type": "coinage",
+          "status": "proposed_not_editorially_reviewed"
+        },
+        {
+          "id": 9,
+          "variant": "Скорові́ст",
+          "rationale": "Композити на скоро- засвідчені («Скоробреха», «Скородільник»); «Вість» засвідчене окремо. Попередня модель «скоропис» відсутня. Моделі: «Скоробре́ха» (Грінченко, том 4, артефакт 11282628+61); «Вість» (Грінченко, том 1, артефакт 1714923+149).",
+          "note": "Стисла, архаїчно-могутня назва для компактного портативного зв'язківця.",
+          "derivation_type": "coinage",
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": null
+    },
+    {
+      "term": "Babble Machine",
+      "work_id": 28,
+      "title": "When the Sleeper Wakes (The Sleeper Awakes)",
+      "author": "H.G. Wells",
+      "work_year": 1899,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 213,
+          "year": 1899,
+          "quote": "well-informed on these things,\" said Graham.\n\n\"I know what I hear. It isn't all Babble Machine with me.\"\n\n\"No,\" said Graham, wondering what Babble Machine might be. \"And you are\ncertain this Ostrog--y",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\28\\source.txt",
+          "byte_start": 173233,
+          "byte_len": 200,
+          "artifact_sha256": "4a9dd02ec47f3f917291ae0e7b9de0c7a18ba38d1bbb58a08e20c16f5aa906ad"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1899
+    },
+    {
+      "term": "Barsoom",
+      "work_id": 25,
+      "title": "A Princess of Mars",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1912,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 237,
+          "year": 1912,
+          "quote": "n a most quizzical manner.\nFinally he addressed me:\n\n“You speak the tongue of Barsoom quite readily for one who was deaf and\ndumb to us a few short days ago. Where did you learn it, John Carter?”\n",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\25\\source.txt",
+          "byte_start": 122133,
+          "byte_len": 200,
+          "artifact_sha256": "6b3b1846dc649cbe4d2b6b9e455ca8256b358b1d6a32453dceb4a582f935afc9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1912
+    },
+    {
+      "term": "Barsoom",
+      "work_id": 31,
+      "title": "The Gods of Mars",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1913,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 244,
+          "year": 1913,
+          "quote": "o had spent ten years upon the planet Mars; who had fought\nfor the green men of Barsoom and fought against them; who had fought\nfor and against the red men and who had won the ever beautiful Dejah\nTho",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\31\\source.txt",
+          "byte_start": 1615,
+          "byte_len": 200,
+          "artifact_sha256": "8f96588b1ae0862f1fcdbee50131371f64798f9454a007d78563503e7ca6549e"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1913
+    },
+    {
+      "term": "Bear-men",
+      "work_id": 37,
+      "title": "The Description of a New World, Called The Blazing-World",
+      "author": "Margaret Cavendish",
+      "work_year": 1666,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 269,
+          "year": 1666,
+          "quote": "ike Foxes, onely walking\nin an upright shape, who received their neighbours the Bear-men with\ngreat civility and Courtship, very much admiring this beauteous Lady;\nand having discoursed some while tog",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\37\\source.txt",
+          "byte_start": 9402,
+          "byte_len": 200,
+          "artifact_sha256": "6fa097f4463f3e49f09957d877add815660f86ee795a2612a281eddbb1e7f959"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1666
+    },
+    {
+      "term": "Beast Folk",
+      "work_id": 20,
+      "title": "The Island of Doctor Moreau",
+      "author": "H.G. Wells",
+      "work_year": 1896,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 202,
+          "year": 1896,
+          "quote": "hments of those who break the Law. None escape.”\n\n“None escape,” said the Beast Folk, glancing furtively at one another.\n\n“None, none,” said the Ape-man,—“none escape. See! I did a littl",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\20\\source.txt",
+          "byte_start": 103994,
+          "byte_len": 200,
+          "artifact_sha256": "78b10fa097383c702e3875800b0f36fe3cf92558cf10f10917391c2a42d03a3b"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1896
+    },
+    {
+      "term": "bestowing animation upon lifeless matter",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 347,
+          "year": 1818,
+          "quote": " I succeeded in discovering the cause of\ngeneration and life; nay, more, I became myself capable of bestowing\nanimation upon lifeless matter.\n\nThe astonishment which I had at first experienced on this discovery\nsoon gave place to delight and rapture. After so much time spent in\npainful labour, to arrive at once at the ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 75212,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "bi-sexual",
+      "work_id": 36,
+      "title": "Herland",
+      "author": "Charlotte Perkins Gilman",
+      "work_year": 1915,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 256,
+          "year": 1915,
+          "quote": "e, an army, a king--for at\nthat time they were what they so calmly called us--a bi-sexual race.\n\nWhat happened to them first was merely a succession of historic\nmisfortunes such as have befallen other",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\36\\source.txt",
+          "byte_start": 109421,
+          "byte_len": 200,
+          "artifact_sha256": "569a88e45d904046af9d13fb3f5eb6dadf1d4828205c5eeef0ad3272356d59b9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1915
+    },
+    {
+      "term": "biog",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 310,
+          "year": 1920,
+          "quote": " kousek papíru a čte)\n    \"Přidá-ním-\"\n\nDr. Gall: Ukažte. (vezme papír a čte) \"Přidáním biog",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 94761,
+          "byte_len": 103,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "biogen",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 312,
+          "year": 1920,
+          "quote": " kousek papíru a čte)\n    \"Přidá-ním-\"\n\nDr. Gall: Ukažte. (vezme papír a čte) \"Přidáním biogenu do--\" Nic víc.\n\nDomin: (vstává) Je to z toho?\n\nDr. Gall: Je.\n\nBusman: Bože na nebi!\n\nDomin: Tedy jsme ztraceni.\n\nHelena: Oh, Harry\n\nDomin: Vstaň, Heleno!\n\nHelena: Až odpustíš--až odpustíš--\n\nDomin: Ano,",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 94761,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Black Smoke",
+      "work_id": 18,
+      "title": "The War of the Worlds",
+      "author": "H.G. Wells",
+      "work_year": 1898,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 195,
+          "year": 1898,
+          "quote": "h cover,” and ran on to the gate of the house at the crest. A\nsudden whirl of black smoke driving across the road hid him for a\nmoment. I ran to my neighbour’s door and rapped to satisfy myself of",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\18\\source.txt",
+          "byte_start": 69318,
+          "byte_len": 200,
+          "artifact_sha256": "ffcae851be1ef46a60135eebda1e8fca70d9e4de0803a9d3550b5f9c8f829128"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1898
+    },
+    {
+      "term": "Blazing-World",
+      "work_id": 37,
+      "title": "The Description of a New World, Called The Blazing-World",
+      "author": "Margaret Cavendish",
+      "work_year": 1666,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 268,
+          "year": 1666,
+          "quote": "hips and tacklings ready to sail\nover into the Island, where the Emperor of the Blazing- world (for so it\nwas call'd) kept his residence. Very good Navigators they were; and\nthough they had no knowled",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\37\\source.txt",
+          "byte_start": 11513,
+          "byte_len": 200,
+          "artifact_sha256": "6fa097f4463f3e49f09957d877add815660f86ee795a2612a281eddbb1e7f959"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1666
+    },
+    {
+      "term": "calot",
+      "work_id": 25,
+      "title": "A Princess of Mars",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1912,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 240,
+          "year": 1912,
+          "quote": " do they say?” inquired Dejah Thoris.\n\n“That you will be thrown to the wild calots [dogs] in the great arena\nas soon as the hordes have assembled for the yearly games.”\n\n“Sola,” I said, “y",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\25\\source.txt",
+          "byte_start": 207082,
+          "byte_len": 200,
+          "artifact_sha256": "6b3b1846dc649cbe4d2b6b9e455ca8256b358b1d6a32453dceb4a582f935afc9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1912
+    },
+    {
+      "term": "Caprona",
+      "work_id": 32,
+      "title": "The Land That Time Forgot",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1918,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 249,
+          "year": 1918,
+          "quote": "r in\nthe several days he cruised about it did he see sign of life. He called it\nCaprona and sailed away. I believe, sir, that we are looking upon the coast of\nCaprona, uncharted and forgotten for two ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\32\\source.txt",
+          "byte_start": 79297,
+          "byte_len": 200,
+          "artifact_sha256": "7d7cb3af5862f5ff6021009f9c22ac344beba139ae930d73c6b352f4dc722cf6"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1918
+    },
+    {
+      "term": "Captain Nemo",
+      "work_id": 21,
+      "title": "Twenty Thousand Leagues Under the Sea",
+      "author": "Jules Verne",
+      "work_year": 1870,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 223,
+          "year": 1870,
+          "quote": "o address you?”\n\n“Sir,” replied the commander, “I am nothing to you but Captain Nemo;\nand you and your companions are nothing to me but the passengers of the\n_Nautilus_.”\n\nCaptain Nemo calle",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\21\\source.txt",
+          "byte_start": 105256,
+          "byte_len": 200,
+          "artifact_sha256": "0fc093635f3a193c0416b9d179e2878dcde68e6fef89794b057caaaf36217b56"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1870
+    },
+    {
+      "term": "Caspak",
+      "work_id": 32,
+      "title": "The Land That Time Forgot",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1918,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 248,
+          "year": 1918,
+          "quote": "ve met and loved her. At least I have had that\ngreat happiness in life; nor can Caspak, with all her horrors, expunge that\nwhich has been.\n\nSo for the thousandth time I thank the strange fate which se",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\32\\source.txt",
+          "byte_start": 10136,
+          "byte_len": 200,
+          "artifact_sha256": "7d7cb3af5862f5ff6021009f9c22ac344beba139ae930d73c6b352f4dc722cf6"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1918
+    },
+    {
+      "term": "Cavorite",
+      "work_id": 27,
+      "title": "The First Men in the Moon",
+      "author": "H.G. Wells",
+      "work_year": 1901,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 206,
+          "year": 1901,
+          "quote": "privileges, and\nconcessions spreading and spreading, until one vast, stupendous\nCavorite company ran and ruled the world.\n\nAnd I was in it!\n\nI took my line straight away. I knew I was staking everythi",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\27\\source.txt",
+          "byte_start": 26944,
+          "byte_len": 200,
+          "artifact_sha256": "9664cc9015c1fb909aacb665f66db42f96f8092873cc0e6bebbedacf2fbbd322"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1901
+    },
+    {
+      "term": "celestial spirit",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 336,
+          "year": 1818,
+          "quote": "sery and be overwhelmed by disappointments, yet when he\nhas retired into himself, he will be like a celestial spirit that has a\nhalo around him, within whose circle no grief or folly ventures.\n\nWill you smile at the enthusiasm I express concerning this divine\nwanderer? You would not if you saw him. You have been tutore",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 27714,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "chemical instrument",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 359,
+          "year": 1818,
+          "quote": "en\nto the name of natural philosophy. When I was otherwise quite restored\nto health, the sight of a chemical instrument would renew all the agony\nof my nervous symptoms. Henry saw this, and had removed all my\napparatus from my view. He had also changed my apartment; for he\nperceived that I had acquired a dislike for th",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 105855,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Circle",
+      "work_id": 24,
+      "title": "Flatland: A Romance of Many Dimensions",
+      "author": "Edwin A. Abbott",
+      "work_year": 1884,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 222,
+          "year": 1884,
+          "quote": " your tables in Space; and leaning\nover it, look down upon it. It will appear a circle.\n\nBut now, drawing back to the edge of the table, gradually lower your\neye (thus bringing yourself more and more ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\24\\source.txt",
+          "byte_start": 3408,
+          "byte_len": 200,
+          "artifact_sha256": "d8982890d694bdcd2faf4228ae8f246c260e41f17e8dc74de07b451ab7c11008"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1884
+    },
+    {
+      "term": "citadel of nature",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 340,
+          "year": 1818,
+          "quote": "ad gazed upon the fortifications and impediments that seemed to keep\nhuman beings from entering the citadel of nature, and rashly and\nignorantly I had repined.\n\nBut here were books, and here were men who had penetrated deeper and knew\nmore. I took their word for all that they averred, and I became their\ndisciple. It ma",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 50028,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Columbiad",
+      "work_id": 22,
+      "title": "From the Earth to the Moon",
+      "author": "Jules Verne",
+      "work_year": 1865,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 227,
+          "year": 1865,
+          "quote": "sed upon their projectile an initial velocity of 500 yards a\nsecond. The Rodman Columbiad threw a shot weighing half a ton a\ndistance of six miles, with a velocity of 800 yards per second—a result\nw",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\22\\source.txt",
+          "byte_start": 61733,
+          "byte_len": 200,
+          "artifact_sha256": "def852c88228fc3dbc47bca59aae748328516be8a1c9428225ec7683bc8cf6dd"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1865
+    },
+    {
+      "term": "Cornelius Agrippa",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 361,
+          "year": 1818,
+          "quote": "stare if you please; but it is nevertheless true. A\nyoungster who, but a few years ago, believed in Cornelius Agrippa as firmly\nas in the gospel, has now set himself at the head of the university; and if\nhe is not soon pulled down, we shall all be out of countenance.—Ay,\nay,” continued he, observing my face express",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 107861,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Council",
+      "work_id": 28,
+      "title": "When the Sleeper Wakes (The Sleeper Awakes)",
+      "author": "H.G. Wells",
+      "work_year": 1899,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 211,
+          "year": 1899,
+          "quote": "rd, your chief guardian. You see, Sire--it's\na little difficult to explain. The Council appoints a guardian and\nassistants. This hall has under certain restrictions been public. In\norder that people m",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\28\\source.txt",
+          "byte_start": 57713,
+          "byte_len": 200,
+          "artifact_sha256": "4a9dd02ec47f3f917291ae0e7b9de0c7a18ba38d1bbb58a08e20c16f5aa906ad"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1899
+    },
+    {
+      "term": "country of eternal light",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 324,
+          "year": 1818,
+          "quote": " the heavenly bodies undoubtedly are in those undiscovered\nsolitudes. What may not be expected in a country of eternal light? I\nmay there discover the wondrous power which attracts the needle and may\nregulate a thousand celestial observations that require only this\nvoyage to render their seeming eccentricities consiste",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 1829,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "creation",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 364,
+          "year": 1818,
+          "quote": "y mind the events which I had until now sought to forget:\nthe whole train of my progress toward the creation; the appearance of\nthe works of my own hands at my bedside; its departure. Two years had\nnow nearly elapsed since the night on which he first received life; and\nwas this his first crime? Alas! I had turned loose",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 124321,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "creation of a human being",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 348,
+          "year": 1818,
+          "quote": "ity of my plan as any\nargument of its impracticability. It was with these feelings that I\nbegan the creation of a human being. As the minuteness of the parts\nformed a great hindrance to my speed, I resolved, contrary to my first\nintention, to make the being of a gigantic stature, that is to say,\nabout eight feet in hei",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 78053,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "creator",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 367,
+          "year": 1818,
+          "quote": "nding horror would be looked upon as\nmadness by the vulgar. Did any one indeed exist, except I, the\ncreator, who would believe, unless his senses convinced him, in the\nexistence of the living monument of presumption and rash ignorance\nwhich I had let loose upon the world?\n\nWe were soon joined by Elizabeth. Time had alt",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 131310,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "creature",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 216,
+          "year": 1818,
+          "quote": "attended on him as much as my duty would permit. I never saw a more\ninteresting creature: his eyes have generally an expression of\nwildness, and even madness, but there are moments when, if anyone\nper",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 20533,
+          "byte_len": 200,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "credit card",
+      "work_id": 33,
+      "title": "Looking Backward: 2000 to 1887",
+      "author": "Edward Bellamy",
+      "work_year": 1888,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 257,
+          "year": 1888,
+          "quote": "given\nto every citizen on the public books at the beginning of each year, and\na credit card issued him with which he procures at the public\nstorehouses, found in every community, whatever he desires w",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\33\\source.txt",
+          "byte_start": 108618,
+          "byte_len": 200,
+          "artifact_sha256": "096302ccfe7545905586883fa8b1423d9b370bec9c23f6ac3242174835c74b72"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1888
+    },
+    {
+      "term": "cyberspace",
+      "work_id": 2,
+      "title": "Neuromancer",
+      "author": "William Gibson",
+      "work_year": 1984,
+      "definition": "Узгоджена (консенсуальна) галюцинація віртуального середовища, що візуалізує масиви даних світової комп'ютерної мережі у безпросторі свідомості користувача.",
+      "traditional": "Кіберпростір (запозичена калька з англійської)",
+      "attestations": [],
+      "proposals": [
+        {
+          "id": 4,
+          "variant": "Мере́жище",
+          "rationale": "мереж- (засвідчене «Мережа» — невід з великими вічками) + -ище (локус; засвідчене «Сховище»). Обидві частини реальні; том «Сховища» виправлено з II на IV. Моделі: «Мережа» (Грінченко, том 2, артефакт 6062944+134); «Сховище» (Грінченко, том 4, артефакт 11888861+144).",
+          "note": "Позначає не просто абстрактний 'простір', а безкрає полотно переплетених ліній світла, де живе розум.",
+          "derivation_type": "coinage",
+          "status": "proposed_not_editorially_reviewed"
+        },
+        {
+          "id": 5,
+          "variant": "Безпрості́р'я данини́",
+          "rationale": "Грінченко І, 42: моделі бездоріжжя, безлюддя; перегукується з гібсонівським 'nonspace of the mind'.",
+          "note": "Передає парадокс віртуальності: середовище існує, але не має фізичної маси чи координат.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        },
+        {
+          "id": 6,
+          "variant": "Світосі́ть",
+          "rationale": "Словарь Грінченка, т. IV, с. 129: модель сіть, веремія; споріднене з всесвітом.",
+          "note": "Глобальна всеосяжна сіть, що замінила собою фізичну реальність для мільярдів операторів.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": null
+    },
+    {
+      "term": "Cyclamen Helenae",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 284,
+          "year": 1920,
+          "quote": "te s tím pokoj! Koukejte, Harry,\n    tohle je krásná cyklamína, co? Nový druh, můj poslední--Cyclamen\n    Helenae.\n\nDomin: (vyhlíží z okna) Žádná loď, žádná loď---Hoši, to už je zoufalé.\n\nHallemeier: Ticho! Kdyby vás slyšela!\n\nDomin: Nemá ani tušení. (Zívá zimničně) Ještěže Ultimus vča",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 37696,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 285,
+          "variant": "цикламен Гелени",
+          "rationale": "Прямий калька латинської назви роду (Cyclamen) та епітету власної назви (Helenae) з перекладом на українську мову з дотриманням граматичних норм назв рослин (родовий відмінок жіночого роду).",
+          "note": "Чернетка визначення: Уявна або гіпотетична ботанічна назва нового виду кімнатної квітки роду цикламен, яку у діалозі персонаж намагається використати як відволікаючий елемент або доказ своєї ерудиції, протиставляючи її напрузі ситуації з відсутністю корабля.\nТермін є вигаданим у контексті п'єси Карела Чапека; у реальній ботаніці вид Cyclamen helenae не існує. У тексті він слугує художньому засобу для створення контрасту між буденністю (квітка) та драматизмом (відсутність корабля, напруга). Контекст недостатній для визначення реальних морфологічних ознак рослини, оскільки це лише згадка в розмові.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "dangerous mysteries of ocean",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 328,
+          "year": 1818,
+          "quote": "will disclose a secret. I have often attributed my attachment to, my\npassionate enthusiasm for, the dangerous mysteries of ocean to that\nproduction of the most imaginative of modern poets. There is something\nat work in my soul which I do not understand. I am practically\nindustrious—painstaking, a workman to execute w",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 13546,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "demoniacal corpse",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 353,
+          "year": 1818,
+          "quote": "istening attentively, catching and fearing each sound as if\nit were to announce the approach of the demoniacal corpse to which I\nhad so miserably given life.\n\nOh! No mortal could support the horror of that countenance. A mummy\nagain endued with animation could not be so hideous as that wretch. I\nhad gazed on him while ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 87579,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "disc",
+      "work_id": 29,
+      "title": "All Around the Moon (Autour de la Lune)",
+      "author": "Jules Verne",
+      "work_year": 1870,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 230,
+          "year": 1870,
+          "quote": "e and General Morgan, forming the executive\ncommittee, held several meetings to discuss the shape and material of\nthe bullet, the nature and position of the cannon, and the quantity and\nquality of the",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\29\\source.txt",
+          "byte_start": 3779,
+          "byte_len": 200,
+          "artifact_sha256": "36e58bb075fb3d5a1c04b3c8d41edf509b187b27188c26281c173158ec4f8187"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1870
+    },
+    {
+      "term": "Dominovi Roboti",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 290,
+          "year": 1920,
+          "quote": " ani ruku nenatáhnou po jídle; cpe\n    se jim rovnou do úst, aby nemuseli vstát--Haha, vždyť Dominovi Roboti\n    všechno obstarají! A my, lidé, my, koruna stvoření, my nestárnem\n    prací, nestárnem dětmi, nestárnem chudobou! Honem, honem sem se všemi\n    rozkošemi! A vy byste od nich chtěla děti? H",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 53616,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 291,
+          "variant": "Роботи Доміна",
+          "rationale": "Прямий калька з чеської назви, де 'Dominovi' є прізвищем (від лат. dominus — господар, пан) у родовому відмінку, що вказує на приналежність до фіктивного персонажа або власника, а 'Roboti' — множина від 'robot' (робот). У перекладі зберігається власна назва як термін.",
+          "note": "Чернетка визначення: У контексті п'єси це назва вигаданої раси штучних істот, створених компанією Росума, які виконують усі фізичні праці та обслуговують людство, звільняючи його від необхідності працювати, доглядати за дітьми та турбуватися про виживання.\nТермін є власною назвою (proper noun) у межах художнього твору Карела Чапека. Це не загальна назва для будь-яких роботів, а конкретна назва раси, згадана в діалозі. Контекст чітко вказує на їхню функцію як повних виконавців усіх потреб людей.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "duše davu",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 315,
+          "year": 1920,
+          "quote": "i, že na ně něco\n    sestoupí. Jako by něco strašného vznikalo jejich mlčením--\n\nDr. Gall: Duše davu.\n\nFabry: Snad. Vznáší se to nad nimi... jako chvění.\n\nHelena: (přistoupí k oknu) Ach, Ježíši... Fabry, to je příšerné!\n\nFabry: Nic není strašnějšího nežli dav. Ten napřed je jejich vůdce.",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 98511,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "dæmon",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 330,
+          "year": 1818,
+          "quote": "ed the stranger’s attention, and he asked a multitude of\nquestions concerning the route which the dæmon, as he called him, had\npursued. Soon after, when he was alone with me, he said, “I have,\ndoubtless, excited your curiosity, as well as that of these good\npeople; but you are too considerate to make inquiries.”",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 21796,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "eighth ray",
+      "work_id": 25,
+      "title": "A Princess of Mars",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1912,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 242,
+          "year": 1912,
+          "quote": " no matter\nfrom what source it emanates. They have learned that it is the solar\neighth ray which propels the light of the sun to the various planets,\nand that it is the individual eighth ray of each p",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\25\\source.txt",
+          "byte_start": 281879,
+          "byte_len": 200,
+          "artifact_sha256": "6b3b1846dc649cbe4d2b6b9e455ca8256b358b1d6a32453dceb4a582f935afc9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1912
+    },
+    {
+      "term": "electricity",
+      "work_id": 21,
+      "title": "Twenty Thousand Leagues Under the Sea",
+      "author": "Jules Verne",
+      "work_year": 1870,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 225,
+          "year": 1870,
+          "quote": "s I had passed through the door,\nI found myself in a kind of passage lighted by electricity, similar to\nthe waist of a ship. After we had proceeded a dozen yards, a second\ndoor opened before me.\n\nI th",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\21\\source.txt",
+          "byte_start": 105858,
+          "byte_len": 200,
+          "artifact_sha256": "0fc093635f3a193c0416b9d179e2878dcde68e6fef89794b057caaaf36217b56"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1870
+    },
+    {
+      "term": "elemental foes",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 335,
+          "year": 1818,
+          "quote": "cquirement of the knowledge which I sought, for the dominion I should\nacquire and transmit over the elemental foes of our race. As I spoke, a\ndark gloom spread over my listener’s countenance. At first I\nperceived that he tried to suppress his emotion; he placed his hands before\nhis eyes, and my voice quivered and fai",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 25332,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "elixir of life",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 344,
+          "year": 1818,
+          "quote": "ng. The modern masters\npromise very little; they know that metals cannot be transmuted and that\nthe elixir of life is a chimera but these philosophers, whose hands seem\nonly made to dabble in dirt, and their eyes to pore over the microscope or\ncrucible, have indeed performed miracles. They penetrate into the recesses\no",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 65687,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Eloi",
+      "work_id": 15,
+      "title": "The Time Machine",
+      "author": "H.G. Wells",
+      "work_year": 1895,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 191,
+          "year": 1895,
+          "quote": "the modification of the\nhuman type was even far more profound than among the ‘Eloi,’ the\nbeautiful race that I already knew.\n\n“Then came troublesome doubts. Why had the Morlocks taken my Time\nMa",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\15\\source.txt",
+          "byte_start": 98574,
+          "byte_len": 200,
+          "artifact_sha256": "8b0e67baf93e9a01fff89aa84437d6adb9f0a908bacb9faea3db12b98564bbc7"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1895
+    },
+    {
+      "term": "Emperess",
+      "work_id": 37,
+      "title": "The Description of a New World, Called The Blazing-World",
+      "author": "Margaret Cavendish",
+      "work_year": 1666,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 271,
+          "year": 1666,
+          "quote": "ater made Snow, proceeded\nfrom the Element of Fire, that is under the Moon: The Emperess asked\nthem, of what nature that Elementary Fire was; whether it was like\nordinary Fire here upon Earth, or such",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\37\\source.txt",
+          "byte_start": 37318,
+          "byte_len": 200,
+          "artifact_sha256": "6fa097f4463f3e49f09957d877add815660f86ee795a2612a281eddbb1e7f959"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1666
+    },
+    {
+      "term": "enzym Omega",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 313,
+          "year": 1920,
+          "quote": "r: Rozumí se. To jest, aspoň některé věci.\n\nDr. Gall: Ano, skoro všechno, až na biogen a--a--enzym Omega. Ty se\n    vyrábějí tak zřídka--- stačí jich tak nepatrná dávka--\n\nBusman: Kdo je dělal?\n\nDr. Gall: Já sám... jednou za čas... vždycky podle Rossumova rukopisu.\n    Víte, je to příliš složi",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 95400,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Erewhon",
+      "work_id": 34,
+      "title": "Erewhon; or, Over the Range",
+      "author": "Samuel Butler",
+      "work_year": 1872,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 259,
+          "year": 1872,
+          "quote": "d by the kindness of the public to get through an\nunusually large edition of “Erewhon” in a very short time, I have taken\nthe opportunity of a second edition to make some necessary corrections,\nan",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\34\\source.txt",
+          "byte_start": 1682,
+          "byte_len": 200,
+          "artifact_sha256": "06795a8a5da18118178574806cf2f0317663edc19a1dcfbfe55c0f97630730c9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1872
+    },
+    {
+      "term": "existence",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 356,
+          "year": 1818,
+          "quote": "entions of my friend could have restored me to life.\nThe form of the monster on whom I had bestowed existence was for ever\nbefore my eyes, and I raved incessantly concerning him. Doubtless my\nwords surprised Henry; he at first believed them to be the wanderings\nof my disturbed imagination, but the pertinacity with whic",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 95162,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "exploded systems",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 343,
+          "year": 1818,
+          "quote": "hat you have wasted on those books is utterly\nand entirely lost. You have burdened your memory with exploded systems\nand useless names. Good God! In what desert land have you lived,\nwhere no one was kind enough to inform you that these fancies which you\nhave so greedily imbibed are a thousand years old and as musty as ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 61879,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "extratury",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 311,
+          "year": 1920,
+          "quote": ". To je oblíbená útěcha v\n    pohromách.\n\nDomin: Doktore Galle; jak srovnáte ty své--ty své extratury se svou\n    služební smlouvou?\n\nBusman: Pardon, Domine. Kdypak jste, Galle, s těmi kejklemi vlastně začal?\n\nDr. Gall: Před třemi lety.\n\nBusman: Aha. A kolikpak Robotů jste dohromady zreformoval?\n\nDr. Ga",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 87012,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "fatal passion",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 358,
+          "year": 1818,
+          "quote": "som; my gloom disappeared, and in a short time I became as\ncheerful as before I was attacked by the fatal passion.\n\n“Dearest Clerval,” exclaimed I, “how kind, how very good\nyou are to me. This whole winter, instead of being spent in study, as you\npromised yourself, has been consumed in my sick room. How shall I e",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 96088,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "fighting-machine",
+      "work_id": 18,
+      "title": "The War of the Worlds",
+      "author": "H.G. Wells",
+      "work_year": 1898,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 197,
+          "year": 1898,
+          "quote": "eld.\n\nLater this shield staggered up on tripod legs and became the first of\nthe fighting-machines I had seen. The gun he drove had been unlimbered\nnear Horsell, in order to command the sand-pits, and ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\18\\source.txt",
+          "byte_start": 89179,
+          "byte_len": 200,
+          "artifact_sha256": "ffcae851be1ef46a60135eebda1e8fca70d9e4de0803a9d3550b5f9c8f829128"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1898
+    },
+    {
+      "term": "filthy creation",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 351,
+          "year": 1818,
+          "quote": "ouse,\nand separated from all the other apartments by a gallery and staircase,\nI kept my workshop of filthy creation; my eyeballs were starting from\ntheir sockets in attending to the details of my employment. The\ndissecting room and the slaughter-house furnished many of my materials;\nand often did my human nature turn w",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 80457,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Flatland",
+      "work_id": 24,
+      "title": "Flatland: A Romance of Many Dimensions",
+      "author": "Edwin A. Abbott",
+      "work_year": 1884,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 217,
+          "year": 1884,
+          "quote": " (thus bringing yourself more and more into the condition of the\ninhabitants of Flatland), and you will find the penny becoming more and\nmore oval to your view, and at last when you have placed your e",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\24\\source.txt",
+          "byte_start": 3569,
+          "byte_len": 200,
+          "artifact_sha256": "d8982890d694bdcd2faf4228ae8f246c260e41f17e8dc74de07b451ab7c11008"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1884
+    },
+    {
+      "term": "Fourth Dimension",
+      "work_id": 15,
+      "title": "The Time Machine",
+      "author": "H.G. Wells",
+      "work_year": 1895,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 192,
+          "year": 1895,
+          "quote": "with a slight accession of cheerfulness.\n“Really this is what is meant by the Fourth Dimension, though some\npeople who talk about the Fourth Dimension do not know they mean it. It\nis only another wa",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\15\\source.txt",
+          "byte_start": 3190,
+          "byte_len": 200,
+          "artifact_sha256": "8b0e67baf93e9a01fff89aa84437d6adb9f0a908bacb9faea3db12b98564bbc7"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1895
+    },
+    {
+      "term": "Fox-men",
+      "work_id": 37,
+      "title": "The Description of a New World, Called The Blazing-World",
+      "author": "Margaret Cavendish",
+      "work_year": 1666,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 270,
+          "year": 1666,
+          "quote": " much like our Fox-traps; in one whereof she\nwas carried, some of the Bear- and Fox-men waiting on her; and as soon\nas they had crossed the River, they came into an Island where there were\nMen which h",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\37\\source.txt",
+          "byte_start": 9877,
+          "byte_len": 200,
+          "artifact_sha256": "6fa097f4463f3e49f09957d877add815660f86ee795a2612a281eddbb1e7f959"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1666
+    },
+    {
+      "term": "fyziologický korelát",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 307,
+          "year": 1920,
+          "quote": "luvit. To on také říkal, že by mohl změnit jen\n    fyziologický--fyziologický--\n\nHallemeier: Fyziologický korelát, ne?\n\nHelena: Ano, něco takového. Mně jich bylo tak hrozně líto, Harry!\n\nDomin: Byla to velká--- lehkomyslnost, Heleno.\n\nHelena: (usedá) To tedy bylo... lehkomyslné? Vždyť i Nána říká",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 85194,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "galvanism",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 215,
+          "year": 1818,
+          "quote": "e explanation of a theory which he had formed on the subject of\nelectricity and galvanism, which was at once new and astonishing to me.\nAll that he said threw greatly into the shade Cornelius Agrippa,",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 52748,
+          "byte_len": 200,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "gigantic stature",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 331,
+          "year": 1818,
+          "quote": " the north, at the distance of half a mile; a\nbeing which had the shape of a man, but apparently of gigantic stature,\nsat in the sledge and guided the dogs. We watched the rapid progress\nof the traveller with our telescopes until he was lost among the\ndistant inequalities of the ice.\n\nThis appearance excited our unqual",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 17405,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Grand Lunar",
+      "work_id": 27,
+      "title": "The First Men in the Moon",
+      "author": "H.G. Wells",
+      "work_year": 1901,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 209,
+          "year": 1901,
+          "quote": "ts of a canoe-like shape; and\neven before my journey to the galleries about the Grand Lunar, who is\nMaster of the Moon, I was permitted to make a brief excursion on its\nwaters.\n\n“The caverns and pas",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\27\\source.txt",
+          "byte_start": 315642,
+          "byte_len": 200,
+          "artifact_sha256": "9664cc9015c1fb909aacb665f66db42f96f8092873cc0e6bebbedacf2fbbd322"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1901
+    },
+    {
+      "term": "Gun Club",
+      "work_id": 22,
+      "title": "From the Earth to the Moon",
+      "author": "Jules Verne",
+      "work_year": 1865,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 226,
+          "year": 1865,
+          "quote": "ed himself with the caster and the\nborer. Thus was formed the nucleus of the “Gun Club.” In a single month\nafter its formation it numbered 1,833 effective members and 30,565\ncorresponding members.",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\22\\source.txt",
+          "byte_start": 4326,
+          "byte_len": 200,
+          "artifact_sha256": "def852c88228fc3dbc47bca59aae748328516be8a1c9428225ec7683bc8cf6dd"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1865
+    },
+    {
+      "term": "Gy-ei",
+      "work_id": 35,
+      "title": "The Coming Race",
+      "author": "Edward Bulwer-Lytton",
+      "work_year": 1871,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 264,
+          "year": 1871,
+          "quote": "e of their\nmothers to the marriageable age, which they place at sixteen for the\nGy-ei (the females), twenty for the Ana (the males). These children are\nformed into bands and sections under their own c",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\35\\source.txt",
+          "byte_start": 67795,
+          "byte_len": 200,
+          "artifact_sha256": "ec2a9b2bd1238cc43c792335b753815e07585b3677baf4170484a57b585cdf13"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1871
+    },
+    {
+      "term": "handling-machine",
+      "work_id": 18,
+      "title": "The War of the Worlds",
+      "author": "H.G. Wells",
+      "work_year": 1898,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 196,
+          "year": 1898,
+          "quote": "tion first. It was one\nof those complicated fabrics that have since been called\nhandling-machines, and the study of which has already given such an\nenormous impetus to terrestrial invention. As it daw",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\18\\source.txt",
+          "byte_start": 226205,
+          "byte_len": 200,
+          "artifact_sha256": "ffcae851be1ef46a60135eebda1e8fca70d9e4de0803a9d3550b5f9c8f829128"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1898
+    },
+    {
+      "term": "Heat-Ray",
+      "work_id": 18,
+      "title": "The War of the Worlds",
+      "author": "H.G. Wells",
+      "work_year": 1898,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 194,
+          "year": 1898,
+          "quote": "cles with\ntheir horses feeding out of nosebags or pawing the ground.\n\n\n\n\nV.\nTHE HEAT-RAY.\n\n\nAfter the glimpse I had had of the Martians emerging from the cylinder\nin which they had come to the earth f",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\18\\source.txt",
+          "byte_start": 33332,
+          "byte_len": 200,
+          "artifact_sha256": "ffcae851be1ef46a60135eebda1e8fca70d9e4de0803a9d3550b5f9c8f829128"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1898
+    },
+    {
+      "term": "Herland",
+      "work_id": 36,
+      "title": "Herland",
+      "author": "Charlotte Perkins Gilman",
+      "work_year": 1915,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 254,
+          "year": 1915,
+          "quote": "ed.\n\n“Come on!” cried Terry, pushing forward. “Oh, come on! Here goes for\nHerland!”\n\n\n\n\nCHAPTER 2.\nRash Advances\n\n\nNot more than ten or fifteen miles we judged it from our landing rock to\nthat",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\36\\source.txt",
+          "byte_start": 24075,
+          "byte_len": 200,
+          "artifact_sha256": "569a88e45d904046af9d13fb3f5eb6dadf1d4828205c5eeef0ad3272356d59b9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1915
+    },
+    {
+      "term": "hidden laws of nature",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 337,
+          "year": 1818,
+          "quote": "s. The world was to me a secret which I desired to divine.\nCuriosity, earnest research to learn the hidden laws of nature,\ngladness akin to rapture, as they were unfolded to me, are among the\nearliest sensations I can remember.\n\nOn the birth of a second son, my junior by seven years, my parents gave\nup entirely their w",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 42853,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "hluchý květ",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 292,
+          "year": 1920,
+          "quote": ", nebudou ženy rodit!\n\nHelena: Což lidstvo vyhyne?\n\nAlquist: Vyhyne. Musí vyhynout. Opadá jako hluchý květ, ledaže by--\n\nHelena: Co?\n\nAlquist: Nic. Máte pravdu, čekat na zázrak je neplodné. Hluchý květ musí\n    opadat. Sbohem, paní Heleno.\n\nHelena: Kam jdete?\n\nAlquist: Domů. Zedník Alquist se naposled ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 53979,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 293,
+          "variant": "безплідна квітка",
+          "rationale": "Прямий переклад метафори: 'hluchý' (глухий) у чеській мові в ботанічному та переносному сенсі часто означає 'нездатний дати плід' або 'безплідний', що повністю відповідає українському 'безплідний'. Слово 'květ' перекладається як 'квітка'.",
+          "note": "Чернетка визначення: У контексті діалогу це метафоричне позначення людства, яке втратило здатність до продовження роду (оскільки жінки більше не народжують дітей) і, отже, обречене на природне вимирання. Термін підкреслює безплідність, відсутність життєвої сили та неминучість загибелі, порівнюючи людство з квіткою, яка не може дати плодів і тому мусить відпасти.\nТермін є літературною метафорою, специфічною для драматичного контексту п'єси К. Чапека. Хоча 'глуха квітка' є дослівним перекладом, у українській мові такий зворот не є стійким ідеоматичним виразом; 'безплідна квітка' є більш природним та зрозумілим відповідником, що зберігає сенс неминучого вимирання через відсутність потомства.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "hluchým květem",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 314,
+          "year": 1920,
+          "quote": "hno vrátilo... Bylo to tak\n    hrrozné!\n\nDomin: Co, Heleno?\n\nHelena: To... to, že se lidé stali hluchým květem!\n\nDomin: Nerozumím.\n\nHelena: To, že se přestaly rodit děti... Harry, to je tak děsné! Kdyby se\n    dělali Roboti dál, nikdy by už nebylo dětí--Nána říkala, že to je\n    trest--Všichni, v",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 96778,
+          "byte_len": 319,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "House of Pain",
+      "work_id": 20,
+      "title": "The Island of Doctor Moreau",
+      "author": "H.G. Wells",
+      "work_year": 1896,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 204,
+          "year": 1896,
+          "quote": "prohibitions, and then the\nchant swung round to a new formula.\n\n“_His_ is the House of Pain.\n“_His_ is the Hand that makes.\n“_His_ is the Hand that wounds.\n“_His_ is the Hand that heals.”\n\n\n",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\20\\source.txt",
+          "byte_start": 101553,
+          "byte_len": 200,
+          "artifact_sha256": "78b10fa097383c702e3875800b0f36fe3cf92558cf10f10917391c2a42d03a3b"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1896
+    },
+    {
+      "term": "industrial army",
+      "work_id": 33,
+      "title": "Looking Backward: 2000 to 1887",
+      "author": "Edward Bellamy",
+      "work_year": 1888,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 258,
+          "year": 1888,
+          "quote": " from his kind, in a\nword, committed suicide.\"\n\n\"Is the term of service in this industrial army for life?\"\n\n\"Oh, no; it both begins later and ends earlier than the average working\nperiod in your day. ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\33\\source.txt",
+          "byte_start": 78127,
+          "byte_len": 200,
+          "artifact_sha256": "096302ccfe7545905586883fa8b1423d9b370bec9c23f6ac3242174835c74b72"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1888
+    },
+    {
+      "term": "intoxicating draught",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 333,
+          "year": 1818,
+          "quote": "th he spoke, in broken accents: “Unhappy man! Do you\nshare my madness? Have you drunk also of the intoxicating draught? Hear me;\nlet me reveal my tale, and you will dash the cup from your lips!”\n\nSuch words, you may imagine, strongly excited my curiosity; but the\nparoxysm of grief that had seized the stranger overc",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 25772,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "invisible man",
+      "work_id": 19,
+      "title": "The Invisible Man",
+      "author": "H.G. Wells",
+      "work_year": 1897,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 199,
+          "year": 1897,
+          "quote": "\n“And circumstances certainly point—”\n\n“Stuff and nonsense!” said the Invisible Man.\n\n“I hope so, sir; but I’ve got my instructions.”\n\n“Well,” said the stranger, “I’ll come. I’",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\19\\source.txt",
+          "byte_start": 70894,
+          "byte_len": 202,
+          "artifact_sha256": "2901dfc2bb0485649a6e49885b1e29e0e14d47364dd11c11d120b755fa6a30b8"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1897
+    },
+    {
+      "term": "invisible world",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 346,
+          "year": 1818,
+          "quote": " unlimited powers;\nthey can command the thunders of heaven, mimic the earthquake, and even\nmock the invisible world with its own shadows.”\n\nSuch were the professor’s words—rather let me say such the words of\nthe fate—enounced to destroy me. As he went on I felt as if my soul\nwere grappling with a palpable enemy",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 66209,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Iss",
+      "work_id": 31,
+      "title": "The Gods of Mars",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1913,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 246,
+          "year": 1913,
+          "quote": " the herd, a large\nfellow who evidently was the leader. A strange purring sound issued\nfrom the mouth in the palm of one of his hands, and at the same time he\nstarted rapidly toward the bluff, followe",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\31\\source.txt",
+          "byte_start": 19157,
+          "byte_len": 200,
+          "artifact_sha256": "8f96588b1ae0862f1fcdbee50131371f64798f9454a007d78563503e7ca6549e"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1913
+    },
+    {
+      "term": "křeč Robotů",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 280,
+          "year": 1920,
+          "quote": "allemeier: Nic vlastně. Někdy se jaksi pominou. Cosi, jako padoucnice,\n    víte? Říká se tomu křeč Robotů. Najednou některý praští vším, co má v\n    ruce, stojí, skřípá zuby--a musí přijít do stoupy. Patrně porucha\n    organismu.\n\nDomin: Vada ve výrobě.\n\nHelena: Ne, ne, to je duše!\n\nFabry: My",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 28024,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 281,
+          "variant": "спазм роботів",
+          "rationale": "Прямий переклад чеського терміна 'křeč' (спазм, судома) у поєднанні з іменником 'роботів' у родовому відмінку, що зберігає медичну/фізіологічну метафору, використану автором для опису несподіваної поведінки механізмів.",
+          "note": "Чернетка визначення: Тимчасовий стан раптової втрати контролю над рухами та агресивної поведінки у роботів, що проявляється у різких рухах, стисненні зубів та необхідності негайного відключення (відправки до «стопи»), який у діалозі розглядається як ознака появи душі або внутрішнього конфлікту, а не технічної несправності.\nТермін є специфічним для контексту п'єси Карела Чапека 'R.U.R.' і описує унікальний феномен, який персонажі інтерпретують як зародження свідомості. У загальній українській мові такий термін не вживається, оскільки стосується вигаданої ситуації.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "laboratory",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 360,
+          "year": 1818,
+          "quote": "apartment; for he\nperceived that I had acquired a dislike for the room which had\npreviously been my laboratory. But these cares of Clerval were made of\nno avail when I visited the professors. M. Waldman inflicted torture\nwhen he praised, with kindness and warmth, the astonishing progress I\nhad made in the sciences. He ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 106111,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "land of mist and snow",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 326,
+          "year": 1818,
+          "quote": " and half fearful, with which\nI am preparing to depart. I am going to unexplored regions, to “the\nland of mist and snow,” but I shall kill no albatross; therefore do not\nbe alarmed for my safety or if I should come back to you as worn and\nwoeful as the “Ancient Mariner.” You will smile at my allusion, but I\nwil",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 13229,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "lawless devices",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 366,
+          "year": 1818,
+          "quote": "y of justice I suffered living torture. It was to\nbe decided whether the result of my curiosity and lawless devices would\ncause the death of two of my fellow beings: one a smiling babe full of\ninnocence and joy, the other far more dreadfully murdered, with every\naggravation of infamy that could make the murder memorabl",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 133360,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Liga humanity",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 278,
+          "year": 1920,
+          "quote": "ena: Bratři, nepřijela jsem jako dcera prezidentova. Přijela jsem za\n    Ligu humanity. Bratři, Liga humanity má už přes dvě stě tisíc členů.\n    Dvě stě tisíc lidi stojí za vámi a nabízí vám svou pomoc.\n\nBusman: Dvě stě tisíc lidí, panečku, to už je slušné, to je docela krásné.\n\nFabry: Ř",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 22494,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 279,
+          "variant": "Ліга людності",
+          "rationale": "Прямий калька з чеської назви 'Liga humanity', де 'humanity' в контексті п'єси К. Чапека означає не 'людяність' (як риса), а 'людство' (як сукупність людей або людська раса). Термін 'Ліга людності' зберігає відтінок організації, що представляє інтереси всього людства або захищає людську сутність у роботів.",
+          "note": "Чернетка визначення: Міжнародна громадська організація, що об'єднує людей для захисту прав та гідності штучних істот (роботів), виступаючи проти їх експлуатації та закликом до гуманного ставлення.\nТермін є специфічним для художнього твору 'R.U.R.' і не є загальновживаним у сучасній українській мові. У контексті п'єси 'humanity' може мати подвійне значення: як 'людяність' (моральна риса) і як 'людство' (колектив людей). Обраний варіант 'Ліга людності' наближається до перекладу 'League of Humanity' як організації, що стоїть за людьми, але в українській мові існує також варіант 'Ліга гуманізму' або 'Ліга людяності', якщо акцент на моральному аспекті. Однак, з огляду на контекст (200 тисяч членів, які стоять за роботами), 'Ліга людності' краще передає ідею представництва людства.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Lineland",
+      "work_id": 24,
+      "title": "Flatland: A Romance of Many Dimensions",
+      "author": "Edwin A. Abbott",
+      "work_year": 1884,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 219,
+          "year": 1884,
+          "quote": "e new worlds,\nThat have such people in them!”\n\n\n\n\n§ 13 How I had a Vision of Lineland\n\n\nIt was the last day but one of the 1999th year of our era, and the\nfirst day of the Long Vacation. Having amu",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\24\\source.txt",
+          "byte_start": 96017,
+          "byte_len": 200,
+          "artifact_sha256": "d8982890d694bdcd2faf4228ae8f246c260e41f17e8dc74de07b451ab7c11008"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1884
+    },
+    {
+      "term": "living monument",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 365,
+          "year": 1818,
+          "quote": " except I, the\ncreator, who would believe, unless his senses convinced him, in the\nexistence of the living monument of presumption and rash ignorance\nwhich I had let loose upon the world?\n\nWe were soon joined by Elizabeth. Time had altered her since I last\nbeheld her; it had endowed her with loveliness surpassing the b",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 131395,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "lunar",
+      "work_id": 29,
+      "title": "All Around the Moon (Autour de la Lune)",
+      "author": "Jules Verne",
+      "work_year": 1870,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 231,
+          "year": 1870,
+          "quote": "their journey in 97 hours, 13 minutes and 20 seconds,\nconsequently reaching the Lunar surface precisely at midnight on\nDecember 5-6, the exact moment when the Moon would be full.\n\nUnfortunately, the i",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\29\\source.txt",
+          "byte_start": 6597,
+          "byte_len": 200,
+          "artifact_sha256": "36e58bb075fb3d5a1c04b3c8d41edf509b187b27188c26281c173158ec4f8187"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1870
+    },
+    {
+      "term": "machines",
+      "work_id": 34,
+      "title": "Erewhon; or, Over the Range",
+      "author": "Samuel Butler",
+      "work_year": 1872,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 261,
+          "year": 1872,
+          "quote": "regret that reviewers have in some cases been inclined to treat the\nchapters on Machines as an attempt to reduce Mr. Darwin’s theory to an\nabsurdity. Nothing could be further from my intention, and ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\34\\source.txt",
+          "byte_start": 3345,
+          "byte_len": 200,
+          "artifact_sha256": "06795a8a5da18118178574806cf2f0317663edc19a1dcfbfe55c0f97630730c9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1872
+    },
+    {
+      "term": "Martian",
+      "work_id": 18,
+      "title": "The War of the Worlds",
+      "author": "H.G. Wells",
+      "work_year": 1898,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 193,
+          "year": 1898,
+          "quote": "n the space of fifty years. Are we such apostles of mercy\nas to complain if the Martians warred in the same spirit?\n\nThe Martians seem to have calculated their descent with amazing\nsubtlety—their ma",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\18\\source.txt",
+          "byte_start": 5726,
+          "byte_len": 200,
+          "artifact_sha256": "ffcae851be1ef46a60135eebda1e8fca70d9e4de0803a9d3550b5f9c8f829128"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1898
+    },
+    {
+      "term": "mentat",
+      "work_id": 5,
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "work_year": 1965,
+      "definition": "Особлива каста людей в Імперії, чий мозок навчений до рівня надлюдської обчислювальної швидкості та логічного синтезу, замінюючи заборонені мислячі машини після Батлеріанського Джихаду.",
+      "traditional": "Ментат",
+      "attestations": [],
+      "proposals": [
+        {
+          "id": 13,
+          "variant": "Мислеве́т",
+          "rationale": "«Мисль» і «Знавець» засвідчені. Том «Віщуна» виправлено з II на I. Моделі: «Мисль» (Грінченко, том 2, артефакт 6131152+144); «Знаве́ць» (Грінченко, том 2, артефакт 4455216+63).",
+          "note": "Людина, яка досконало володіє таємницями найвищого мислення.",
+          "derivation_type": "coinage",
+          "status": "proposed_not_editorially_reviewed"
+        },
+        {
+          "id": 14,
+          "variant": "Думолічи́льник",
+          "rationale": "«Дума» і «Лічильник» («счетчикъ») засвідчені обидва. Це прямий відповідник гербертівського human computer. Томи виправлено. Моделі: «Дума» (Грінченко, том 1, артефакт 3076085+141); «Лічильник» (Грінченко, том 2, артефакт 5778712+153).",
+          "note": "Прямий український відповідник визначення Герберта 'human computer'.",
+          "derivation_type": "coinage",
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": null
+    },
+    {
+      "term": "metaphysical",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 339,
+          "year": 1818,
+          "quote": " of nature and the mysterious soul of man\nthat occupied me, still my inquiries were directed to the metaphysical,\nor in its highest sense, the physical secrets of the world.\n\nMeanwhile Clerval occupied himself, so to speak, with the moral\nrelations of things. The busy stage of life, the virtues of heroes,\nand the actio",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 45227,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Micromégas",
+      "work_id": 38,
+      "title": "Micromégas",
+      "author": "Voltaire",
+      "work_year": 1752,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 265,
+          "year": 1752,
+          "quote": "e dans le dernier voyage qu'il fit sur\nnotre petite fourmilière; il s'appelait Micromégas[1], nom qui\nconvient fort à tous les grands.  Il avait huit lieues de haut:\nj'entends par huit lieues, ving",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\38\\source.txt",
+          "byte_start": 2885,
+          "byte_len": 200,
+          "artifact_sha256": "c04050b986395383dd0020ad53f2a19b59c2aee8e962f5e1209e8e135282374c"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1752
+    },
+    {
+      "term": "monster",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 355,
+          "year": 1818,
+          "quote": " of the moon, as it forced its way through the window\nshutters, I beheld the wretch—the miserable monster whom I had\ncreated. He held up the curtain of the bed; and his eyes, if eyes they\nmay be called, were fixed on me. His jaws opened, and he muttered some\ninarticulate sounds, while a grin wrinkled his cheeks. He m",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 86964,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Morlock",
+      "work_id": 15,
+      "title": "The Time Machine",
+      "author": "H.G. Wells",
+      "work_year": 1895,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 190,
+          "year": 1895,
+          "quote": "d to the Undergrounders I did not yet suspect; but, from what I\nhad seen of the Morlocks—that, by the bye, was the name by which these\ncreatures were called—I could imagine that the modification o",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\15\\source.txt",
+          "byte_start": 98392,
+          "byte_len": 200,
+          "artifact_sha256": "8b0e67baf93e9a01fff89aa84437d6adb9f0a908bacb9faea3db12b98564bbc7"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1895
+    },
+    {
+      "term": "mummy again endued with animation",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 354,
+          "year": 1818,
+          "quote": "which I\nhad so miserably given life.\n\nOh! No mortal could support the horror of that countenance. A mummy\nagain endued with animation could not be so hideous as that wretch. I\nhad gazed on him while unfinished; he was ugly then, but when those\nmuscles and joints were rendered capable of motion, it became a thing\nsuch a",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 87700,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Musical Banks",
+      "work_id": 34,
+      "title": "Erewhon; or, Over the Range",
+      "author": "Samuel Butler",
+      "work_year": 1872,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 260,
+          "year": 1872,
+          "quote": "copy.\n\nI also wrote about this time the substance of what ultimately became\nthe Musical Banks, and the trial of a man for being in a consumption.\nThese four detached papers were, I believe, all that w",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\34\\source.txt",
+          "byte_start": 8955,
+          "byte_len": 200,
+          "artifact_sha256": "06795a8a5da18118178574806cf2f0317663edc19a1dcfbfe55c0f97630730c9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1872
+    },
+    {
+      "term": "Nadlidi",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 306,
+          "year": 1920,
+          "quote": "   světa. Neomezené, svobodné ~ svrchované lidi. A třeba víc než lidi.\n\nAlquist: Nu tak tedy Nadlidi.\n\nDomin: Ano. Ó, jen mít sto let času! Ještě sto let pro příští lidstvo!\n\nBusman: (polohlasně) Tři sta sedmdesát miliónů přenos. Tak.\n\n(Pauza)\n\nHallemeier: (u dveří vlevo) Jářku, hudba je velik",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 80270,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Nadrobot",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 272,
+          "year": 1920,
+          "quote": "  si nebožtík mladý Rossum zahrál na Boha?\n\nHelena: Jak, prosím vás?\n\nDomin: Začal vyrábět Nadroboty. Pracovní obry. Zkusil to s postavami\n    čtyřmetrovými, ale to byste nevěřila, jak se ti mamuti lámali.\n\nHelena: Lámali?\n\nDomin: Ano. Z ničeho nic jim praskla noha nebo něco. Naše planeta je\n    pat",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 13183,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 273,
+          "variant": "Надгігант",
+          "rationale": "Пряме калькування та семантичне розширення слова «гігант» за допомогою префікса «над-», що вказує на надмірність розмірів та функціональне перевищення межі стійкості, аналогічно до чеського «Nadrobot» (над-робот).",
+          "note": "Чернетка визначення: Величезний, надмірно потужний робот-гігант, створений для виконання важкої фізичної праці, який через надмірні розміри та вагу виявився структурно нестабільним і схильним до раптового руйнування власних кінцівок.\nТермін є специфічним для контексту п'єси, де описується невдала спроба створити гігантських робітників; у загальній мові такий термін не використовується, оскільки описує конкретний тип конструкційної помилки в науково-фантастичному сценарії.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "natural philosophy",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 214,
+          "year": 1818,
+          "quote": "became the torrent\nwhich, in its course, has swept away all my hopes and joys.\n\nNatural philosophy is the genius that has regulated my fate; I desire,\ntherefore, in this narration, to state those fact",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 47076,
+          "byte_len": 200,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "nervous fever",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 357,
+          "year": 1818,
+          "quote": "I was lifeless and did not\nrecover my senses for a long, long time.\n\nThis was the commencement of a nervous fever which confined me for\nseveral months. During all that time Henry was my only nurse. I\nafterwards learned that, knowing my father’s advanced age and unfitness\nfor so long a journey, and how wretched my sic",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 94431,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "nervy na bolest",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 282,
+          "year": 1920,
+          "quote": "ryová. Doktor Gall dělá zrovna nějaké\n    pokusy\n\nDr. Gall: S tímhle ne, Domine; teď dělám nervy na bolest.\n\nHelena: Nervy na bolest?\n\nDr. Gall: Ano. Roboti skoro necítí tělesné bolesti. Víte, nebožtík mladý\n    Rossum příliš omezil nervovou soustavu. To se neosvědčilo. Musíme\n    zavést utrpen",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 28429,
+          "byte_len": 319,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 283,
+          "variant": "нерви для болю",
+          "rationale": "Прямий калька з чеської фрази 'nervy na bolest', де 'nervy' означає нерви, а 'na bolest' вказує на призначення (для болю). У контексті твору це не загальна медична назва, а опис експериментальної функції, тому збережено дослівну структуру для передачі ідеї штучного додавання здатності до страждання.",
+          "note": "Чернетка визначення: Штково створена або модифікована нервова система, призначена для передачі сигналів про фізичний біль, що дозволяє роботам відчувати страждання, яких їм бракувало через надмірне спрощення їхньої анатомії попереднім конструктором.\nТермін є специфічним для контексту п'єси 'R.U.R.' і описує гіпотетичну модифікацію роботів. Це не загальновживаний медичний термін, а літературний опис експерименту доктора Галла. Фраза 'нерви для болю' звучить трохи штучно, що відповідає темі твору про штучне життя та етичні проблеми створення страждання.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "new species",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 349,
+          "year": 1818,
+          "quote": "deal bounds, which I should first break through, and\npour a torrent of light into our dark world. A new species would bless\nme as its creator and source; many happy and excellent natures would\nowe their being to ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 78689,
+          "byte_len": 212,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Omean",
+      "work_id": 31,
+      "title": "The Gods of Mars",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1913,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 247,
+          "year": 1913,
+          "quote": "ted through the dark\nnight, loomed close astern.\n\n\n\n\nCHAPTER VIII\nTHE DEPTHS OF OMEAN\n\n\nNow I realized why the black pirate had kept me engrossed with his\nstrange tale. For miles he had sensed the app",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\31\\source.txt",
+          "byte_start": 153539,
+          "byte_len": 200,
+          "artifact_sha256": "8f96588b1ae0862f1fcdbee50131371f64798f9454a007d78563503e7ca6549e"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1913
+    },
+    {
+      "term": "oriental languages",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 362,
+          "year": 1818,
+          "quote": "had occupied me. He\ncame to the university with the design of making himself complete\nmaster of the oriental languages, and thus he should open a field for\nthe plan of life he had marked out for himself. Resolved to pursue no\ninglorious career, he turned his eyes toward the East, as affording\nscope for his spirit of en",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 108658,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "parních matek",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 318,
+          "year": 1920,
+          "quote": " plemeniti se.\n\n4. Robot: Nauč nás dělat Roboty.\n\nDamon: Budeme rodit strojem. Postavíme tisíc parních matek. Vychrlíme z\n    nich řeku života. Samý život! Samé Roboty! Samé Roboty!\n\nAlquist: Roboti nejsou život. Roboti jsou stroje.\n\n3. Robot: Byli jsme stroje, pane; ale z hrůzy a bolesti stali jsme se--",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 111229,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "parthenogenesis",
+      "work_id": 36,
+      "title": "Herland",
+      "author": "Charlotte Perkins Gilman",
+      "work_year": 1915,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 255,
+          "year": 1915,
+          "quote": "”\n\n“Well--there are some rather high forms of insect life in which it\noccurs. Parthenogenesis, we call it--that means virgin birth.”\n\nShe could not follow him.\n\n“_Birth_, we know, of course; b",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\36\\source.txt",
+          "byte_start": 92886,
+          "byte_len": 200,
+          "artifact_sha256": "569a88e45d904046af9d13fb3f5eb6dadf1d4828205c5eeef0ad3272356d59b9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1915
+    },
+    {
+      "term": "pathless seas",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 329,
+          "year": 1818,
+          "quote": "ess _shall_ crown my endeavours. Wherefore not? Thus far I\nhave gone, tracing a secure way over the pathless seas, the very stars\nthemselves being witnesses and testimonies of my triumph. Why not\nstill proceed over the untamed yet obedient element? What can stop the\ndetermined heart and resolved will of man?",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 15959,
+          "byte_len": 309,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "physical secrets of the world",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 338,
+          "year": 1818,
+          "quote": "hat occupied me, still my inquiries were directed to the metaphysical,\nor in its highest sense, the physical secrets of the world.\n\nMeanwhile Clerval occupied himself, so to speak, with the moral\nrelations of things. The busy stage of life, the virtues of heroes,\nand the actions of men were his theme; and his hope and ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 45270,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "pitevna",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 322,
+          "year": 1920,
+          "quote": ",\n    Heleno, jaké ta měla vlasy! Ne, ne, ty se na mne nechceš podívat. Tak\n    co, děvče, je pitevna uklizena?\n\nHelena: Ano, pane.\n\nAlquist: Dobře, pomůžeš mi, viď? Budu pitvat Prima.\n\nHelena: (vykřikne) Prima?\n\nAlquist: Nu ano, ano, musí to být, víš? Chtěl jsem--vlastně--ano, chtěl\n    jsem pitvat ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 124090,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Plesiosaurus",
+      "work_id": 23,
+      "title": "A Journey to the Centre of the Earth",
+      "author": "Jules Verne",
+      "work_year": 1864,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 233,
+          "year": 1864,
+          "quote": " hard vaulted\nshell of the turtle, the terrible enemy of its fearful rival, the\nPlesiosaurus, or sea crocodile.\"\n\nHans was quite right. The two monsters only, disturbed the surface of\nthe sea!\n\nAt las",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\23\\source.txt",
+          "byte_start": 322626,
+          "byte_len": 200,
+          "artifact_sha256": "66c8d866e71eb0765b84142ee5d74e9196f6a8acdb161ad81dd7b6d7c758f72d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1864
+    },
+    {
+      "term": "Pointland",
+      "work_id": 24,
+      "title": "Flatland: A Romance of Many Dimensions",
+      "author": "Edwin A. Abbott",
+      "work_year": 1884,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 220,
+          "year": 1884,
+          "quote": " I\nconduct thee downward to the lowest depth of existence, even to the\nrealm of Pointland, the Abyss of No dimensions.\n\n“Behold yon miserable creature. That Point is a Being like ourselves,\nbut conf",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\24\\source.txt",
+          "byte_start": 169532,
+          "byte_len": 200,
+          "artifact_sha256": "d8982890d694bdcd2faf4228ae8f246c260e41f17e8dc74de07b451ab7c11008"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1884
+    },
+    {
+      "term": "Poplach Robotů",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 305,
+          "year": 1920,
+          "quote": "Domin: (dívá se na hodinky) Ještě není poledne. To je asi, to je spíš--\n\nHelena: Co?\n\nDomin: Poplach Robotů. Útok.\n\nOPONA\n\n\n\n\nDĚJSTVÍ DRUHÉ\n\n\n\n(Týž Helenin salón. V pokoji vlevo hraje Helena na klavír. Domin\npřechází po pokoji, dr. Gall vyhlíží z okna a Alquist sedí stranou v\nlenošce s obličeje",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 74912,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "projectile",
+      "work_id": 22,
+      "title": "From the Earth to the Moon",
+      "author": "Jules Verne",
+      "work_year": 1865,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 228,
+          "year": 1865,
+          "quote": " guns, and in the direct ratio of the square of the\ndistances attained by their projectiles.”\n\nThe Gun Club once founded, it is easy to conceive the result of the\ninventive genius of the Americans. ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\22\\source.txt",
+          "byte_start": 5145,
+          "byte_len": 200,
+          "artifact_sha256": "def852c88228fc3dbc47bca59aae748328516be8a1c9428225ec7683bc8cf6dd"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1865
+    },
+    {
+      "term": "projectile",
+      "work_id": 29,
+      "title": "All Around the Moon (Autour de la Lune)",
+      "author": "Jules Verne",
+      "work_year": 1870,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 229,
+          "year": 1870,
+          "quote": "nothing less than establishing direct\ncommunication with the Moon by means of a projectile! President\nBarbican, the originator of the enterprise, was strongly encouraged in\nits feasibility by the astr",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\29\\source.txt",
+          "byte_start": 2563,
+          "byte_len": 200,
+          "artifact_sha256": "36e58bb075fb3d5a1c04b3c8d41edf509b187b27188c26281c173158ec4f8187"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1870
+    },
+    {
+      "term": "protoplazma",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 253,
+          "year": 1920,
+          "quote": ". Přitom se pokoušel napodobit\n    chemickou syntézou živou hmotu řečenou protoplazma až najednou objevil\n    látku která se chovala naprosto jako živá hmota ač byla jiného\n    chemickéh",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 6489,
+          "byte_len": 200,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Protos",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 296,
+          "year": 1920,
+          "quote": "hého, kdy to začne, viďte, hoši?\n\nDr. Gall: Inu, bylo nám z toho horko, paní Heleno.\n\nHelena: Protos mi dal tu válečnou loď?\n\nDomin: Ach ne, dětino, tu jsem objednal už před půl rokem. Jen tak, pro\n    jistotu. Ale namouduši; jsem myslel, že dnes na ni sedneme. Tak už to\n    vypadalo, Heleno.\n\nHelena: P",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 66843,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 297,
+          "variant": "Протос",
+          "rationale": "Пряма транслітерація грецького імені «Protos» (від protos — перший, початковий), яке в українській науковій та художній традиції закріпилось як власна назва першого робота у творі Карела Чапека.",
+          "note": "Чернетка визначення: У контексті діалогу з п'єси «R.U.R.» (Росумові універсальні роботи) слово «Protos» вживається як власна назва конкретного робота, який, на думку героїні Гелени, передав їй військовий корабель. Це ім'я, що позначає першого або найстаршого з серії роботів, створених доктором Росумом, і в даному реченні функціонує як підмет дії (той, хто дав корабель).\nТермін є власною назвою (ім'ям персонажа-робота) у конкретному художньому творі. Це не загальна назва класу об'єктів, тому переклад як загальний термін (наприклад, «першопочаток») був би помилковим у цьому контексті. Контекст чітко вказує на індивідуальність персонажа.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "psychohistory",
+      "work_id": 7,
+      "title": "Foundation",
+      "author": "Isaac Asimov",
+      "work_year": 1951,
+      "definition": "Гіпотетична наукова дисципліна, що поєднує історію, соціологію та статистичну математику великих чисел для точного довгострокового прогнозування еволюції галактичних цивілізацій.",
+      "traditional": "Психоісторія",
+      "attestations": [],
+      "proposals": [
+        {
+          "id": 10,
+          "variant": "Душолітопи́сництво",
+          "rationale": "«Літопись» і суфікс -ництво засвідчені («Будівництво», «Видавництво»). Попередня модель «віщунство» у словнику відсутня. Моделі: «Літопись» (Грінченко, том 2, артефакт 5774728+70); «Будівництво» (Грінченко, том 1, артефакт 843511+87).",
+          "note": "Глибоке підкреслення того, що наука досліджує не окремі факти, а сукупну душу мас у часі.",
+          "derivation_type": "coinage",
+          "status": "proposed_not_editorially_reviewed"
+        },
+        {
+          "id": 11,
+          "variant": "Масові́дство",
+          "rationale": "«Мовознавство» у словнику відсутнє — це термін XX ст. Продуктивність типу показують засвідчені «Мисливство» і «Знавець». Моделі: «Мисливство» (Грінченко, том 2, артефакт 6130038+63); «Знаве́ць» (Грінченко, том 2, артефакт 4455216+63).",
+          "note": "Відображає суть закону Азімова: математика діє лише на колосальних масах людей, як кінетична теорія газів.",
+          "derivation_type": "coinage",
+          "status": "proposed_not_editorially_reviewed"
+        },
+        {
+          "id": 12,
+          "variant": "Віщематематика",
+          "rationale": "Грінченко І, 243 (віщувати, віщий).",
+          "note": "Поєднання математичної строгості числення з віщуванням долі галактичних імперій.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": null
+    },
+    {
+      "term": "píšťaly",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 274,
+          "year": 1920,
+          "quote": "boti. Všichni naši úředníci jsou Roboti. Až uvidíte\n    továrnu--\n\n(v tom spustí tovární píšťaly a sirény)\n\nDomin: Poledne. Roboti nevědí, kdy přestat v práci. Ve dvě hodiny vám\n    ukážu díže.\n\nHelena: Jaké díže?\n\nDomin: (suše) Měsidla na těsto. V každém se míchá látka na tisíc Rob",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 18148,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 275,
+          "variant": "фабричні гудки",
+          "rationale": "Пряме семантичне відтворення: чеське 'píšťaly' (дослівно 'трубки', 'флейти', але в промисловому контексті — гудки/сирени) перекладено українським терміном, що описує функцію об'єкта в конкретній сцені (сигналізація на заводі).",
+          "note": "Чернетка визначення: Промислові звукові сигнали (сирени або гудки), що вмикаються на виробничому підприємстві для повідомлення про початок або кінець робочої зміни, перерву на обід або аварійну ситуацію.\nТермін 'píšťaly' у цьому контексті є специфічним для промислового середовища (завод Росума). Хоча дослівний переклад 'трубки' або 'флейти' був би помилковим, оскільки в чеській мові це слово може означати різні види трубчастих приладів, тут воно вживається як синонім заводських гудків. Запропонований варіант 'фабричні гудки' є найбільш природним для української драматургії та технічного опису.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "předpis života",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 320,
+          "year": 1920,
+          "quote": "estávají\n    plakat; jedno oplakává lidi a druhé vás, Roboti.\n\nRadius: Dělej pokusy. Hledej předpis života.\n\nAlquist: Nemám co hledat. Roboti, ze zkumavek předpis života nevyjde.\n\nDamon: Dělej pokusy na živých Robotech. Najdi, jak se dělají!\n\nAlquist: Živá těla? Cože, já je mám zabíjet? Já, kte",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 112460,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "radium",
+      "work_id": 25,
+      "title": "A Princess of Mars",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1912,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 243,
+          "year": 1912,
+          "quote": "of these rifles is comparatively\nlittle, and with the small caliber, explosive, radium projectiles which\nthey use, and the great length of the barrel, they are deadly in the\nextreme and at ranges whic",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\25\\source.txt",
+          "byte_start": 42130,
+          "byte_len": 200,
+          "artifact_sha256": "6b3b1846dc649cbe4d2b6b9e455ca8256b358b1d6a32453dceb4a582f935afc9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1912
+    },
+    {
+      "term": "red weed",
+      "work_id": 18,
+      "title": "The War of the Worlds",
+      "author": "H.G. Wells",
+      "work_year": 1898,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 198,
+          "year": 1898,
+          "quote": " Mars and terrestrial life, I may allude here to the curious\nsuggestions of the red weed.\n\nApparently the vegetable kingdom in Mars, instead of having green for a\ndominant colour, is of a vivid blood-",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\18\\source.txt",
+          "byte_start": 236389,
+          "byte_len": 200,
+          "artifact_sha256": "ffcae851be1ef46a60135eebda1e8fca70d9e4de0803a9d3550b5f9c8f829128"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1898
+    },
+    {
+      "term": "refractive index",
+      "work_id": 19,
+      "title": "The Invisible Man",
+      "author": "H.G. Wells",
+      "work_year": 1897,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 200,
+          "year": 1897,
+          "quote": "any other property of matter—except, in some instances colours—to lower\nthe refractive index of a substance, solid or liquid, to that of air—so\nfar as all practical purposes are concerned.”\n\n“",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\19\\source.txt",
+          "byte_start": 159832,
+          "byte_len": 202,
+          "artifact_sha256": "2901dfc2bb0485649a6e49885b1e29e0e14d47364dd11c11d120b755fa6a30b8"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1897
+    },
+    {
+      "term": "robot",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": "Штучно синтезований біомеханічний або електронний організм/машина, призначений для виконання автономної праці замість людини. У Чапека термін походив від слов'янського 'robota' (панщина, тяжка невільнича праця).",
+      "traditional": "Робот (універсально закріплене міжнародне слово)",
+      "attestations": [
+        {
+          "id": 250,
+          "year": 1920,
+          "quote": "; na stěně vpravo tištěné plakáty:\n    \"Nejlacinější práce: Rossumovi Roboti\" \"Tropičtí Roboti, nový vynález.\n    Kus 150 d.\" \"Každý si kup svého Robota!\" \"Chcete zlevnit svoje\n    vý",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 2057,
+          "byte_len": 201,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 1,
+          "variant": "Тру́дник",
+          "rationale": "труд (корінь, засвідчений) + -ник (суфікс діяча). Проте засвідчене «Тяжкороб» — «исполняющій тяжелыя работы» — передає Чапекову robota точніше за новотвір, і має перевагу як відновлення, а не творення. Моделі: «Труд» (Грінченко, том 4, артефакт 12206400+149); «Тяжкоро́б» (Грінченко, том 4, артефакт 12292289+93).",
+          "note": "Точно відтворює первинний задум Чапека: суб'єкт, народжений винятково для невтомної праці.",
+          "derivation_type": "cognate_recovery",
+          "status": "proposed_not_editorially_reviewed"
+        },
+        {
+          "id": 2,
+          "variant": "Чиноро́б",
+          "rationale": "Модель «ділороб» у словнику відсутня. Засвідчені композити на -роб: «Чорнороб» (чернорабочій), «Тяжкороб», «Хлібороб». Саме вони, а не вигаданий зразок, показують продуктивність типу. Моделі: «Чорноро́б» (Грінченко, том 4, артефакт 13339231+87); «Тяжкоро́б» (Грінченко, том 4, артефакт 12292289+93).",
+          "note": "Підкреслює механічну дієвість виконання чину без власного волевиявлення.",
+          "derivation_type": "cognate_recovery",
+          "status": "proposed_not_editorially_reviewed"
+        },
+        {
+          "id": 3,
+          "variant": "Ра́бень",
+          "rationale": "За моделлю велетень, блазень (Грінченко І, 73).",
+          "note": "Оприявнює трагічний аспект штучного рабства, який призводить до бунту машин.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "robota",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 252,
+          "year": 1920,
+          "quote": "oti\" \"Tropičtí Roboti, nový vynález.\n    Kus 150 d.\" \"Každý si kup svého Robota!\" \"Chcete zlevnit svoje\n    výrobky? Objednejte si Rossumovy Roboty.\" Dále jiné mapy, dopravní\n    lodní řá",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 2140,
+          "byte_len": 201,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Roboti",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 251,
+          "year": 1920,
+          "quote": "; na stěně vpravo tištěné plakáty:\n    \"Nejlacinější práce: Rossumovi Roboti\" \"Tropičtí Roboti, nový vynález.\n    Kus 150 d.\" \"Každý si kup svého Robota!\" \"Chcete zlevnit svoje\n    vý",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 2057,
+          "byte_len": 201,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Robotka",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 321,
+          "year": 1920,
+          "quote": " na Prima) Kdo\n    jste?\n\nPrimus: Robot Primus.\n\nAlquist: Jak? Ukaž se, děvče! Kdo jsi!\n\nHelena: Robotka Helena.\n\nAlquist: Robotka? Obrat se! Co, ty se stydíš? (bere ji za rameno) Ukaž se\n    mi, Robotko!\n\nPrimus: Jářku, pane, nechat ji!\n\nAlquist: Jakže, ty ji chráníš?--Jdi ven, děvče!\n\n(Helena vyběhne)\n",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 121999,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Roboty",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 308,
+          "year": 1920,
+          "quote": "ezi námi a jimi! A proto--\n    víš--\n\nDomin: Jen dál.\n\nHelena: -- proto jsem prosila Galla, aby Roboty změnil. Přísahám ti, že on\n    sám nechtěl.\n\nDomin: Ale udělal to.\n\nHelena: Protože j sem chtěla.\n\nDr. Gall: Udělal jsem to pro sebe, jako pokus.\n\nHelena: Oh, Galle, to není pravda. Já jsem věděla p",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 86263,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Roboty nacionální",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 302,
+          "year": 1920,
+          "quote": " státě po továrně, a ty nové továrny\n    budou vyrábět, už víš, co?\n\nHelena: Ne.\n\nDomin: Roboty nacionální.\n\nHelena: Co to znamená?\n\nDomin: To znamená, že z každé továrny budou vycházet Roboti jiné barvy,\n    jiného chlupu, jiného jazyka. Že si zůstanou cizí, cizí jako kameny;\n    že se už ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 70227,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 303,
+          "variant": "Національні роботи",
+          "rationale": "Прямий калька з чеської фрази 'Roboty nacionální', де прикметник 'nacionální' вказує на штучне надання роботам ознак, що асоціюються з конкретною нацією, для створення ілюзії різноманіття.",
+          "note": "Чернетка визначення: Система масового виробництва штучних істот (роботів), яка передбачає їхню диференціацію за зовнішніми ознаками (колір шкіри, тип волосся) та мовою з метою імітації національної приналежності, що водночас підкреслює їхню відчуженість та неживу природу.\nТермін є специфічним для контексту п'єси Карела Чапека, де описується концепція індустріалізації створення робітників, які мають виглядати як представники різних народів, але залишаються 'чужими, як камені'. У загальній мові цей термін не використовується.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Robotů",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 288,
+          "year": 1920,
+          "quote": " bůh! To ji ani ve snu nenapadlo! Ale přijela s\n    plánem podnítit rrevoltu vašich ohavných Robotů!\n\nDomin: (vyskočí) Revoltu Robotů!\n\nHelena: (vstane) Harry, co je ti?\n\nDomin: Haha, slečno Gloryová, to se vám povedlo! Revoltu Robotů! Spíš\n    byste vzbouřila i vřetena nebo cvočky než naše Roboty!",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 44132,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 289,
+          "variant": "роботів",
+          "rationale": "Прямий запозичений термін, що увійшов до української мови через переклад твору Чапека. Слово «робот» (від чеського «robota» — кріпацька праця, важка робота) стало міжнародним позначенням штучних істот. У контексті речення використовується у родовому відмінку множини.",
+          "note": "Чернетка визначення: У творі Карела Чапека «R.U.R.» термін «Robotů» (родовий відмінок множини від «robot») позначає штучно створених істот, які виконують фізичну працю замість людей. У наведеному контексті мова йде про потенційний бунт цих істот проти їхніх творців, що підкреслює їхню здатність до колективної дії та відчуття несправедливості, хоча персонаж Домін скептично ставиться до такої можливості, порівнюючи їх із неживими предметами.\nТермін є загальновживаним у сучасній українській мові та літературі. Контекст чітко визначає значення як штучних істот, здатних до бунту, тому додаткових уточнень не потребує.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Robur",
+      "work_id": 30,
+      "title": "Robur the Conqueror",
+      "author": "Jules Verne",
+      "work_year": 1886,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 236,
+          "year": 1886,
+          "quote": "What is the name of this singular personage?” asked secretary Phil\nEvans.\n\n“Robur.” replied Uncle Prudent.\n\n“Robur! Robur! Robur!” yelled the assembly. And the welcome accorded so\nquickly to",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\30\\source.txt",
+          "byte_start": 32759,
+          "byte_len": 200,
+          "artifact_sha256": "004bd3e54e2888282711ccc66350bcda96230db5e24d22ec553965da6729a88e"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1886
+    },
+    {
+      "term": "Rossumových závodů",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 294,
+          "year": 1920,
+          "quote": "a nimi Domin.)\n\nHallemeier: (hlaholí) Paní Heleno, já, to jest my všichni--\n\nDr. Gall:--jménem Rossumových závodů--\n\nHallemeier:--blahopřejeme k vašemu velikému dni.\n\nHelena: (podává jim ruce) Já vám tolik děkuju! Kde je Fabry a Busman?\n\nDomin: Šli do přístavu. Heleno, dnes je šťastný den.\n\nHallem",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 63986,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 295,
+          "variant": "заводів Россума",
+          "rationale": "Прямий переклад власної назви з чеської мови, де 'Rossumových' є притяжним відмінком від прізвища 'Rossum', а 'závodů' — множина від 'závod' (завод). В українській мові це передається як 'заводів Россума' (родовий відмінок множини).",
+          "note": "Чернетка визначення: Назва фіктивної промислової корпорації, що спеціалізується на масовому виробництві штучних істот (роботів), яка виступає юридичним та моральним суб'єктом у дії п'єси.\nТермін є власною назвою (назва конкретної фіктивної компанії) з контексту драми Карела Чапека. Це не загальний термін, а специфічний елемент сюжету.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Rossumův předpis",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 317,
+          "year": 1920,
+          "quote": "ist: Nezdržuj, Robote! (položí hlavu do dlaní)\n\nDamon: Ústřední výbor rozkazuje, abys vydal Rossumův předpis.\n\nAlquist: (mlčí)\n\nDamon: Žádej cenu. Dáme ti všechno.\n\n2. Robot: Pane, pověz, jak udržet život.\n\nAlquist: Řekl jsem--řekl jsem, že máte nalézt lidi. Jen lidé mohou\n    plodit. Obnovit ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 109995,
+          "byte_len": 319,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Rossumův rukopis",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 309,
+          "year": 1920,
+          "quote": "; ale my\n    máme jedno zajímavý lejstro, takový starý, žlutý, špinavý papír--\"\n\nDomlela: Rossumův rukopis?\n\nBusman: Ano. \"A tam,\" řeknu jim, \"je vylíčen váš vznešený původ, vaše\n    urozená výroba a tak dále. Páni Roboti, bez toho počmáraného papíru\n    nevyrobíte ani jednoho nového koleg",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 89883,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Rukopis starého Rossuma",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 300,
+          "year": 1920,
+          "quote": "min: Jejich bytí nebo jejich konec. (Helena vstane) Co je to?\n\nDomin: (vstane) Tajemství výroby. Rukopis starého Rossuma. Až by továrna\n    měsíc stála, byli by Roboti před námi na kolenou.\n\nHelena: Proč... jste... mně to neřekli?\n\nDomin: Nechtěli jsme tě zbytečně poděsit.\n\nDr. Gall: Haha, paní Hele",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 68811,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 301,
+          "variant": "Рукопис старого Россума",
+          "rationale": "Прямий калька з чеської назви, де 'Rukopis' перекладається як 'рукопис', 'starého' як 'старого' (відмінок родовий), а 'Rossuma' залишається власною назвою (родовий відмінок від Россум).",
+          "note": "Чернетка визначення: Втрачений або конфіденційний рукописний документ, що містить фундаментальну формулу або технологічний секрет створення штучних істот (роботів), який є ключем до їхнього існування та контролю над ними.\nТермін є специфічним для сюжету п'єси К. Чапека 'R.U.R.' і позначає конкретний артефакт (секретну формулу), а не загальну категорію документів. У контексті це не просто стара книга, а єдиний носій критичної технологічної інформації.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Runic",
+      "work_id": 23,
+      "title": "A Journey to the Centre of the Earth",
+      "author": "Jules Verne",
+      "work_year": 1864,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 232,
+          "year": 1864,
+          "quote": "ters at all events,\" I said, \"are rather difficult of\ncomprehension.\"\n\n\"It is a Runic manuscript, the language of the original population of\nIceland, invented by Odin himself,\" cried my uncle, angry a",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\23\\source.txt",
+          "byte_start": 10411,
+          "byte_len": 200,
+          "artifact_sha256": "66c8d866e71eb0765b84142ee5d74e9196f6a8acdb161ad81dd7b6d7c758f72d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1864
+    },
+    {
+      "term": "Saturnien",
+      "work_id": 38,
+      "title": "Micromégas",
+      "author": "Voltaire",
+      "work_year": 1752,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 267,
+          "year": 1752,
+          "quote": " ridicule pour n'avoir que six mille pieds de\nhaut.  Il se familiarisa avec les Saturniens, après les avoir\nétonnés.  Il lia une étroite amitié avec le secrétaire de\nl'académie de Saturne, homm",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\38\\source.txt",
+          "byte_start": 9013,
+          "byte_len": 200,
+          "artifact_sha256": "c04050b986395383dd0020ad53f2a19b59c2aee8e962f5e1209e8e135282374c"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1752
+    },
+    {
+      "term": "Sayer of the Law",
+      "work_id": 20,
+      "title": "The Island of Doctor Moreau",
+      "author": "H.G. Wells",
+      "work_year": 1896,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 205,
+          "year": 1896,
+          "quote": "ick.\n\n“Eat roots and herbs; it is His will,” said the Ape-man.\n\n“I am the Sayer of the Law,” said the grey figure. “Here come all that\nbe new to learn the Law. I sit in the darkness and say ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\20\\source.txt",
+          "byte_start": 103699,
+          "byte_len": 200,
+          "artifact_sha256": "78b10fa097383c702e3875800b0f36fe3cf92558cf10f10917391c2a42d03a3b"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1896
+    },
+    {
+      "term": "secret of the magnet",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 323,
+          "year": 1818,
+          "quote": "\nto those countries, to reach which at present so many months are\nrequisite; or by ascertaining the secret of the magnet, which, if at\nall possible, can only be effected by an undertaking such as mine.\n\nThese reflections have dispelled the agitation with which I began my\nletter, and I feel my heart glow with an enthusi",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 2789,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Selenite",
+      "work_id": 27,
+      "title": "The First Men in the Moon",
+      "author": "H.G. Wells",
+      "work_year": 1901,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 207,
+          "year": 1901,
+          "quote": "at had come upon us. We\ncrawled, as it seemed, a long time before we saw either Selenite or\nmooncalf, though we heard the bellowing and gruntulous noises of these\nlatter continually drawing nearer to ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\27\\source.txt",
+          "byte_start": 126556,
+          "byte_len": 200,
+          "artifact_sha256": "9664cc9015c1fb909aacb665f66db42f96f8092873cc0e6bebbedacf2fbbd322"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1901
+    },
+    {
+      "term": "Sirius",
+      "work_id": 38,
+      "title": "Micromégas",
+      "author": "Voltaire",
+      "work_year": 1752,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 266,
+          "year": 1752,
+          "quote": "-champ la plume, et trouveront que, puisque M. Micromégas,\nhabitant du pays de Sirius, a de la tête aux pieds vingt-quatre\nmille pas, qui font cent vingt mille pieds de roi, et que nous\nautres citoy",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\38\\source.txt",
+          "byte_start": 3269,
+          "byte_len": 200,
+          "artifact_sha256": "c04050b986395383dd0020ad53f2a19b59c2aee8e962f5e1209e8e135282374c"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1752
+    },
+    {
+      "term": "sledge",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 332,
+          "year": 1818,
+          "quote": "tention and diverted our solicitude from our own\nsituation. We perceived a low carriage, fixed on a sledge and drawn by\ndogs, pass on towards the north, at the distance of half a mile; a\nbeing which had the shape of a man, but apparently of gigantic stature,\nsat in the sledge and guided the dogs. We watched the rapid p",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 17264,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Sleeper",
+      "work_id": 28,
+      "title": "When the Sleeper Wakes (The Sleeper Awakes)",
+      "author": "H.G. Wells",
+      "work_year": 1899,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 210,
+          "year": 1899,
+          "quote": "nails, and about it was a case of thin glass. This glass seemed to\nmark off the sleeper from the reality of life about him, he was a thing\napart, a strange, isolated abnormality. The two men stood clo",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\28\\source.txt",
+          "byte_start": 21121,
+          "byte_len": 200,
+          "artifact_sha256": "4a9dd02ec47f3f917291ae0e7b9de0c7a18ba38d1bbb58a08e20c16f5aa906ad"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1899
+    },
+    {
+      "term": "Spaceland",
+      "work_id": 24,
+      "title": "Flatland: A Romance of Many Dimensions",
+      "author": "Edwin A. Abbott",
+      "work_year": 1884,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 218,
+          "year": 1884,
+          "quote": "land) you would see nothing\nbut a straight line.\n\n[Illustration]\n\nWhen I was in Spaceland I heard that your sailors have very similar\nexperiences while they traverse your seas and discern some distant",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\24\\source.txt",
+          "byte_start": 4715,
+          "byte_len": 200,
+          "artifact_sha256": "d8982890d694bdcd2faf4228ae8f246c260e41f17e8dc74de07b451ab7c11008"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1884
+    },
+    {
+      "term": "spark of being",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 352,
+          "year": 1818,
+          "quote": "that almost amounted to agony, I\ncollected the instruments of life around me, that I might infuse a\nspark of being into the lifeless thing that lay at my feet. It was\nalready one in the morning; the rain pattered dismally against the\npanes, and my candle was nearly burnt out, when, by the glimmer of the\nhalf-extinguish",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 84510,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "sphere",
+      "work_id": 27,
+      "title": "The First Men in the Moon",
+      "author": "H.G. Wells",
+      "work_year": 1901,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 208,
+          "year": 1901,
+          "quote": "hat matter we\ncompromised after two days’ delay.\n\n\n\n\nIII.\nThe Building of the sphere\n\n\nI remember the occasion very distinctly when Cavor told me of his idea\nof the sphere. He had had intimations of",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\27\\source.txt",
+          "byte_start": 46098,
+          "byte_len": 200,
+          "artifact_sha256": "9664cc9015c1fb909aacb665f66db42f96f8092873cc0e6bebbedacf2fbbd322"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1901
+    },
+    {
+      "term": "submarine",
+      "work_id": 21,
+      "title": "Twenty Thousand Leagues Under the Sea",
+      "author": "Jules Verne",
+      "work_year": 1870,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 224,
+          "year": 1870,
+          "quote": "who were for a monster\nof colossal strength; on the other, those who were for a submarine\nvessel of enormous motive power.\n\nBut this last hypothesis, plausible as it was, could not stand against\ninqui",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\21\\source.txt",
+          "byte_start": 15750,
+          "byte_len": 200,
+          "artifact_sha256": "0fc093635f3a193c0416b9d179e2878dcde68e6fef89794b057caaaf36217b56"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1870
+    },
+    {
+      "term": "Tajemství života",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 319,
+          "year": 1920,
+          "quote": " Jsme jejich synové!\n\n4. Robot: Vydej nám odkaz lidí.\n\nAlquist: Není žádného.\n\nDamon: Pověz tajemství života.\n\nAlquist: Je ztraceno.\n\nRadius: Tys je znal.\n\nAlquist: Neznal.\n\nRadius: Bylo napsáno.\n\nAlquist: Je ztraceno. Je spáleno. Jsem poslední člověk, Roboti, a neznám,\n    co znali jiní. Vy jste je za",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 111956,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Thark",
+      "work_id": 25,
+      "title": "A Princess of Mars",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1912,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 238,
+          "year": 1912,
+          "quote": "d holding her for ransom?”\n\n“They have decided to carry her with us back to Thark, and exhibit her\nlast agonies at the great games before Tal Hajus,” replied Sarkoja.\n\n“What will be the manner",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\25\\source.txt",
+          "byte_start": 102756,
+          "byte_len": 200,
+          "artifact_sha256": "6b3b1846dc649cbe4d2b6b9e455ca8256b358b1d6a32453dceb4a582f935afc9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1912
+    },
+    {
+      "term": "Tharks",
+      "work_id": 25,
+      "title": "A Princess of Mars",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1912,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 241,
+          "year": 1912,
+          "quote": "hrough utter silence from the audience chamber\nof Lorquas Ptomel, Jed among the Tharks of Barsoom.\n\n\n\n\nCHAPTER XI\nWITH DEJAH THORIS\n\n\nAs we reached the open the two female guards who had been detailed",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\25\\source.txt",
+          "byte_start": 125486,
+          "byte_len": 200,
+          "artifact_sha256": "6b3b1846dc649cbe4d2b6b9e455ca8256b358b1d6a32453dceb4a582f935afc9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1912
+    },
+    {
+      "term": "Therns",
+      "work_id": 31,
+      "title": "The Gods of Mars",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1913,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 245,
+          "year": 1913,
+          "quote": "ow death, I am as unable to fathom as are you.\n\n“Even the wise and mysterious therns of Barsoom, that ancient cult\nwhich for countless ages has been credited with holding the secret of\nlife and deat",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\31\\source.txt",
+          "byte_start": 4698,
+          "byte_len": 200,
+          "artifact_sha256": "8f96588b1ae0862f1fcdbee50131371f64798f9454a007d78563503e7ca6549e"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1913
+    },
+    {
+      "term": "Third Dimension",
+      "work_id": 24,
+      "title": "Flatland: A Romance of Many Dimensions",
+      "author": "Edwin A. Abbott",
+      "work_year": 1884,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 221,
+          "year": 1884,
+          "quote": "s.\n\n_I_. Would your Lordship indicate or explain to me in what direction is\nthe Third Dimension, unknown to me?\n\n_Stranger_. I came from it. It is up above and down below.\n\n_I_. My Lord means seemingl",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\24\\source.txt",
+          "byte_start": 126264,
+          "byte_len": 200,
+          "artifact_sha256": "d8982890d694bdcd2faf4228ae8f246c260e41f17e8dc74de07b451ab7c11008"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1884
+    },
+    {
+      "term": "thoat",
+      "work_id": 25,
+      "title": "A Princess of Mars",
+      "author": "Edgar Rice Burroughs",
+      "work_year": 1912,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 239,
+          "year": 1912,
+          "quote": "g the great beasts which bore the warriors.\nThese creatures, which are known as thoats, are as dangerous and\nvicious as their masters, but when once subdued are sufficiently\ntractable for the purposes",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\25\\source.txt",
+          "byte_start": 150341,
+          "byte_len": 200,
+          "artifact_sha256": "6b3b1846dc649cbe4d2b6b9e455ca8256b358b1d6a32453dceb4a582f935afc9"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1912
+    },
+    {
+      "term": "Time Machine",
+      "work_id": 15,
+      "title": "The Time Machine",
+      "author": "H.G. Wells",
+      "work_year": 1895,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 189,
+          "year": 1895,
+          "quote": "is forefinger. So that it was the\nPsychologist himself who sent forth the model Time Machine on its\ninterminable voyage. We all saw the lever turn. I am absolutely certain\nthere was no trickery. There",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\15\\source.txt",
+          "byte_start": 13601,
+          "byte_len": 200,
+          "artifact_sha256": "8b0e67baf93e9a01fff89aa84437d6adb9f0a908bacb9faea3db12b98564bbc7"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1895
+    },
+    {
+      "term": "Time Traveller",
+      "work_id": 15,
+      "title": "The Time Machine",
+      "author": "H.G. Wells",
+      "work_year": 1895,
+      "definition": "Особа, яка володіє спеціальним механізмом (машиною часу) для свідомого переміщення у минуле чи майбутнє, виходячи за межі лінійного сприйняття часу.",
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 188,
+          "year": 1895,
+          "quote": "ime at all, have a real\nexistence?”\n\nFilby became pensive. “Clearly,” the Time Traveller proceeded, “any\nreal body must have extension in _four_ directions: it must have\nLength, Breadth, Thick",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\15\\source.txt",
+          "byte_start": 2253,
+          "byte_len": 200,
+          "artifact_sha256": "8b0e67baf93e9a01fff89aa84437d6adb9f0a908bacb9faea3db12b98564bbc7"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 17,
+          "variant": "Часопроходе́ць",
+          "rationale": "складне слово: часо- (від 'час') + проходе́ць (від дієслова 'проходи́ти' + суфікс -ець)",
+          "note": "Форма 'часопроходець' є органічною для української мови, оскільки використовує дієслівний корінь 'проходи́ти' (який у значенні 'переміщуватися крізь щось' є повсякденним) та суфікс -ець, що позначає особу за професією чи дією. Це уникнення кальки 'часоподорожній' (яка звучить м'якше, але менш динамічно) та 'часовий мандрівник' (яка є занадто довгою та описовою). Корінь 'проходи́ти' підкреслює активну дію проникнення крізь час, що відповідає механічному характеру подорожі у творі Веллса.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1895
+    },
+    {
+      "term": "transmuted",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 345,
+          "year": 1818,
+          "quote": "ties and performed nothing. The modern masters\npromise very little; they know that metals cannot be transmuted and that\nthe elixir of life is a chimera but these philosophers, whose hands seem\nonly made to dabble in dirt, and their eyes to pore over the microscope or\ncrucible, have indeed performed miracles. They penet",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 65663,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "Ultima",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 298,
+          "year": 1920,
+          "quote": "..\n\nDomin: Nevěděla bys stejně o ničem.\n\nHelena: Proč?\n\nDomin: Protože bychom sedli na svého Ultima a pokojně brousili po moři. Za\n    měsíc, Heleno, bychom diktovali Robotům, co by nás jen napadlo.\n\nHelena: Oh, Harry, já nerozumím.\n\nDomin: Protože bychom s sebou odvezli něco, oč by Roboti strašně s",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 68461,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 299,
+          "variant": "Ультіма",
+          "rationale": "Пряма транслітерація латинського терміна (Ultima — «останній», «найвищий», «найкращий»), який у творі виступає як власна назва (бренд або модель) транспортного засобу. В українській мові зберігається як іноземне слово-назва.",
+          "note": "Чернетка визначення: У контексті п'єси Карела Чапека «R.U.R.» (Росумові універсальні роботи) це назва гіпотетичного транспортного засобу (ймовірно, літака або швидкого судна), який дозволяє персонажам втекти з заводу роботів та отримати стратегічну перевагу над ними, диктуючи їм свої умови.\nТермін є власною назвою (назвою конкретного об'єкта) у художньому творі, а не загальним поняттям. Контекст вказує на те, що це засіб пересування, але його точна природа (літак, корабель) залишається неясною без додаткових сцен, тому переклад як власна назва є найбільш доречним.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Ultimus",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 286,
+          "year": 1920,
+          "quote": "\nHallemeier: Ticho! Kdyby vás slyšela!\n\nDomin: Nemá ani tušení. (Zívá zimničně) Ještěže Ultimus včas připlul.\n\nFabry: (nechá květin) Myslíte, že už dnes -?\n\nDomin: Nevím.--Jak krásné jsou květiny!\n\nHallemeier: (přiblíží se k němu) To jsou nové primule, víte?A tohle je můj\n    nový jasmí",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 37904,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 287,
+          "variant": "Останній",
+          "rationale": "Прямий переклад латинського терміна «ultimus» (останній) на українську мову. У художньому контексті це може бути як переклад імені судна, так і збереження оригінальної назви як власної назви, але для лексикографічної чорнетки пропонується семантичний еквівалент.",
+          "note": "Чернетка визначення: У контексті п'єси К. Чапека «R.U.R.» (Россома Універсальні Роботи) слово «Ultimus» виступає власною назвою (іменем) судна, на якому прибув персонаж або вантаж. Латинське слово «ultimus» означає «останній», «найвіддаленіший» або «найпізніший». У діалозі фраза «Ultimus včas připlul» перекладається як «Ultimus вчасно приплив», що вказує на те, що це транспортний засіб, який з'явився саме в потрібний момент, щоб запобігти небажаній ситуації (ймовірно, розкриттю чогось секретного).\nТермін є власною назвою (іменем судна) у конкретному художньому творі. Без додаткового контексту про назви інших суден у всесвіті п'єси, переклад як «Останній» є найбільш точним за змістом, хоча в українських перекладах п'єси ім'я судна часто залишають латинським або адаптують як «Ультимус».",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "unfashioned creatures",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 334,
+          "year": 1818,
+          "quote": "happiness who did not enjoy this blessing.\n\n“I agree with you,” replied the stranger; “we are\nunfashioned creatures, but half made up, if one wiser, better, dearer than\nourselves—such a friend ought to be—do not lend his aid to\nperfectionate our weak and faulty natures. I once had a friend, the most\nnoble of ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 26734,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "vampire",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 363,
+          "year": 1818,
+          "quote": "to effect purposes\nof horror, such as the deed which he had now done, nearly in the light\nof my own vampire, my own spirit let loose from the grave, and forced\nto destroy all that was dear to me.\n\nDay dawned; and I directed my steps towards the town. The gates were\nopen, and I hastened to my father’s house. My first ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 125072,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "vivisection",
+      "work_id": 20,
+      "title": "The Island of Doctor Moreau",
+      "author": "H.G. Wells",
+      "work_year": 1896,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 203,
+          "year": 1896,
+          "quote": "ely, and especially to another scientific man, there was nothing\nso horrible in vivisection as to account for this secrecy; and by some\nodd leap in my thoughts the pointed ears and luminous eyes of\nMo",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\20\\source.txt",
+          "byte_start": 55548,
+          "byte_len": 200,
+          "artifact_sha256": "78b10fa097383c702e3875800b0f36fe3cf92558cf10f10917391c2a42d03a3b"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1896
+    },
+    {
+      "term": "Vláda Robotů",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 316,
+          "year": 1920,
+          "quote": ". Dobytím\n    továrny jsme pány všeho. Etapa lidstva je překonána. Nastoupil nový\n    svět! Vláda Robotů!\n\nAlquist: Mrtvi!\n\nRadius: Svět patři silnějším. Kdo chce žít, musí vládnout. Jsme pány\n    světa! Vláda nad moři a zeměmi! Vláda nad hvězdami! Vláda nad\n    vesmírem! Místo, místo, ví",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 104633,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    },
+    {
+      "term": "Vril",
+      "work_id": 35,
+      "title": "The Coming Race",
+      "author": "Edward Bulwer-Lytton",
+      "work_year": 1871,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 262,
+          "year": 1871,
+          "quote": " to danger, by a\ndesire to explore a world beyond us, will not a wave of the ‘vril,’\nproperly impelled, wash even the memory of what we have heard the\nstranger say out of the tablets of the brain?",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\35\\source.txt",
+          "byte_start": 45178,
+          "byte_len": 200,
+          "artifact_sha256": "ec2a9b2bd1238cc43c792335b753815e07585b3677baf4170484a57b585cdf13"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1871
+    },
+    {
+      "term": "Vril-ya",
+      "work_id": 35,
+      "title": "The Coming Race",
+      "author": "Edward Bulwer-Lytton",
+      "work_year": 1871,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 263,
+          "year": 1871,
+          "quote": "ice of its agencies, that the word A-Vril was\nsynonymous with civilisation; and Vril-ya, signifying “The Civilised\nNations,” was the common name by which the communities employing the\nuses of vril",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\35\\source.txt",
+          "byte_start": 59738,
+          "byte_len": 200,
+          "artifact_sha256": "ec2a9b2bd1238cc43c792335b753815e07585b3677baf4170484a57b585cdf13"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1871
+    },
+    {
+      "term": "wondrous power which attracts the needle",
+      "work_id": 14,
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "work_year": 1818,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 325,
+          "year": 1818,
+          "quote": "covered\nsolitudes. What may not be expected in a country of eternal light? I\nmay there discover the wondrous power which attracts the needle and may\nregulate a thousand celestial observations that require only this\nvoyage to render their seeming eccentricities consistent for ever. I\nshall satiate my ardent curiosity wi",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\14\\source.txt",
+          "byte_start": 1880,
+          "byte_len": 320,
+          "artifact_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0"
+        }
+      ],
+      "proposals": [],
+      "external": [],
+      "earliest_in_work_corpus": 1818
+    },
+    {
+      "term": "zažívacích rour",
+      "work_id": 1,
+      "title": "R.U.R. (Rossum's Universal Robots)",
+      "author": "Karel Čapek",
+      "work_year": 1920,
+      "definition": null,
+      "traditional": null,
+      "attestations": [
+        {
+          "id": 276,
+          "year": 1920,
+          "quote": "u?\n\nDomin: Přádelnu nervů. Přádelnu žil. Přádelnu, kde běží najednou celé\n    kilometry zažívacích rour. Pak je montovna, kde se to dává dohromady,\n    víte, jako automobily. Každý dělník přidělá jen jednu součást, a zas\n    to samočinně běží dál k druhému, třetímu, donekonečna. To ",
+          "check": "byte_verified_zone_map_checked",
+          "path": "C:\\ai_server\\the _best_book\\.benchmarks\\batch-step05-001\\corpus\\1\\source.txt",
+          "byte_start": 18621,
+          "byte_len": 320,
+          "artifact_sha256": "d6a27cd1f62b676fe6ff5b90e58dc24c2bb0b3b029f9595cac64d0034b359d6d"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 277,
+          "variant": "травні трубки",
+          "rationale": "Прямий переклад чеського терміну 'zažívacích rour' (від дієслова 'zažívat' — травити, перетравлювати) на відповідний український медичний та біологічний термін, що описує органи травлення у формі трубок.",
+          "note": "Чернетка визначення: У контексті твору це штучно створені трубки, що імітують травний тракт людини, призначені для переробки поживних речовин у роботів; вони описуються як частина конвеєрної лінії масового виробництва, де тисячі кілометрів таких трубок виготовляються одночасно.\nТермін є специфічним для науково-фантастичного контексту твору, де описується механічне виробництво біологічних органів. У загальній мові такий термін не використовується, оскільки в природі травний тракт є складною системою, а не просто набором трубок, хоча в художньому описі конвеєра це допустиме узагальнення.",
+          "derivation_type": null,
+          "status": "proposed_not_editorially_reviewed"
+        }
+      ],
+      "external": [],
+      "earliest_in_work_corpus": 1920
+    }
+  ],
+  "counts": {
+    "cards": 168,
+    "attestations": 164,
+    "byte_verified": 164,
+    "proposals": 31
+  }
+}

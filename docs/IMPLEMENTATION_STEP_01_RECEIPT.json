@@ -1,0 +1,27 @@
+{
+  "status": "research_export_not_scientific_validation",
+  "created_at_utc": "2026-09-06T21:39:21.391414+00:00",
+  "git_head": "2d17ddd6758146438fc6e557a5b327fbb48410c7",
+  "python": "3.9.21 (main, Dec 11 2024, 16:35:24) [MSC v.1929 64 bit (AMD64)]",
+  "sqlite": "3.45.3",
+  "counts": {
+    "cards": 88,
+    "attestations": 84,
+    "byte_verified": 84,
+    "proposals": 15
+  },
+  "snapshot_sha256": "d785194d9bd9a4201d08dc792eab6b6b923661cf9420b28fe3067545c29b9fa0",
+  "executor_files": {
+    "scripts\\run_evidence_export.py": "957f4df59619568bf2c6f158a5c0619832c605376f90e5901c14b60ff9fb1387",
+    "modules\\lexicography\\dictionary_exporter.py": "f8d5cc4d19cdcddc7f352f15a7b1bacc6338287f8e8b1e35f89464f687af2f5e",
+    "modules\\corpus\\witness.py": "44b7a6db52d077f85206baa63e75a399b7305058b1844132962a2400e433c1c4",
+    "tests\\test_evidence_export.py": "71a76cf708355da2b1a912b54cbd53f5d3cf38b01bc2d43d1a082a9b839c3d93",
+    "docs\\ARTICLE_CONTRACT_V1.md": "520b6751d4854bb16eceb3fc2f48769a2850034c2ae05b98aabea93657e20f1b"
+  },
+  "outputs": {
+    "SCI_FI_LEXICON.md": "94fc0e2c97b06f2a55552acca4b21f0a3353e75755d7d3ad1b47b05e75177daf",
+    "SCI_FI_LEXICON.json": "1b37751ea76795d79bbcbc74c0a744e1790a8cf4b70375f2615a08532bb316d2"
+  },
+  "rejected": [],
+  "limitation": "Plain SHA-256 receipt, not an Exometric seal or externally anchored audit. Corpus source files must remain available for replay."
+}
