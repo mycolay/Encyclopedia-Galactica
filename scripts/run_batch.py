@@ -16,6 +16,7 @@ from modules.autoresearch.batch import BatchClient,localize,insert_records,MODEL
 from modules.corpus.queue import CorpusQueue
 from modules.audit.exometric import PINS,checked_copy,write_json,sha,seal_prepared_bundle
 from modules.lexicography.dictionary_exporter import DictionaryExporter,check_quote
+from modules.lexicography.relevance import select_derivations
 
 
 def backup(source,target):
@@ -40,6 +41,7 @@ def main():
     parser.add_argument('--anchor',type=Path,required=True)
     parser.add_argument('--queue',type=Path,default=ROOT/'data/batch_queue.db')
     parser.add_argument('--windows',type=int,default=32)
+    parser.add_argument('--relevance-decisions',type=Path)
     args=parser.parse_args()
     if not 1<=args.windows<=120:raise ValueError('window_budget')
     run=args.run.resolve()
@@ -54,6 +56,12 @@ def main():
     with lock.open('x') as f:f.write(str(run))
     try:
         run.mkdir(parents=True)
+        decisions={}
+        if args.relevance_decisions:
+            checked_copy(args.relevance_decisions,run/'relevance-decisions.json')
+            decisions=json.loads((run/'relevance-decisions.json').read_text(encoding='utf-8'))
+            if not isinstance(decisions,dict):raise ValueError('invalid_relevance_decisions')
+        else:write_json(run/'relevance-decisions.json',decisions)
         main_db=ROOT/'data/scifi_lexicon.db'
         backup(main_db,run/'baseline.db')
         c=sqlite3.connect(run/'baseline.db');c.row_factory=sqlite3.Row
@@ -63,7 +71,8 @@ def main():
         names=['scripts/run_batch.py','modules/autoresearch/batch.py','scripts/run_local_pilot.py',
             'modules/corpus/queue.py','modules/corpus/witness.py','modules/autoresearch/llm_client.py',
             'modules/audit/exometric.py','modules/lexicography/dictionary_exporter.py',
-            'docs/BATCH_AND_EDITORIAL_PROTOCOL_V1.md','docs/BATCH_EXECUTION_V1.md','tests/test_batch.py']
+            'docs/BATCH_AND_EDITORIAL_PROTOCOL_V1.md','docs/BATCH_EXECUTION_V1.md','tests/test_batch.py',
+            'modules/lexicography/relevance.py','tests/test_relevance.py']
         for name in names:checked_copy(ROOT/name,run/'executor'/name)
         queue=CorpusQueue(args.queue)
         profile=json.dumps(dict(model=DIGEST,worker=sha(ROOT/'modules/autoresearch/batch.py'),
@@ -76,7 +85,8 @@ def main():
             plans.append((w,pid,path))
         write_json(run/'contract.json',dict(executor_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
             model=DIGEST,windows=args.windows,max_derivations=16,gpu=gpu,ollama=get('version'),
-            plans=[queue.status(pid) for _,pid,_ in plans],baseline_logical_sha256=baseline_hash))
+            plans=[queue.status(pid) for _,pid,_ in plans],baseline_logical_sha256=baseline_hash,
+            derivation_policy='human_context_relevance.v1',relevance_decisions_sha256=sha(run/'relevance-decisions.json')))
         client=BatchClient(run)
         records=[];outcomes=[];done=0;stop=None;seen=set(known)
         for w,pid,path in plans:
@@ -126,10 +136,12 @@ def main():
                         verified_at_utc=datetime.now(timezone.utc).isoformat(),source_path=str(path),proposal=None)
                     if check_quote(record,path)[0] is None:raise ValueError('recovered_evidence_invalid')
                     records.append(record);seen.add(key)
-        # Draft a bounded subset; deterministic order, no dictionary citations invented.
+        # No derivation until a context-bound human relevance decision exists.
+        eligible,held=select_derivations(records,decisions)
+        write_json(run/'derivation-selection.json',dict(eligible_count=len(eligible),held=held))
         client.stage='derive'
         if not stop and not client.stop_reason():
-            for record in records[:16]:
+            for record in eligible:
                 if client.stop_reason():break
                 try:
                     prompt='Термін: '+record['term_orig']+'\nТвір: '+record['title']+'\nКонтекст:\n'+record['quote']

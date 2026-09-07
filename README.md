@@ -36,6 +36,10 @@
 
 ## Відтворюваний експорт
 
+Поточне обмеження деривації та критична звірка аудиту:
+[крок 09](docs/IMPLEMENTATION_STEP_09.md). Готові редакторські форми
+описано в [процедурі](docs/EDITORIAL_REVIEW_RUNBOOK_V1.md); оцінювання ще не виконано.
+
 ```powershell
 python scripts/run_evidence_export.py
 python -m pytest -q tests/test_evidence_export.py test_zones_witness.py

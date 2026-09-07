@@ -1,0 +1,30 @@
+[
+  {
+    "package": "batch-step05-001",
+    "journal_pending": true,
+    "completion_pending": false,
+    "fresh_verdict": "PASS",
+    "artifact_count": 214
+  },
+  {
+    "package": "batch-step06-001",
+    "journal_pending": true,
+    "completion_pending": false,
+    "fresh_verdict": "PASS",
+    "artifact_count": 228
+  },
+  {
+    "package": "world-step07-001",
+    "journal_pending": true,
+    "completion_pending": false,
+    "fresh_verdict": "PASS",
+    "artifact_count": 33
+  },
+  {
+    "package": "world-step08-001",
+    "journal_pending": true,
+    "completion_pending": false,
+    "fresh_verdict": "PASS",
+    "artifact_count": 14
+  }
+]

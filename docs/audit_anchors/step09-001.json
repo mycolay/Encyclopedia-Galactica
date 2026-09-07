@@ -1,0 +1,9 @@
+{
+  "schema_version": "cosmoslov.audit_anchor.v1",
+  "bundle_name": "editorial-audit-step09-001",
+  "manifest_sha256": "71e5a3046b5c8f8a01599afad032dec8b6191006123830994540fef36bd8bf81",
+  "head_chain_hash": "9be457a4b2907fe59e4d978df026039cccd2837a7c4b8789ce7d5eaa1002f472",
+  "artifact_count": 18,
+  "claim": "integrity_only",
+  "external_custody": "pending_human_retention"
+}
