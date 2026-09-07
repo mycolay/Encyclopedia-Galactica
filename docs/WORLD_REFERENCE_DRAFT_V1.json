@@ -1,0 +1,21 @@
+{
+  "schema_version": "cosmoslov.scene_reference.v1",
+  "status": "assistant_draft_pending_human_audit",
+  "human_reviewed": false,
+  "scope": "Non-exhaustive development fixture written after seeing outputs; not held-out gold; no precision or recall claims",
+  "source_sha256": "3839fa35c116713f811903545470041a86079268307ae9fd3ed4d04c88788bc0",
+  "entities": [
+    {"scene":"education","name":"Ingolstadt","kind":"place","subtype":"named_location","description_uk":"Місце, університет якого батьки обрали для навчання оповідача.","quote":"university of Ingolstadt","note":"Не ототожнювати місце з університетом. Тип поселення потребує додаткового контексту."},
+    {"scene":"education","name":"university of Ingolstadt","kind":"place","subtype":"institution_site","description_uk":"Університет, студентом якого мав стати оповідач.","quote":"should become a student at the university of Ingolstadt.","note":"Установа має окрему ідентичність; абзац повідомляє намір, а не факт вступу."},
+    {"scene":"education","name":"Geneva","kind":"place","subtype":"named_location","description_uk":"Місце, школи якого оповідач відвідував раніше.","quote":"hitherto attended the schools of Geneva","note":"Географічні координати та статус міста цей уривок не встановлює."},
+    {"scene":"creation","name":"creature","kind":"character","subtype":"unnamed_being","description_uk":"Істота, око якої розплющилося; вона важко дихала, її кінцівки судомно рухалися.","quote":"I saw the dull yellow eye of the creature\nopen; it breathed hard, and a convulsive motion agitated its limbs.","note":"Ім’я та механізм оживлення не встановлюємо з цього абзацу."},
+    {"scene":"creation","name":"instruments of life","kind":"concept","subtype":"apparatus_candidate","description_uk":"Прилади, зібрані оповідачем з наміром оживити нерухому істоту.","quote":"collected the instruments of life around me, that I might infuse a\nspark of being into the lifeless thing that lay at my feet.","note":"Кандидат до артефактів/технологій, не затверджений термін. Конструкцію не описано."}
+  ],
+  "exclusions": [
+    {"scene":"education","name":"first misfortune","reason":"Згадка події, не окреме НФ-поняття в цих сценах."},
+    {"scene":"creation","name":"November","reason":"Календарна обставина часу; не місце і не НФ-поняття."},
+    {"scene":"creation","name":"candle","reason":"Звичайний предмет без показаної НФ-специфіки."},
+    {"scene":"creation","name":"dull yellow eye","reason":"Ознака істоти, окрема сутність у цьому зрізі не потрібна."},
+    {"scene":"creation","name":"dreary night of November","reason":"Час і атмосфера сцени, не просторовий об’єкт."}
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "reference_status": "assistant_draft_pending_human_audit",
+  "summary": {
+    "candidates": 13,
+    "source_held": 3,
+    "whitespace_recovered": 3,
+    "draft_excluded": 4,
+    "semantic_approved": 0,
+    "llm_calls": 0
+  },
+  "rows": [
+    {
+      "scene": "education",
+      "arm": "original_only",
+      "original": {
+        "name": "Ingolstadt",
+        "kind": "place",
+        "description_uk": "Університет, куди батьки вирішили відправити оповідача навчатися.",
+        "quote": "university of Ingolstadt",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "byte_start": 54706,
+        "byte_len": 24,
+        "quote_sha256": "258520227bb34aa498471b42a72c3537183ab9f4fdfe7e2d0cacf778af492659"
+      },
+      "previous_quote_status": "accepted",
+      "checks": {
+        "issues": [],
+        "evidence": {
+          "byte_len": 24,
+          "quote_original": "university of Ingolstadt",
+          "quote_sha256": "258520227bb34aa498471b42a72c3537183ab9f4fdfe7e2d0cacf778af492659",
+          "alignment": "exact",
+          "byte_start": 54706
+        },
+        "status": "source_grounded_editorial_pending",
+        "semantic_validation": false
+      },
+      "reference_decision": "category_matches_draft",
+      "reference": {
+        "scene": "education",
+        "name": "Ingolstadt",
+        "kind": "place",
+        "subtype": "named_location",
+        "description_uk": "Місце, університет якого батьки обрали для навчання оповідача.",
+        "quote": "university of Ingolstadt",
+        "note": "Не ототожнювати місце з університетом. Тип поселення потребує додаткового контексту."
+      },
+      "publication": "pending_human_review"
+    },
+    {
+      "scene": "education",
+      "arm": "original_only",
+      "original": {
+        "name": "Geneva",
+        "kind": "place",
+        "description_uk": "Місто, де оповідач раніше відвідував школи.",
+        "quote": "schools of Geneva",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "byte_start": 54760,
+        "byte_len": 17,
+        "quote_sha256": "ef134ecc11a756565413e23b6ee948e507026b71d0bf5b19f3dbd5c6c2f6d7fd"
+      },
+      "previous_quote_status": "accepted",
+      "checks": {
+        "issues": [],
+        "evidence": {
+          "byte_len": 17,
+          "quote_original": "schools of Geneva",
+          "quote_sha256": "ef134ecc11a756565413e23b6ee948e507026b71d0bf5b19f3dbd5c6c2f6d7fd",
+          "alignment": "exact",
+          "byte_start": 54760
+        },
+        "status": "source_grounded_editorial_pending",
+        "semantic_validation": false
+      },
+      "reference_decision": "category_matches_draft",
+      "reference": {
+        "scene": "education",
+        "name": "Geneva",
+        "kind": "place",
+        "subtype": "named_location",
+        "description_uk": "Місце, школи якого оповідач відвідував раніше.",
+        "quote": "hitherto attended the schools of Geneva",
+        "note": "Географічні координати та статус міста цей уривок не встановлює."
+      },
+      "publication": "pending_human_review"
+    },
+    {
+      "scene": "education",
+      "arm": "original_only",
+      "original": {
+        "name": "first misfortune",
+        "kind": "concept",
+        "description_uk": "Перша нещасна подія в житті оповідача, що стала віщуванням майбутнього горя.",
+        "quote": "the first misfortune of my life occurred—an omen, as it were, of my future misery",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "reason": "quote_not_exact_in_original"
+      },
+      "previous_quote_status": "rejected",
+      "checks": {
+        "issues": [],
+        "evidence": {
+          "byte_len": 83,
+          "quote_original": "the first misfortune of my life\noccurred—an omen, as it were, of my future misery",
+          "quote_sha256": "907638052cc2faefc8aed0ca9bd0f72c8b8034bdf85028cad68db0f2d556d6e2",
+          "alignment": "whitespace_only",
+          "byte_start": 55032
+        },
+        "status": "source_grounded_editorial_pending",
+        "semantic_validation": false
+      },
+      "reference_decision": "excluded_by_draft_scope",
+      "reference": {
+        "scene": "education",
+        "name": "first misfortune",
+        "reason": "Згадка події, не окреме НФ-поняття в цих сценах."
+      },
+      "publication": "pending_human_review"
+    },
+    {
+      "scene": "education",
+      "arm": "translation_assisted",
+      "original": {
+        "name": "Ingolstadt",
+        "kind": "place",
+        "description_uk": "Університет, куди батьки вирішили відправити оповідача навчатися.",
+        "quote": "university of Ingolstadt",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "byte_start": 54706,
+        "byte_len": 24,
+        "quote_sha256": "258520227bb34aa498471b42a72c3537183ab9f4fdfe7e2d0cacf778af492659"
+      },
+      "previous_quote_status": "accepted",
+      "checks": {
+        "issues": [],
+        "evidence": {
+          "byte_len": 24,
+          "quote_original": "university of Ingolstadt",
+          "quote_sha256": "258520227bb34aa498471b42a72c3537183ab9f4fdfe7e2d0cacf778af492659",
+          "alignment": "exact",
+          "byte_start": 54706
+        },
+        "status": "source_grounded_editorial_pending",
+        "semantic_validation": false
+      },
+      "reference_decision": "category_matches_draft",
+      "reference": {
+        "scene": "education",
+        "name": "Ingolstadt",
+        "kind": "place",
+        "subtype": "named_location",
+        "description_uk": "Місце, університет якого батьки обрали для навчання оповідача.",
+        "quote": "university of Ingolstadt",
+        "note": "Не ототожнювати місце з університетом. Тип поселення потребує додаткового контексту."
+      },
+      "publication": "pending_human_review"
+    },
+    {
+      "scene": "education",
+      "arm": "translation_assisted",
+      "original": {
+        "name": "Geneva",
+        "kind": "place",
+        "description_uk": "Місто, де оповідач навчався в школах до свого від'їзду.",
+        "quote": "schools of Geneva",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "byte_start": 54760,
+        "byte_len": 17,
+        "quote_sha256": "ef134ecc11a756565413e23b6ee948e507026b71d0bf5b19f3dbd5c6c2f6d7fd"
+      },
+      "previous_quote_status": "accepted",
+      "checks": {
+        "issues": [],
+        "evidence": {
+          "byte_len": 17,
+          "quote_original": "schools of Geneva",
+          "quote_sha256": "ef134ecc11a756565413e23b6ee948e507026b71d0bf5b19f3dbd5c6c2f6d7fd",
+          "alignment": "exact",
+          "byte_start": 54760
+        },
+        "status": "source_grounded_editorial_pending",
+        "semantic_validation": false
+      },
+      "reference_decision": "category_matches_draft",
+      "reference": {
+        "scene": "education",
+        "name": "Geneva",
+        "kind": "place",
+        "subtype": "named_location",
+        "description_uk": "Місце, школи якого оповідач відвідував раніше.",
+        "quote": "hitherto attended the schools of Geneva",
+        "note": "Географічні координати та статус міста цей уривок не встановлює."
+      },
+      "publication": "pending_human_review"
+    },
+    {
+      "scene": "education",
+      "arm": "translation_assisted",
+      "original": {
+        "name": "first misfortune",
+        "kind": "concept",
+        "description_uk": "Подія, що сталася перед від'їздом і розглядається як передвістя майбутньої біди.",
+        "quote": "the first misfortune of my life occurred—an omen, as it were, of my future misery",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "reason": "quote_not_exact_in_original"
+      },
+      "previous_quote_status": "rejected",
+      "checks": {
+        "issues": [],
+        "evidence": {
+          "byte_len": 83,
+          "quote_original": "the first misfortune of my life\noccurred—an omen, as it were, of my future misery",
+          "quote_sha256": "907638052cc2faefc8aed0ca9bd0f72c8b8034bdf85028cad68db0f2d556d6e2",
+          "alignment": "whitespace_only",
+          "byte_start": 55032
+        },
+        "status": "source_grounded_editorial_pending",
+        "semantic_validation": false
+      },
+      "reference_decision": "excluded_by_draft_scope",
+      "reference": {
+        "scene": "education",
+        "name": "first misfortune",
+        "reason": "Згадка події, не окреме НФ-поняття в цих сценах."
+      },
+      "publication": "pending_human_review"
+    },
+    {
+      "scene": "creation",
+      "arm": "original_only",
+      "original": {
+        "name": "November",
+        "kind": "concept",
+        "description_uk": "Місяць, коли відбулася подія.",
+        "quote": "It was on a dreary night of November",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "byte_start": 84411,
+        "byte_len": 36,
+        "quote_sha256": "fbf19a915032b48dab4139d40d98a461f04239274f9d2d30687e531aacfe4b8c"
+      },
+      "previous_quote_status": "accepted",
+      "checks": {
+        "issues": [],
+        "evidence": {
+          "byte_len": 36,
+          "quote_original": "It was on a dreary night of November",
+          "quote_sha256": "fbf19a915032b48dab4139d40d98a461f04239274f9d2d30687e531aacfe4b8c",
+          "alignment": "exact",
+          "byte_start": 84411
+        },
+        "status": "source_grounded_editorial_pending",
+        "semantic_validation": false
+      },
+      "reference_decision": "excluded_by_draft_scope",
+      "reference": {
+        "scene": "creation",
+        "name": "November",
+        "reason": "Календарна обставина часу; не місце і не НФ-поняття."
+      },
+      "publication": "pending_human_review"
+    },
+    {
+      "scene": "creation",
+      "arm": "original_only",
+      "original": {
+        "name": "instruments of life",
+        "kind": "concept",
+        "description_uk": "Прилади, зібрані для надання життя.",
+        "quote": "collected the instruments of life around me",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "byte_start": 84543,
+        "byte_len": 43,
+        "quote_sha256": "d2c41642cd1a8e530932ce79953a02d04e8c6a497015f971a44bb5a9951920f3"
+      },
+      "previous_quote_status": "accepted",
+      "checks": {
+        "issues": [],
+        "evidence": {
+          "byte_len": 43,
+          "quote_original": "collected the instruments of life around me",
+          "quote_sha256": "d2c41642cd1a8e530932ce79953a02d04e8c6a497015f971a44bb5a9951920f3",
+          "alignment": "exact",
+          "byte_start": 84543
+        },
+        "status": "source_grounded_editorial_pending",
+        "semantic_validation": false
+      },
+      "reference_decision": "category_matches_draft",
+      "reference": {
+        "scene": "creation",
+        "name": "instruments of life",
+        "kind": "concept",
+        "subtype": "apparatus_candidate",
+        "description_uk": "Прилади, зібрані оповідачем з наміром оживити нерухому істоту.",
+        "quote": "collected the instruments of life around me, that I might infuse a\nspark of being into the lifeless thing that lay at my feet.",
+        "note": "Кандидат до артефактів/технологій, не затверджений термін. Конструкцію не описано."
+      },
+      "publication": "pending_human_review"
+    },
+    {
+      "scene": "creation",
+      "arm": "original_only",
+      "original": {
+        "name": "candle",
+        "kind": "concept",
+        "description_uk": "Джерело світла, яке майже згоріло.",
+        "quote": "my candle was nearly burnt out",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "byte_start": 84755,
+        "byte_len": 30,
+        "quote_sha256": "b01aec9af48cad3462fb972bbc43e0e108bf830a8de7fa545c5760c425e97797"
+      },
+      "previous_quote_status": "accepted",
+      "checks": {
+        "issues": [],
+        "evidence": {
+          "byte_len": 30,
+          "quote_original": "my candle was nearly burnt out",
+          "quote_sha256": "b01aec9af48cad3462fb972bbc43e0e108bf830a8de7fa545c5760c425e97797",
+          "alignment": "exact",
+          "byte_start": 84755
+        },
+        "status": "source_grounded_editorial_pending",
+        "semantic_validation": false
+      },
+      "reference_decision": "excluded_by_draft_scope",
+      "reference": {
+        "scene": "creation",
+        "name": "candle",
+        "reason": "Звичайний предмет без показаної НФ-специфіки."
+      },
+      "publication": "pending_human_review"
+    },
+    {
+      "scene": "creation",
+      "arm": "original_only",
+      "original": {
+        "name": "creature",
+        "kind": "character",
+        "description_uk": "Істота з тьмяним жовтим оком, яка прийшла до життя.",
+        "quote": "I saw the dull yellow eye of the creature open",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "reason": "quote_not_exact_in_original"
+      },
+      "previous_quote_status": "rejected",
+      "checks": {
+        "issues": [],
+        "evidence": {
+          "byte_len": 46,
+          "quote_original": "I saw the dull yellow eye of the creature\nopen",
+          "quote_sha256": "2942fea26ef03c14d6002465ed6035cdf300b73357653301358ab4ff6e9aac0e",
+          "alignment": "whitespace_only",
+          "byte_start": 84840
+        },
+        "status": "source_grounded_editorial_pending",
+        "semantic_validation": false
+      },
+      "reference_decision": "category_matches_draft",
+      "reference": {
+        "scene": "creation",
+        "name": "creature",
+        "kind": "character",
+        "subtype": "unnamed_being",
+        "description_uk": "Істота, око якої розплющилося; вона важко дихала, її кінцівки судомно рухалися.",
+        "quote": "I saw the dull yellow eye of the creature\nopen; it breathed hard, and a convulsive motion agitated its limbs.",
+        "note": "Ім’я та механізм оживлення не встановлюємо з цього абзацу."
+      },
+      "publication": "pending_human_review"
+    },
+    {
+      "scene": "creation",
+      "arm": "translation_assisted",
+      "original": {
+        "name": "original designation",
+        "kind": "concept",
+        "description_uk": "Інструменти, зібрані навіщо, щоб надати іскру буття безжиттєвій істоті.",
+        "quote": "instruments of life",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "byte_start": 84557,
+        "byte_len": 19,
+        "quote_sha256": "1e97abfc58e0586ad5191183799437bfa5c1bfbfffa99796cf0fa541333b07c2"
+      },
+      "previous_quote_status": "accepted",
+      "checks": {
+        "issues": [
+          "name_not_in_original",
+          "name_not_in_evidence"
+        ],
+        "evidence": {
+          "byte_len": 19,
+          "quote_original": "instruments of life",
+          "quote_sha256": "1e97abfc58e0586ad5191183799437bfa5c1bfbfffa99796cf0fa541333b07c2",
+          "alignment": "exact",
+          "byte_start": 84557
+        },
+        "status": "held",
+        "semantic_validation": false
+      },
+      "reference_decision": "unmapped_review_required",
+      "reference": null,
+      "publication": "pending_human_review"
+    },
+    {
+      "scene": "creation",
+      "arm": "translation_assisted",
+      "original": {
+        "name": "original designation",
+        "kind": "concept",
+        "description_uk": "Жовте око істоти, яке відкривається в напівзгаслому світлі.",
+        "quote": "dull yellow eye",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "byte_start": 84850,
+        "byte_len": 15,
+        "quote_sha256": "093aa9467e00de0a6fc27f900171535bf216f4ea08604a171f991bc88500452d"
+      },
+      "previous_quote_status": "accepted",
+      "checks": {
+        "issues": [
+          "name_not_in_original",
+          "name_not_in_evidence"
+        ],
+        "evidence": {
+          "byte_len": 15,
+          "quote_original": "dull yellow eye",
+          "quote_sha256": "093aa9467e00de0a6fc27f900171535bf216f4ea08604a171f991bc88500452d",
+          "alignment": "exact",
+          "byte_start": 84850
+        },
+        "status": "held",
+        "semantic_validation": false
+      },
+      "reference_decision": "unmapped_review_required",
+      "reference": null,
+      "publication": "pending_human_review"
+    },
+    {
+      "scene": "creation",
+      "arm": "translation_assisted",
+      "original": {
+        "name": "original designation",
+        "kind": "place",
+        "description_uk": "Похмура ніч у листопаді, коли відбувається подія.",
+        "quote": "dreary night of November",
+        "epistemic": "explicit",
+        "status": "editorial_pending",
+        "entailment": "not_verified",
+        "byte_start": 84423,
+        "byte_len": 24,
+        "quote_sha256": "bdcbc370c930dc5635f385e43c62817dca1d28496a352f9fe15ab601de46c313"
+      },
+      "previous_quote_status": "accepted",
+      "checks": {
+        "issues": [
+          "name_not_in_original",
+          "name_not_in_evidence"
+        ],
+        "evidence": {
+          "byte_len": 24,
+          "quote_original": "dreary night of November",
+          "quote_sha256": "bdcbc370c930dc5635f385e43c62817dca1d28496a352f9fe15ab601de46c313",
+          "alignment": "exact",
+          "byte_start": 84423
+        },
+        "status": "held",
+        "semantic_validation": false
+      },
+      "reference_decision": "unmapped_review_required",
+      "reference": null,
+      "publication": "pending_human_review"
+    }
+  ],
+  "reference_sha256": "8a96b10460e7c4174c0fa3a1529a35122d376d742471e208a586cc3800b346ff",
+  "input_sha256": "802a8d3023f0a9c1e59ec356e736771f9195ed105527703542f570c7573d0195"
+}
