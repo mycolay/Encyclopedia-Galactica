@@ -7,3 +7,4 @@ __pycache__/
 data/batch_queue.db*
 data/scifi_lexicon.db-wal
 data/scifi_lexicon.db-shm
+data/editorial_audit.db*

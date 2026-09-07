@@ -1,0 +1,9 @@
+{
+  "schema_version": "cosmoslov.audit_anchor.v1",
+  "bundle_name": "encyclopedia-step13-001",
+  "manifest_sha256": "e3de78ebf4a817e8b4888d6e8aa4d4be5441006f3b0e2e7d2596172c7c375183",
+  "head_chain_hash": "5f15ade0970195564b28ce6f36591ab5f90e01a1047c934fe07246e2e44e8728",
+  "artifact_count": 17,
+  "claim": "integrity_only",
+  "external_custody": "pending_human_retention"
+}
