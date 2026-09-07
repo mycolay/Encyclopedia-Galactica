@@ -152,6 +152,12 @@ def seal_prepared_bundle(bundle, anchor_path):
         claim='integrity_only',external_custody='pending_human_retention')
     result = verify_bundle(bundle,anchor)
     write_json(bundle/'seal/independent_recompute.json',result)
+    # The bridge journal is an intermediate observation, not the final package status.
+    write_json(bundle/'seal/completion.json',dict(
+        status='integrity_verified', independent_verification_pending=False,
+        independent_report='independent_recompute.json',
+        head_chain_hash=result['head_chain_hash'],
+        external_custody='pending_human_retention', scientific_validation=False))
     anchor_path.parent.mkdir(parents=True,exist_ok=True)
     write_json(anchor_path,anchor)
     return anchor
